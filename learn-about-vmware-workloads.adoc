@@ -1,0 +1,72 @@
+---
+sidebar: sidebar 
+permalink: learn-about-vmware-workloads.html 
+keywords: overview, concepts, features, use case, workloads, how workload factory works 
+summary: O Workload Factory para VMware fornece ferramentas para mover seus dados de sistemas locais para o VMware Cloud on AWS. O consultor de migração da VMware permite analisar as configurações atuais da máquina virtual em ambientes vSphere locais e gerar um plano para implantar layouts de VM recomendados no VMware Cloud nos clusters do AWS vSphere e usar sistemas de arquivos personalizados do Amazon FSX for NetApp ONTAP como datastores externos. 
+---
+= Saiba mais sobre o Workload Factory para VMware
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+O Workload Factory para VMware fornece ferramentas para mover seus dados de sistemas locais para o VMware Cloud on AWS (VMC) ou Amazon EC2. O consultor de migração da VMware permite analisar as configurações atuais da máquina virtual em ambientes vSphere locais e gerar um plano para implantar layouts de VM recomendados para clusters do Amazon EC2 ou VMware Cloud no AWS vSphere e usar sistemas de arquivos personalizados do Amazon FSX para NetApp ONTAP como datastores externos.
+
+O Amazon FSX for NetApp ONTAP é um armazenamento de dados NFS externo, desenvolvido com o sistema de arquivos ONTAP da NetApp, que pode ser anexado a instâncias do Amazon EC2 ou a clusters do AWS vSphere. Não há necessidade de adicionar mais hosts para aumentar o armazenamento disponível; em vez disso, basta usar o FSX for ONTAP volumes como datastores externos para complementar os datastores VSAN. Isso fornece uma infraestrutura de storage virtualizada, flexível e de alto desempenho que é dimensionada independentemente dos recursos de computação.
+
+image:diagram-vmware-fsx-overview.png["Um diagrama mostrando a arquitetura."]
+
+
+
+== Como funciona o consultor de migração da VMware
+
+O consultor de migração pode ajudá-lo a migrar máquinas virtuais (VMs) locais e seus dados, executados em qualquer datastores compatíveis com VMware, para o Amazon EC2 ou o VMware Cloud datastores, que inclui datastores NFS suplementares em um sistema de arquivos FSX for ONTAP.
+
+image:diagram-vmware-fsx-old-new.png["Um diagrama mostrando um exemplo de arquitetura antiga e nova arquitetura após a migração."]
+
+Observe que você pode anexar até quatro (4) volumes do FSX for ONTAP a um único cluster do vSphere no VMware Cloud na AWS.
+
+
+
+== O que você pode fazer com o consultor de migração
+
+O consultor de migração fornece a seguinte funcionalidade:
+
+* Analise as configurações atuais de VM no local
+* Determine quais VMs migrar para o Amazon EC2 ou VMware Cloud na AWS
+* Identifique o espaço necessário no FSX para volumes do ONTAP para ser usado como datastores externos de VM
+* Revise o relatório resultante para entender as etapas de implantação
+* Execute a implantação real
+
+
+O consultor de migração oferece suporte ao Planejamento de configuração para uma única instância do Amazon EC2 ou cluster do VMware Cloud on AWS conetado a um único sistema de arquivos FSX for ONTAP.
+
+
+
+== Benefícios de usar o consultor de migração
+
+A transição de partes da sua infraestrutura atual para o Amazon EC2 ou VMware Cloud na AWS usando o Amazon FSX for ONTAP como datastores NFS externos oferece os seguintes benefícios:
+
+* Otimização dos custos devido à desacoplamento do host e do storage e à eficiência avançada de dados
+* Capacidade de aumentar a capacidade de storage conforme necessário sem a necessidade de adquirir instâncias de host adicionais
+* Funcionalidades de gerenciamento de dados da NetApp ONTAP na nuvem, como snapshots com uso eficiente de espaço, clonagem, compressão, deduplicação, compactação e replicação
+* Redução no gerenciamento de atualizações de hardware
+* Capacidade de alterar a taxa de transferência de dados, IOPS e o tamanho do sistema de arquivos, além de aumentar ou diminuir o tamanho dos volumes
+* Alta disponibilidade com suporte para implantações de várias zonas de disponibilidade (AZ)
+* Redução de custo e latência de configurações de uma única AZ que usam peering VPC sem exigir um Transit Gateway
+
+
+
+
+== Custo
+
+Não há custo para usar o consultor de migração da VMware.
+
+Você precisará pagar pelos recursos da AWS implantados com base nas recomendações do consultor de migração.
+
+
+
+== Licenciamento
+
+Não são necessárias licenças especiais da NetApp para usar o consultor de migração.

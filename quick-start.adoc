@@ -1,0 +1,62 @@
+---
+sidebar: sidebar 
+permalink: quick-start.html 
+keywords: quick start 
+summary: Comece a usar o consultor de migração da VMware para migrar sua infraestrutura atual para o VMware Cloud na AWS usando o Amazon FSX for ONTAP como datastores NFS externos. 
+---
+= Início rápido para migrar para o VMware Cloud na AWS usando o consultor de migração da VMware
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Comece a usar o consultor de migração da VMware para migrar sua infraestrutura atual para o VMware Cloud na AWS usando o Amazon FSX for ONTAP como datastores NFS externos.
+
+Antes de começar, você deve ter uma compreensão https://docs.netapp.com/us-en/workload-setup-admin/operational-modes.html["modos operacionais"^]
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["Um"] Inscreva-se e crie uma conta para o Workload Factory
+[role="quick-margin-para"]
+Vá para o https://console.workloads.netapp.com["Console de fábrica da carga de trabalho"^] e inscreva-se. https://docs.netapp.com/us-en/workload-setup-admin/sign-up-saas.html["Saiba mais sobre como criar contas"].
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["Dois"] Adicione credenciais e permissões da AWS à sua conta
+[role="quick-margin-para"]
+Você pode usar o Workload Factory no modo _Basic_ sem adicionar credenciais para acessar sua conta da AWS. Adicionar credenciais da AWS ao Workload Factory no modo _Read_ ou _Automate_ dá à sua conta do Workload Factory as permissões necessárias para criar e gerenciar os sistemas de arquivos FSX for ONTAP e para implantar e gerenciar cargas de trabalho no VMware Cloud.
+
+[role="quick-margin-para"]
+https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["Saiba como adicionar credenciais e permissões"^]
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["Três"] Capture suas configurações atuais de VM em seu ambiente vSphere
+[role="quick-margin-para"]
+Você pode usar o script de coletor de VM do consultor de migração ou RVTools para capturar suas configurações atuais de VM, a fim de criar um plano de implantação. Você também pode importar um plano de implantação existente como um modelo e, em seguida, modificar todos os atributos necessários.
+
+[role="quick-margin-para"]
+link:capture-vm-configurations.html["Saiba como capturar suas configurações atuais de VM"].
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["Quatro"] Crie um plano de implantação usando o consultor de migração da VMware
+[role="quick-margin-para"]
+Inicie o consultor de migração do VMware e selecione as VMs que você deseja migrar para a nova infraestrutura do VMware Cloud na AWS usando um sistema de arquivos do Amazon FSX for ONTAP como armazenamentos de dados NFS externos. Você pode fazer algumas modificações antes de salvar o plano.
+
+[role="quick-margin-para"]
+link:launch-onboarding-advisor.html["Saiba como usar o consultor de migração da VMware para criar um plano de implantação"].
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png["Cinco"] Implante o sistema de arquivos FSX for ONTAP recomendado
+[role="quick-margin-para"]
+Implante o novo sistema de arquivos FSX for ONTAP que fornecerá os armazenamentos de dados para suas VMs na infraestrutura da AWS.
+
+[role="quick-margin-para"]
+link:deploy-fsx-file-system.html["Saiba como implantar seu novo sistema de arquivos FSX for ONTAP"].
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-6.png["Seis"] Conete seus sistemas de arquivos do FSX for ONTAP ao VMware Cloud na AWS
+[role="quick-margin-para"]
+Seu data center definido por software (SDDC) oferece opções de rede para se conetar ao sistema de arquivos FSX for ONTAP usando o recurso de peering VPC para estender a conetividade de rede aos volumes de armazenamento NFS externos.
+
+[role="quick-margin-para"]
+link:connect-sddc-to-fsx.html["Saiba mais sobre como migrar seus dados"].
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-7.png["Sete"] Migre dados de seus sistemas antigos para seus novos sistemas de arquivos FSX for ONTAP
+[role="quick-margin-para"]
+Use uma ferramenta externa, como o VMware HCX (extensão de nuvem híbrida), para mover seus dados do armazenamento antigo da máquina virtual para o FSX for NetApp ONTAP volumes conetados às suas novas máquinas virtuais.
+
+[role="quick-margin-para"]
+link:migrate-data.html["Saiba mais sobre como migrar seus dados"].

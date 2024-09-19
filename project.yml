@@ -1,0 +1,64 @@
+---
+settings:
+  name: VMware workloads
+  platform: cloud
+  internal:
+    pdf_enabled: true
+  prod:
+    pdf_enabled: true
+    harmony_enabled: false
+  rss_page: whats-new.html
+  release_notes_autogen:
+    release_notes_repo: workload-relnotes
+  langs: pt-br,us-en,ja-jp,ko-kr,zh-cn,zh-tw,de-de,es-es,fr-fr,it-it
+sidebar:
+  entries:
+  - title: Documentos de workloads da VMware
+    url: "/index.html"
+  - title: Notas de lançamento
+    entries:
+    - title: O que há de novo
+      url: "/whats-new.html"
+  - title: Comece agora
+    entries:
+    - title: Saiba mais sobre o Workload Factory para VMware
+      url: "/learn-about-vmware-workloads.html"
+    - title: Início rápido para migrar para o VMware Cloud na AWS
+      url: "/quick-start.html"
+    - title: Início rápido para migrar para o Amazon EC2
+      url: "/quick-start-native.html"
+  - title: Use o consultor de migração da VMware
+    entries:
+    - title: Migre para o VMware Cloud na AWS
+      entries:
+      - title: Capture suas configurações atuais de VM
+        url: "/capture-vm-configurations.html"
+      - title: Crie um plano de implantação usando o consultor de migração
+        url: "/launch-onboarding-advisor.html"
+      - title: Implante o sistema de arquivos FSX for ONTAP recomendado
+        url: "/deploy-fsx-file-system.html"
+      - title: Conete o FSX for ONTAP ao VMware Cloud na AWS
+        url: "/connect-sddc-to-fsx.html"
+      - title: Migre seus dados para a nova infraestrutura
+        url: "/migrate-data.html"
+    - title: Migrar para o Amazon EC2
+      entries:
+      - title: Capture suas configurações atuais de VM
+        url: "/capture-vm-configurations-native.html"
+      - title: Crie um plano de implantação usando o consultor de migração
+        url: "/launch-onboarding-advisor-native.html"
+      - title: Implante o sistema de arquivos FSX for ONTAP recomendado
+        url: "/deploy-fsx-file-system.html"
+      - title: Migre seus dados para a nova infraestrutura
+        url: "/migrate-data-native.html"
+  - title: Conhecimento e apoio
+    entries:
+    - title: Registre-se para obter suporte
+      url: "/support-registration.html"
+    - title: Obtenha ajuda
+      url: "/get-help.html"
+  - title: Avisos legais
+    url: "/legal-notices.html"
+product-family:
+  name: BlueXP Workload Factory for AWS
+  repo: workload-family

@@ -1,0 +1,166 @@
+---
+sidebar: sidebar 
+permalink: launch-onboarding-advisor.html 
+keywords: overview, concepts, features, use case, workloads, how workload factory works 
+summary: Faça login na fábrica de workloads do NetApp para acessar o consultor de migração do VMware. Siga as etapas do assistente para criar um plano de implantação ou plano de migração personalizado para suas necessidades. 
+---
+= Crie um plano de implantação para o VMware Cloud na AWS usando o consultor de migração
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Faça login na fábrica de workloads do NetApp para acessar o consultor de migração do VMware. Siga as etapas do assistente para criar um plano de implantação ou plano de migração personalizado para suas necessidades.
+
+Ao migrar para o VMware Cloud, você pode usar o consultor de migração para criar um plano de implantação para os seguintes cenários:
+
+* <<Crie um plano de implantação com base em um ambiente vSphere local,Para migrar seu ambiente vSphere local atual para a nuvem VMware.>>
+* <<Crie um plano de implantação com base em um plano existente,Para implantar um sistema na nuvem com base em um plano de implantação existente que tenha requisitos semelhantes.>>
+
+
+Tenha em atenção que tem de ter um nome de utilizador e uma palavra-passe para aceder ao Workload Factory. Se você não tiver acesso, crie uma conta agora. Consulte as instruções https://docs.netapp.com/us-en/workload-setup-admin/quick-start.html["aqui"].
+
+
+
+== Crie um plano de implantação com base em um ambiente vSphere local
+
+Você pode migrar suas configurações atuais de máquina virtual em ambientes vSphere locais para máquinas virtuais no VMware Cloud on AWS e usar sistemas de arquivos personalizados do Amazon FSX for NetApp ONTAP como datastores externos.
+
+.Requisitos
+* Você deve ter criado o arquivo de inventário a partir de seus sistemas existentes usando o coletor VM do consultor de migração ( arquivo .csv) ou usando RVTools (arquivo .xlsx).
+* Tem de ter acesso ao ficheiro de inventário a partir do sistema no qual está a iniciar sessão na fábrica de carga de trabalho.
+
+
+.Passos
+. No bloco cargas de trabalho VMware, selecione *Access and plan* e, em seguida, selecione *Migration to VMware Cloud on AWS*.
++
+A página principal do VMware Migration Advisor é exibida.
+
+. Selecione *criar um novo plano de implantação*.
+. Selecione o tipo de arquivo de inventário que você usará para preencher o Workload Factory com sua configuração atual de VM e selecione *Next*.
++
+** Selecione *Use o coletor de dados VMware do consultor de migração* para usar o arquivo .csv criado usando o coletor de dados VMware.
+** Selecione *Use RVTools* para usar o arquivo .xlsx que você criou usando RVTools.
+
+
++
+A página "Prepare for VMware Cloud onboarding" é exibida.
+
+. Na seção _Upload VM Configuration_, image:button-upload-file.png["o botão de carregamento"]selecione e selecione o arquivo que deseja usar.
++
+** Selecione o arquivo .csv ao usar o coletor VM do Migration ADVISOR.
+** Selecione o arquivo .xlsx ao usar RVTools.
+
+
++
+A seção de resumo das VMs é preenchida a partir do arquivo de inventário para refletir o número de VMs e a capacidade total de storage.
+
+. Na seção _considerações de inventário da VM_, selecione as opções para filtrar a lista de VMs que você deseja migrar.
++
+.. *Considere VMs*: Indique quais VMs serão extraídas do arquivo .csv com base em seu estado de energia operacional. Você pode inserir todas as VMs, ou apenas aquelas que estão ativadas, desativadas ou suspensas.
+.. *Armazenamento de VM a considerar*: Selecione se os armazenamentos de dados criados para cada VM integrada são dimensionados com base no tamanho utilizado atualmente (recomendado) ou no tamanho provisionado.
++
+Os datastores externos serão implementados usando os volumes do sistema de arquivos do Amazon FSX for NetApp ONTAP.
+
+.. *Memória VM a considerar*: Selecione se a memória alocada para cada VM integrada é dimensionada com base no tamanho utilizado atualmente (recomendado) ou no tamanho provisionado.
+
+
+. Na seção _VMware Cloud on AWS Deployment Configuration_, insira detalhes sobre a configuração necessária do VMware Cloud on AWS.
++
+.. *Região*: Selecione a região onde as VMs e os sistemas de arquivos do Amazon FSX for NetApp ONTAP serão implantados.
++
+Para obter o desempenho ideal e a eficiência de custo, essa é normalmente a mesma região que a implantação do VMware Cloud no AWS SDDC existente.
+
+.. *Requisitos de desempenho estimados da VM*: Esta opção está disponível somente quando se usa RVTools. O coletor de VM do Migration Advisor captura essas informações do seu ambiente. Forneça os seguintes parâmetros de desempenho médios por máquina virtual que você deseja aplicar às novas VMs que serão implantadas:
++
+*** *IOPS médio por VM*: Insira o número de IOPS necessário para seus sistemas de arquivos. Se você não tiver certeza, você pode usar o padrão de 3 IOPS por GiB de armazenamento SSD para sistemas de arquivos do Amazon FSX for ONTAP. Por exemplo, se você implantar 2.000 GiB de capacidade, isso será traduzido para 6.000 IOPS. Recomendamos que você comece com uma configuração de IOPS menor. Você pode aumentar seu IOPS SSD provisionado depois que o sistema de arquivos é criado à medida que as cargas de trabalho são migradas ou implantadas.
+*** *Tamanho médio do bloco I/o*: O tamanho de cada bloco contendo operações de leitura ou gravação. O tamanho padrão é 4 KB. Um tamanho de bloco maior pode ser melhor para grandes workloads de leitura e gravação sequenciais. Um tamanho de bloco menor pode oferecer melhor desempenho para cargas de trabalho que executam pequenas gravações aleatórias em arquivos esparsos ou arquivos grandes.
+*** * Taxa média de gravação*: A porcentagem de operações que são operações de gravação para suas cargas de trabalho. A taxa padrão é de 30% de gravações e 70% de leituras.
+
+
+
+
+. Na seção _considerações sobre capacidade de armazenamento da VM_, selecione entre algumas opções de armazenamento.
++
+.. * Relação média de redução de dados*: Escolha entre os três valores comuns de seleção de redução de dados. Selecione "1:1 - sem redução", "1:1,25 - 20% de redução" ou "1:1,5 - 33% de redução".
+.. *Porcentagem de espaço livre*: Insira a porcentagem de crescimento de capacidade que é adicionada à capacidade para seus sistemas de arquivos FSX for ONTAP.
++
+Observe que, se você selecionar um valor inferior a 20%, não será possível criar snapshots de volume para proteção e backups de longo prazo.
+
+
+
+. Selecione *Next* e a página "VMware Cloud on AWS node Configuration" (Configuração de nó da AWS) será exibida.
++
+Essa página permite definir a configuração de nuvem da VMware na configuração de cluster da AWS usando uma análise de economia estimada e o tipo de nó recomendado. Você pode configurar o seguinte:
+
++
+.. *Arquitetura VSAN*: Selecione se deseja usar a arquitetura VSAN Express Storage Architecture (ESA) ou a arquitetura VSAN original Storage Architecture (OSA).
+.. *Tolerância a falhas VSAN*: Selecione o nível de tolerância a falhas necessário para as VMs. Você pode escolher "Auto", que é recomendado, ou entre uma variedade de níveis de RAID.
++
+*** RAID-1 (FTT 1): Consiste em uma cópia exata (ou espelho) de um conjunto de dados em 2 ou mais discos.
+*** RAID-5 (FTT 1): Consiste em striping em nível de bloco com paridade distribuída - as informações de paridade são distribuídas entre 3 ou mais unidades e podem sobreviver a uma única falha de disco.
+*** RAID-5 (FTT 2): Consiste em striping em nível de bloco com paridade distribuída - as informações de paridade são distribuídas entre 4 ou mais unidades e podem sobreviver a quaisquer duas falhas de disco simultâneas.
+*** RAID-6 (FTT 2): Estende o RAID 5 adicionando outro bloco de paridade; assim, ele usa striping em nível de bloco com dois blocos de paridade distribuídos em todos os discos membros. Ele requer 4 ou mais unidades e pode sobreviver a quaisquer duas falhas de disco simultâneas.
+
+
+.. *Lista de seleção de configuração de nós*: Selecione um tipo de instância EC2 para os nós.
+
+
+. Selecione *Next* e a página "Select virtual machines" (Selecionar máquinas virtuais) exibe as VMs que correspondem aos critérios fornecidos na página anterior.
++
+.. Na seção _critérios de seleção_, selecione os critérios para as VMs que você planeja implantar:
++
+*** Com base na otimização de custo e performance
+*** Com base na capacidade de restaurar seus dados facilmente com snapshots locais para cenários de recuperação
+*** Com base em ambos os conjuntos de critérios: O menor custo, ao mesmo tempo em que oferece boas opções de recuperação
+
+
+.. Na seção _máquinas virtuais_, as VMs que correspondem aos critérios fornecidos na página anterior são selecionadas (marcadas). Marque ou desmarque VMs se quiser integrar/migrar menos ou mais VMs nesta página.
++
+A seção *Recommended deployment* será atualizada se você fizer alguma alteração. Observe que, ao selecionar a caixa de seleção na linha de cabeçalho, você pode selecionar todas as VMs nesta página.
+
+.. Selecione *seguinte*.
+
+
+. Na página *plano de implantação do datastore*, revise o número total de VMs e datastores recomendados para a migração.
++
+.. Selecione cada datastore listado na parte superior da página para ver como os datastores e as VMs serão provisionados.
++
+A parte inferior da página mostra a VM de origem (ou várias VMs) para a qual essa nova VM e datastore serão provisionados.
+
+.. Depois de entender como seus datastores serão implantados, selecione *Next*.
+
+
+. Na página *Rever plano de implantação*, analise o custo mensal estimado de todas as VMs que você planeja migrar.
++
+O topo da página descreve o custo mensal de todas as VMs implantadas e do FSX para sistemas de arquivos ONTAP. Você pode expandir cada seção para ver os detalhes de "Configuração recomendada do sistema de arquivos do Amazon FSX for ONTAP", "discriminação de custo estimado", "Configuração de volume", "suposições de dimensionamento" e "isenções de responsabilidade" técnicas.
+
+. Quando você estiver satisfeito com o plano de migração, você terá algumas opções:
++
+** Selecione *Deploy* para implantar os sistemas de arquivos FSX for ONTAP para oferecer suporte às suas VMs. link:deploy-fsx-file-system.html["Saiba como implantar um sistema de arquivos FSX for ONTAP"].
+** Selecione *Download plan > VM deployment* para fazer o download do plano de migração em um formato .csv para que você possa usá-lo para criar sua nova infraestrutura de dados inteligente baseada na nuvem.
+** Selecione *Download plan > Plan report* para fazer o download do plano de migração em formato .pdf para que você possa distribuir o plano para revisão.
+** Selecione *Exportar plano* para salvar o plano de migração como um modelo em formato .json. Você pode importar o plano posteriormente para usar como modelo ao implantar sistemas com requisitos semelhantes.
+
+
+
+
+
+
+== Crie um plano de implantação com base em um plano existente
+
+Se você estiver planejando uma nova implantação semelhante a um plano de implantação existente que já usou no passado, você poderá importar esse plano, fazer edições e salvá-lo como um novo plano de implantação.
+
+.Requisitos
+Você deve ter acesso ao arquivo .json para o plano de implantação existente a partir do sistema no qual você está fazendo login no Workload Factory.
+
+.Passos
+. Inicie sessão no Workload Factory.
+. No bloco cargas de trabalho VMware, selecione *Access and plan* e, em seguida, selecione *Migration to VMware Cloud on AWS*. A página principal do VMware Migration Advisor é exibida.
+. Selecione *Importar um plano de implantação existente*.
+. image:button-upload-file.png["o botão de carregamento"]Selecione e selecione o arquivo de plano existente que você deseja importar no consultor de migração.
+. Selecione *Next* (seguinte) e a página Review plan (Plano de revisão) é apresentada.
+. Você pode selecionar *Previous* para acessar a página _Prepare for VMware Cloud onboarding_ e a página _Select VMs_ para modificar as configurações do plano conforme descrito na seção anterior.
+. Depois de personalizar o plano de acordo com suas necessidades, você pode salvar o plano ou iniciar o processo de implantação para seus datastores no FSX for ONTAP.
+

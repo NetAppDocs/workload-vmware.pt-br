@@ -1,0 +1,41 @@
+---
+indexpage:
+  title: Documentação de fábrica de carga de trabalho para VMware
+  summary: Simplifique as migrações de ambientes vSphere locais para o VMware Cloud
+    na AWS e implemente sistemas de arquivos FSX para ONTAP personalizados como datastores
+    externos.
+  keywords: VMware, FSx, VMs, VMC, VMware Cloud on AWS, FSx for ONTAP
+  lead: Simplifique as migrações de ambientes vSphere locais para o VMware Cloud na
+    AWS e implemente sistemas de arquivos FSX para ONTAP personalizados como datastores
+    externos.
+  tiles:
+  - title: Comece agora
+    links:
+    - title: Saiba mais sobre o Workload Factory para VMware
+      url: learn-about-vmware-workloads.html
+    - title: 'Início rápido: Migre para o VMware Cloud na AWS'
+      url: quick-start.html
+    - title: 'Início rápido: Migrar para o Amazon EC2'
+      url: quick-start-native.html
+  - title: Migre para o VMware Cloud na AWS
+    links:
+    - title: Capture suas configurações atuais de VM
+      url: capture-vm-configurations.html
+    - title: Crie um plano de implantação usando o consultor de migração
+      url: launch-onboarding-advisor.html
+    - title: Implante o sistema de arquivos FSX for ONTAP recomendado
+      url: deploy-fsx-file-system.html
+    - title: Conete o FSX para sistemas de arquivos ONTAP ao VMware Cloud na AWS
+      url: connect-sddc-to-fsx.html
+    - title: Migre seus dados para a nova infraestrutura
+      url: migrate-data.html
+  - title: Migrar para o Amazon EC2
+    links:
+    - title: Capture suas configurações atuais de VM
+      url: capture-vm-configurations-native.html
+    - title: Crie um plano de implantação usando o consultor de migração
+      url: launch-onboarding-advisor-native.html
+    - title: Implante o sistema de arquivos FSX for ONTAP recomendado
+      url: deploy-fsx-file-system.html
+    - title: Migre seus dados para a nova infraestrutura
+      url: migrate-data-native.html
