@@ -29,6 +29,16 @@ sidebar:
       url: "/quick-start-native.html"
   - title: Use o consultor de migração da VMware
     entries:
+    - title: Migrar para o Amazon EC2
+      entries:
+      - title: Capture suas configurações atuais de VM
+        url: "/capture-vm-configurations-native.html"
+      - title: Crie um plano de implantação usando o consultor de migração
+        url: "/launch-onboarding-advisor-native.html"
+      - title: Implante o sistema de arquivos FSX for ONTAP recomendado
+        url: "/deploy-fsx-file-system.html"
+      - title: Migre seus dados para a nova infraestrutura
+        url: "/migrate-data-native.html"
     - title: Migre para o VMware Cloud na AWS
       entries:
       - title: Capture suas configurações atuais de VM
@@ -41,16 +51,6 @@ sidebar:
         url: "/connect-sddc-to-fsx.html"
       - title: Migre seus dados para a nova infraestrutura
         url: "/migrate-data.html"
-    - title: Migrar para o Amazon EC2
-      entries:
-      - title: Capture suas configurações atuais de VM
-        url: "/capture-vm-configurations-native.html"
-      - title: Crie um plano de implantação usando o consultor de migração
-        url: "/launch-onboarding-advisor-native.html"
-      - title: Implante o sistema de arquivos FSX for ONTAP recomendado
-        url: "/deploy-fsx-file-system.html"
-      - title: Migre seus dados para a nova infraestrutura
-        url: "/migrate-data-native.html"
   - title: Conhecimento e apoio
     entries:
     - title: Registre-se para obter suporte

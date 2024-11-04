@@ -488,4 +488,8 @@
   <block id="9faf81d72d2e94d2a3b1079129468863" category="sidebar">Use o consultor de migração da VMware</block>
   <block id="48b99c17fb09e3417fa2dfdd982e21b8" category="sidebar">Conete o FSX for ONTAP ao VMware Cloud na AWS</block>
   <block id="0adc03eac86772ad2c75c8f140be417e" category="sidebar">Conhecimento e apoio</block>
+  <block id="3197d9ffc65dc1fe1469440d8891e79d" category="doc">Ajuda da taxa de redução de dados do consultor de migração da VMware</block>
+  <block id="10ced15d9df199f8cb002561b8728770" category="paragraph">Esta versão do Workload Factory for VMware apresenta um assistente de taxa de redução de dados. O assistente de taxa de redução de dados ajuda você a decidir qual é a melhor proporção para seu inventário e armazenamento da VMware ao se preparar para a integração na nuvem da AWS.</block>
+  <block id="dc9ea462821ad27445bd89faaafc765c" category="paragraph">Selecione *Ajude-me a decidir* se não tiver certeza de qual proporção escolher. A caixa de diálogo _Data Reduction Ratio Assistant_ (Assistente de redução de dados) Selecione quaisquer instruções que se apliquem ao inventário de VM e ao armazenamento de dados. O assistente recomendará uma taxa de redução de dados adequada. Selecione *Apply* (aplicar) para utilizar a proporção recomendada.</block>
+  <block id="d9f5899ddcae7952c9df69e075c822e2" category="section-title">3 de novembro de 2024</block>
 </blocks>
