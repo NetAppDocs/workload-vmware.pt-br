@@ -1,6 +1,6 @@
 ---
 indexpage:
-  title: Fábrica de carga de trabalho para documentação da VMware
+  title: Fábrica de carga de trabalho da BlueXP  para documentação da VMware
   summary: Simplifique as migrações de ambientes vSphere locais para o VMware Cloud
     na AWS e implemente sistemas de arquivos FSX para ONTAP personalizados como datastores
     externos.
