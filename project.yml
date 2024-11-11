@@ -21,7 +21,7 @@ sidebar:
       url: "/whats-new.html"
   - title: Comece agora
     entries:
-    - title: Saiba mais sobre o Workload Factory para VMware
+    - title: Saiba mais sobre a fábrica de cargas de trabalho para VMware
       url: "/learn-about-vmware-workloads.html"
     - title: Início rápido para migrar para o VMware Cloud na AWS
       url: "/quick-start.html"
@@ -36,9 +36,7 @@ sidebar:
       - title: Crie um plano de implantação usando o consultor de migração
         url: "/launch-onboarding-advisor-native.html"
       - title: Implante o sistema de arquivos FSX for ONTAP recomendado
-        url: "/deploy-fsx-file-system.html"
-      - title: Migre seus dados para a nova infraestrutura
-        url: "/migrate-data-native.html"
+        url: "/deploy-fsx-file-system-native.html"
     - title: Migre para o VMware Cloud na AWS
       entries:
       - title: Capture suas configurações atuais de VM
@@ -60,5 +58,5 @@ sidebar:
   - title: Avisos legais
     url: "/legal-notices.html"
 product-family:
-  name: BlueXP Workload Factory for AWS
+  name: BlueXP workload factory for AWS
   repo: workload-family

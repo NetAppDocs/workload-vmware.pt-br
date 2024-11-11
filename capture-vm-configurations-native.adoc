@@ -33,7 +33,7 @@ O sistema onde você estará executando o script coletor deve atender aos seguin
 Observe que se você planeja capturar estatísticas de longo prazo de suas VMs (estatísticas diárias), você deve ter ativado estatísticas de nível 3 ou superior no console de gerenciamento do vSphere (ambiente de gerenciamento VMware).
 
 .Passos
-. Inicie sessão no Workload Factory.
+. Efetue login na fábrica da carga de trabalho usando um dos https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["experiências de console"^].
 . No bloco VMware, selecione *Access and plan*.
 . Selecione *criar um novo plano de implantação*, selecione a opção *Use o consultor de migração VMware data Collector* e selecione *Next*.
 +

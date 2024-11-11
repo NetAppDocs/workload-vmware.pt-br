@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar 
-permalink: deploy-fsx-file-system.html 
+permalink: deploy-fsx-file-system-native.html 
 keywords: vm workloads, deploy fsx, deploy storage for vms 
 summary: Depois de verificar se o sistema de arquivos FSX for ONTAP recomendado, ou sistemas de arquivos, em alguns casos, atende aos seus requisitos exatos, você pode usar a fábrica de carga de trabalho para implantar o sistema em seu ambiente AWS. 
 ---
@@ -15,10 +15,8 @@ Depois de verificar se o sistema de arquivos FSX for ONTAP recomendado (ou vári
 
 Dependendo da política e das permissões que você adicionou à sua conta de fábrica de carga de trabalho, você pode implantar o sistema de arquivos FSX for ONTAP completamente usando a fábrica de carga de trabalho (usando o modo de automação). Se você tiver menos permissões (modo de leitura) ou nenhuma permissão (modo básico), precisará usar as informações do CloudFormation do Codebox e implantar o sistema de arquivos FSX for ONTAP na AWS.
 
-.Requisitos para implantações no VMware Cloud na AWS
-* Você precisa estar usando o VMware Cloud no AWS Software-Defined Data Center (SDDC) versão 1,20 ou superior para implantar o FSX para sistemas de arquivos ONTAP.
-* Você não deve implantar o sistema de arquivos FSX for ONTAP na mesma VPC usada durante a implantação do SDDC. Em vez disso, você deve implantá-lo em uma nova Amazon VPC que você possui para habilitar a integração do VMware Cloud no AWS com o Amazon FSX for NetApp ONTAP.
-* Você deve implantar o sistema de arquivos FSX for ONTAP na mesma região da AWS que o seu SDDC.
+.Requisitos para implantações no Amazon EC2
+* O volume raiz do sistema de arquivos FSX for ONTAP deve ser criado como um volume EBS.
 
 
 .Passos

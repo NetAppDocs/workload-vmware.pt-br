@@ -1,6 +1,6 @@
 ---
 indexpage:
-  title: Documentação de fábrica de carga de trabalho para VMware
+  title: Fábrica de carga de trabalho para documentação da VMware
   summary: Simplifique as migrações de ambientes vSphere locais para o VMware Cloud
     na AWS e implemente sistemas de arquivos FSX para ONTAP personalizados como datastores
     externos.
@@ -11,7 +11,7 @@ indexpage:
   tiles:
   - title: Comece agora
     links:
-    - title: Saiba mais sobre o Workload Factory para VMware
+    - title: Saiba mais sobre a fábrica de cargas de trabalho para VMware
       url: learn-about-vmware-workloads.html
     - title: 'Início rápido: Migre para o VMware Cloud na AWS'
       url: quick-start.html
