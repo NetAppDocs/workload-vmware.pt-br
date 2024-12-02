@@ -7,7 +7,7 @@ summary: 'O NetApp fornece suporte para a fábrica de workloads de várias manei
 = Obtenha ajuda
 :allow-uri-read: 
 :icons: font
-:imagesdir: ../media/
+:imagesdir: ./media/
 
 
 [role="lead"]

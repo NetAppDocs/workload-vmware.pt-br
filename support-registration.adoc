@@ -7,7 +7,7 @@ summary: Antes de poder abrir um caso de suporte com o suporte técnico da NetAp
 = Registre-se para obter suporte
 :allow-uri-read: 
 :icons: font
-:imagesdir: ../media/
+:imagesdir: ./media/
 
 
 [role="lead"]
