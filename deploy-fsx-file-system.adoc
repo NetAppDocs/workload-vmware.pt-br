@@ -4,7 +4,7 @@ permalink: deploy-fsx-file-system.html
 keywords: vm workloads, deploy fsx, deploy storage for vms 
 summary: Depois de verificar se o sistema de arquivos FSX for ONTAP recomendado, ou sistemas de arquivos, em alguns casos, atende aos seus requisitos exatos, você pode usar a fábrica de carga de trabalho para implantar o sistema em seu ambiente AWS. 
 ---
-= Implante o sistema de arquivos FSX for ONTAP recomendado
+= Implante o sistema de arquivos FSX for ONTAP recomendado para cargas de trabalho da VMware
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/

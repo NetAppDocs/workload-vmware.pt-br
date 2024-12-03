@@ -4,7 +4,7 @@ permalink: whats-new.html
 keywords: 'what"s new, features, new, release notes, enhancements, fixes' 
 summary: Saiba o que há de novo com o componente VMware Migration Advisor da fábrica de carga de trabalho. 
 ---
-= O que há de novo
+= Novidades na fábrica de workloads da BlueXP  para VMware
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/

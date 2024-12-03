@@ -4,7 +4,7 @@ permalink: get-help.html
 keywords: help, ticket, open support case, support, netapp support, technical support, call support, phone number, open ticket, web ticket, open an issue 
 summary: 'O NetApp fornece suporte para a fábrica de workloads de várias maneiras. Amplas opções gratuitas de suporte autônomo estão disponíveis 24 horas por dia, 7 dias por semana, como artigos da base de conhecimento (KB) e um fórum da comunidade. O seu registo de suporte inclui suporte técnico remoto através de Bilheteira na Web.' 
 ---
-= Obtenha ajuda
+= Obtenha ajuda com a fábrica de workloads da BlueXP  para VMware
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/

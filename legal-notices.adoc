@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords:  
 summary:  
 ---
-= Avisos legais
+= Avisos legais para a fábrica de cargas de trabalho do BlueXP  para VMware
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
