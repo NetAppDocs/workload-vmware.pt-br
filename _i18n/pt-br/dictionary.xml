@@ -109,28 +109,21 @@
   <block id="8a17abf71adea43d22ac172f424f4140" category="paragraph">Em ambos os casos, você pode monitorar o progresso da criação no CloudFormation.</block>
   <block id="af48fc2e1e9f5e62213f21a797f40b49" category="paragraph">O sistema de arquivos FSX for ONTAP é implantado.</block>
   <block id="fabfc25ef8996fd90836e58a4c0b26b6" category="doc">Obtenha ajuda</block>
-  <block id="3c6efe0ce159fb5b8ee4882bcf3ad973" category="paragraph">A NetApp fornece suporte para a fábrica de workloads e seus serviços de nuvem de várias maneiras. Amplas opções gratuitas de suporte autônomo estão disponíveis 24 horas por dia, 7 dias por semana, como artigos da base de conhecimento (KB) e um fórum da comunidade. O seu registo de suporte inclui suporte técnico remoto através de Bilheteira na Web.</block>
   <block id="6a7b2c9c4cec65ad972b108fa0a1192b" category="section-title">Obtenha suporte para o FSX for ONTAP</block>
-  <block id="4435b263dd1a35bcd8dfda050db92b3b" category="paragraph">Para obter suporte técnico relacionado ao FSX for ONTAP, sua infraestrutura ou qualquer solução usando o serviço, consulte "obter ajuda" na documentação do Workload Factory para esse produto.</block>
   <block id="18cf072964a583150dd247485ba75b92" category="inline-link-macro">Amazon FSX para ONTAP</block>
   <block id="9d06990508d25d367d9158c6558eb9c8" category="paragraph"><block ref="9d06990508d25d367d9158c6558eb9c8" category="inline-link-macro-rx"></block></block>
   <block id="35f9849ffdd809bda11d0fc56e1e3583" category="paragraph">Para receber suporte técnico específico para o Workload Factory e suas soluções e serviços de armazenamento, use as opções de suporte descritas abaixo.</block>
   <block id="edd15fbeb7b2dffa163336ecd4f3e80c" category="section-title">Use opções de suporte autônomo</block>
   <block id="5e4b821a1a82558dead1ef6961e90666" category="paragraph">Estas opções estão disponíveis gratuitamente, 24 horas por dia, 7 dias por semana:</block>
   <block id="5b6cf869265c13af8566f192b4ab3d2a" category="list-text">Documentação</block>
-  <block id="d935525f4850c4638cbf48ae53fb4686" category="paragraph">A documentação do Workload Factory que você está visualizando no momento.</block>
   <block id="19111351b69b6b15668130b38b7f6038" category="inline-link">Base de conhecimento</block>
   <block id="436f63b446dba5a418c698d49bd39718" category="list-text"><block ref="436f63b446dba5a418c698d49bd39718" category="inline-link-rx"></block></block>
-  <block id="ba6274b9c9d1f81bb3a648fa289986b8" category="paragraph">PESQUISE na base de conhecimento do Workload Factory para encontrar artigos úteis para solucionar problemas.</block>
   <block id="14526abd8bda5af347775025cd5342cf" category="inline-link">Comunidades</block>
   <block id="410fdb9caa9c64da2ff3f88f4836960d" category="list-text"><block ref="410fdb9caa9c64da2ff3f88f4836960d" category="inline-link-rx"></block></block>
-  <block id="7faef90df03399696ba9d4815b37171a" category="paragraph">Junte-se à comunidade Workload Factory para seguir as discussões em curso ou criar novas.</block>
   <block id="d88bacf2a9fdcbbc844edcba97c34e30" category="section-title">Crie um caso com o suporte do NetApp</block>
   <block id="82812db645b6ff5e9c2a24ddfb66c8d6" category="paragraph">Além das opções de suporte autônomo acima, você pode trabalhar com um especialista de suporte da NetApp para resolver quaisquer problemas depois de ativar o suporte.</block>
   <block id="8fece025a1a8fef7018449bf104a2527" category="paragraph-title">Antes de começar</block>
   <block id="e2a733504c4088b809813bbb35a3ddfd" category="inline-link-macro">Saiba como se inscrever para obter suporte</block>
-  <block id="a12ea39ddf1c98adfd7f751299705efa" category="paragraph">Para usar o recurso *criar um caso*, primeiro você deve se Registrar para obter suporte. Associe as credenciais do site de suporte da NetApp ao login do Workload Factory. <block ref="d9fea24984986beabae03291c4b721de" category="inline-link-macro-rx"></block>.</block>
-  <block id="356c88ac4b0ec3f7689cc91f54701fef" category="list-text">No canto superior direito do console do Workload Factory, selecione *Ajuda &gt; suporte*.</block>
   <block id="aadd86a3fadf19221852692c6e4adc2f" category="paragraph">A seleção dessa opção abre o console do BlueXP  uma nova guia do navegador e carrega o painel suporte.</block>
   <block id="08d96fdd1a845d80db99e6e1dffb8bc7" category="list-text">Na página *recursos*, escolha uma das opções disponíveis em suporte técnico:</block>
   <block id="6a1b74969231967ed071d465206b15c7" category="list-text">Selecione *Ligue para nós* se quiser falar com alguém no telefone. Você será direcionado para uma página no NetApp.com que lista os números de telefone que você pode ligar.</block>
@@ -197,7 +190,6 @@
   <block id="df5b6541eb8d439f6dc76a16fe960915" category="list-text">Selecione *Use RVTools* para usar o arquivo .xlsx que você criou usando RVTools.</block>
   <block id="d762f74fe1a7fc0e27c55a560adb618a" category="inline-image-macro">o botão de carregamento</block>
   <block id="27251bcadd79e3fd1a18ec89ac447679" category="list-text">Selecione o arquivo .xlsx ao usar RVTools.</block>
-  <block id="c3fb55d7fbab2ce4cf38cd35ab2765e2" category="paragraph">A seção *Resumo das VMs* é preenchida a partir do arquivo de inventário para refletir o número de VMs e a capacidade total de armazenamento.</block>
   <block id="3d8f99409368ebf501d582ae12ca2f27" category="list-text">Na seção _considerações de inventário da VM_, selecione as opções para filtrar a lista de VMs que você deseja migrar.</block>
   <block id="edbd0792b525368441c58f7092b26053" category="list-text">*Armazenamento de VM a considerar*: Selecione se os armazenamentos de dados criados para cada VM integrada são dimensionados com base no tamanho utilizado atualmente (recomendado) ou no tamanho provisionado.</block>
   <block id="5137ca074fe20694559457d4589ea3cb" category="paragraph">Os datastores externos serão implementados usando os volumes do sistema de arquivos do Amazon FSX for NetApp ONTAP.</block>
@@ -212,14 +204,11 @@
   <block id="e6cd86d61f4639c8a27006c6c29b3e9f" category="list-text">Selecione *seguinte*.</block>
   <block id="ef3c7f794852a9bd24d0e9c87cce7d80" category="paragraph">O topo da página estima a economia mensal do FSX para sistemas de arquivos ONTAP e volumes EBS. Você pode expandir cada seção para ver detalhes da configuração sugerida do sistema de arquivos, divisão estimada de economia, suposições e isenções técnicas.</block>
   <block id="8687a48178491c960e3d406f98cbf29c" category="list-text">Quando você estiver satisfeito com o plano de migração, você terá algumas opções:</block>
-  <block id="15cd8c066461a2900cdb71fc53b09930" category="list-text">Selecione *Plano de download &gt; implantação de armazenamento de instâncias* para fazer o download do plano de implantação de armazenamento de dados externo em um formato .csv para que você possa usá-lo para criar sua nova infraestrutura de dados inteligente baseada na nuvem.</block>
-  <block id="74f9ca267e4b5efb489a146170987dbb" category="list-text">Selecione *Download plan &gt; Plan report* para fazer o download do plano de implantação em formato .pdf para que você possa distribuir o plano para revisão.</block>
   <block id="a8e3f2e23f07d3e3b894748c162a207a" category="list-text">Selecione *Exportar plano* para salvar o plano de migração como um modelo em formato .json. Você pode importar o plano posteriormente para usar como modelo ao implantar sistemas com requisitos semelhantes.</block>
   <block id="eb0382b6d1486520f7db805842e3cb39" category="section-title">Crie um plano de implantação com base em um plano existente</block>
   <block id="d30cddb743993744da7757e5dc8d38a4" category="paragraph">Se você estiver planejando uma nova implantação semelhante a um plano de implantação existente que já usou no passado, você poderá importar esse plano, fazer alterações e salvá-lo como um novo plano de implantação.</block>
   <block id="9666bbc427ef045e019206b1e73f8b26" category="list-text">No bloco cargas de trabalho VMware, selecione *Access and plan* e, em seguida, selecione *Migration to AWS native Compute*.</block>
   <block id="0cf508bfdfca6645623887a9bbdf21a6" category="list-text">Selecione *Importar um plano de implantação existente*.</block>
-  <block id="a788f47234ccaf5adf5a6ea422148ef6" category="list-text">Depois de personalizar o plano de acordo com as suas necessidades, pode guardar o plano ou transferir o relatório do plano como um ficheiro PDF.</block>
   <block id="be0af0f3e1f270dc982344a36c5f734f" category="paragraph">Ao migrar para o VMware Cloud, você pode usar o consultor de migração para criar um plano de implantação para os seguintes cenários:</block>
   <block id="dafb3c70bc12caaeab402760a87e98d9" category="inline-xref">Para migrar seu ambiente vSphere local atual para a nuvem VMware.</block>
   <block id="59bf0f7e79d795451ad94f36b9896e02" category="list-text"><block ref="d7d9086f96876c516cd0685f13fc1fe9" category="inline-xref-macro-rx"></block></block>
@@ -364,8 +353,6 @@
   <block id="8d7795534dfe29f84396c92c8d0a4dcd" category="paragraph"><block ref="a837f3781560502a9640d7db10536ff7" category="inline-link-macro-rx"></block>.</block>
   <block id="f52c9ba96cd69f0216a683d029eb830e" category="paragraph">Implante o novo sistema de arquivos FSX for ONTAP que fornecerá os armazenamentos de dados para suas VMs na infraestrutura da AWS.</block>
   <block id="42748df9eaa0be17ddc5cc1593cf57ab" category="doc">Registre-se para obter suporte</block>
-  <block id="996ad73a480311d4f86d6946935389d2" category="paragraph">O Registro de suporte é necessário para receber suporte técnico específico para a Workload Factory e suas soluções e serviços de armazenamento. Você deve se Registrar para obter suporte a partir do console BlueXP , que é um console baseado na Web separado do Workload Factory.</block>
-  <block id="c552970fd4dc8118ba1806da596acad9" category="paragraph">O Registro para suporte não ativa o suporte do NetApp para um serviço de arquivos de provedor de nuvem. Para obter suporte técnico relacionado a um serviço de arquivo do provedor de nuvem, sua infraestrutura ou qualquer solução usando o serviço, consulte "obter ajuda" na documentação do Workload Factory para esse produto.</block>
   <block id="0b0e252af8897fbe981ec6682d2aa33b" category="section-title">Visão geral do Registro de suporte</block>
   <block id="d7e4bb081bf4ec4814d83edcfbdb8b96" category="paragraph">Registrar sua assinatura de suporte da ID da conta (seu número de série 960xxxxxxxxx de 20 dígitos localizado na página recursos de suporte no BlueXP ) serve como seu único ID de assinatura de suporte. Cada assinatura de suporte no nível de conta do BlueXP  deve ser registrada.</block>
   <block id="f9e05c2b383e3f11e3b4bebbe8952225" category="paragraph">O Registro permite recursos como abertura de tickets de suporte e geração automática de casos. O Registro é concluído adicionando contas do site de suporte da NetApp (NSS) ao BlueXP , conforme descrito abaixo.</block>
@@ -404,7 +391,6 @@
   <block id="cc8b0535948da368f832027c19b7f853" category="list-text">Certifique-se de copiar o número de série da conta (960xxxx) usado acima para o campo de número de série. Isto irá acelerar o processamento da conta.</block>
   <block id="684375e279a289295b72a006d93e2c4c" category="paragraph">O NetApp deve entrar em Contato com você durante esse processo. Este é um exercício de integração única para novos usuários.</block>
   <block id="5cdee814e2d9ba3490a8f16d00c65759" category="paragraph">Depois de ter sua conta do site de suporte da NetApp, associe a conta ao login do BlueXP , executando as etapas em <block ref="2f3aba04ec49ee5f0573a6c80a1b9df2" category="inline-xref-macro-rx"></block>.</block>
-  <block id="123186fd98b69e2b3d463c83c49edfe7" category="section-title">19 de setembro de 2024</block>
   <block id="1d949c7c5600289e10795f178278edd1" category="section-title">7 de julho de 2024</block>
   <block id="1a61f87dd9021f3f5868a4a4418a6116" category="sidebar">Simplifique as migrações de ambientes vSphere locais para o VMware Cloud na AWS e implemente sistemas de arquivos FSX para ONTAP personalizados como datastores externos.</block>
   <block id="be11c74c1dd7f307bb80183a90dc2067" category="sidebar">Comece agora</block>
@@ -484,7 +470,6 @@
   <block id="8322562b9931621dac341ec2891a8ed7" category="list-text">*Padrão para alto desempenho*: Para VMs com taxas médias de e/S entre 20 e 5000 IOPS.</block>
   <block id="fe6746d68f60ac87ac812195dbe0ba44" category="list-text">* Desempenho muito alto*: Para VMs com taxas médias de e/S superiores a 5000 IOPS.</block>
   <block id="def2319cb1ab48e55abf938aae0948be" category="list-text">*Desempenho muito baixo*: Para VMs com taxas médias de e/S inferiores a 20 IOPS.</block>
-  <block id="b31024f3340bb98c95da565075ba28e4" category="list-text">Na página *Escopo*, selecione as VMs na lista que você deseja incluir na migração para a nuvem da AWS e selecione *Next*.</block>
   <block id="4db7ab627ca2119e30a51c404a814e9f" category="list-text">Na página *Classify*, revise as informações da VM, regras de classificação de volume, atribuições de volume e lista de volumes que serão migrados como parte da implantação e selecione *Next*.</block>
   <block id="6e8e51789a8fdf8319fae75541361b0d" category="list-text">Na página *Pacote*, revise as instâncias EC2 e os volumes atribuídos a diferentes clusters FSX for ONTAP e selecione *Avançar*.</block>
   <block id="45de7b9580db1698613b43e8b89bb740" category="list-text">Na página *Review plan*, revise as estimativas de custo e economia mensais estimadas para todas as VMs que você planeja migrar.</block>
@@ -495,8 +480,6 @@
   <block id="518090cfd67cd9305ed824ac9e5cc06e" category="paragraph">Você pode selecionar *Done* para retornar à página de consultores de migração da VMware.</block>
   <block id="7726d5796471d8b93e1bd91aa1db9caa" category="list-text">Selecione *Importar plano*.</block>
   <block id="d117b15d4decf0a56ccac3c38c271055" category="list-text">Selecione o arquivo de plano .json existente que você deseja importar no consultor de migração e selecione *Open*.</block>
-  <block id="42b7d26c8da56661da79cbe95791968e" category="paragraph">É apresentada a página *Review plan* (Plano de revisão).</block>
-  <block id="b989004e18a26f3c98cfe95fa122af6c" category="list-text">Você pode selecionar *anterior* para acessar páginas anteriores e modificar as configurações do plano conforme descrito na seção anterior.</block>
   <block id="fbcf13b4033589220687bf9717dd7cda" category="summary">A fábrica de workloads da BlueXP  para VMware fornece ferramentas para mover seus dados de sistemas locais para o VMware Cloud no AWS (VMC) ou Amazon EC2.</block>
   <block id="76882d4f1c13ac2d5609c95803006de5" category="doc">Saiba mais sobre a fábrica de cargas de trabalho do BlueXP  para VMware</block>
   <block id="878b0838fec14a308c058b697894e8b9" category="section-title">O que é a fábrica de carga de trabalho do BlueXP  para VMware?</block>
@@ -504,7 +487,6 @@
   <block id="428b0b39be2352757edeb5f9f12a7bdd" category="inline-link">Carga de trabalho de fábrica da BlueXP</block>
   <block id="7cf449620aa459bc5c449db69b07e507" category="paragraph"><block ref="7cf449620aa459bc5c449db69b07e507" category="inline-link-rx"></block></block>
   <block id="5c8df45cbe01191b205c30373b7e5739" category="section-title">1 de dezembro de 2024</block>
-  <block id="ee42de0e28fe9ae4fdaac41867872582" category="paragraph"><block ref="2dbb83c0d88f8aa5c12c5445b2b248ee" category="inline-link-rx"></block> 1 de setembro de 2024</block>
   <block id="f292a76e9c79b833f21da297f0ad751c" category="doc">Capture suas configurações de VM antes de migrar para o Amazon EC2 com cargas de trabalho VMware</block>
   <block id="3a23349f8d161f7653f1e95b602af0f5" category="doc">Capture suas configurações de VM antes de migrar para o VMware Cloud com workloads da VMware</block>
   <block id="3173329d2df7808ef89c684e36fe95db" category="doc">Implante o sistema de arquivos FSX for ONTAP recomendado para cargas de trabalho da VMware</block>
@@ -517,4 +499,34 @@
   <block id="ecdd552e8f9e5da2a61e6db8b8030056" category="doc">Início rápido para migrar para o VMware Cloud na AWS usando o consultor de migração de workloads da VMware</block>
   <block id="9db9ff1e14360eb723369155da355a69" category="doc">Registre-se para obter suporte para a fábrica de workloads do BlueXP  para VMware</block>
   <block id="06d7f560c7d6e855b18ae8d7b5014e05" category="doc">Novidades na fábrica de workloads da BlueXP  para VMware</block>
+  <block id="cde718e2f0bf0ef80eb31becc18c4787" category="list-text">*Salvar ou baixar um plano de migração*: Agora você pode salvar ou baixar um plano de migração e carregar o plano de migração para preencher o consultor de migração. Quando você salva um plano de migração, o plano é salvo com sua conta de fábrica de carga de trabalho.</block>
+  <block id="42ec77b942403dfbfa1bb7908218848c" category="list-text">*Seleção aprimorada de VM*: A fábrica de cargas de trabalho do BlueXP  para VMware agora oferece suporte à filtragem e pesquisa da lista de VMs que você deseja incluir em sua implantação de migração.</block>
+  <block id="00cb1da4c4dda4c1e1894d6c1f8a7487" category="paragraph">O script de coletor de VM do consultor de migração do NetApp reúne informações de configuração de VM do vCenter semelhantes ao que o RVTools coleta, no entanto, ele captura dados atuais de desempenho de VM para fornecer estatísticas reais de leitura e gravação de IOPS e taxa de transferência. Você pode usar o script em um dos dois modos: * Coleta de dados de curto prazo * coleta de dados de longo prazo</block>
+  <block id="2b2099b87f7c704c69c0981f3e339373" category="list-text">*True* coleta dados de IOPS e throughput por um período de tempo personalizado em intervalos de 1 horas.</block>
+  <block id="b6a4501cc05e54e2e5a513c3b552183a" category="paragraph">A NetApp fornece suporte para a fábrica de workloads da BlueXP  e seus serviços de nuvem de várias maneiras. Amplas opções gratuitas de suporte autônomo estão disponíveis 24 horas por dia, 7 dias por semana, como artigos da base de conhecimento (KB) e um fórum da comunidade. O seu registo de suporte inclui suporte técnico remoto através de Bilheteira na Web.</block>
+  <block id="261966eaf033c38f6934f2c8fc36d79c" category="paragraph">Para obter suporte técnico relacionado ao FSX for ONTAP, sua infraestrutura ou qualquer solução usando o serviço, consulte "obter ajuda" na documentação de fábrica de carga de trabalho desse produto.</block>
+  <block id="5b49df4e58e2a4750acd8bfa8687ccd6" category="paragraph">A documentação de fábrica da carga de trabalho que você está visualizando no momento.</block>
+  <block id="ba51332e265e54eb4295d6e7d057bad8" category="paragraph">PESQUISE na base de conhecimento de fábrica da carga de trabalho para encontrar artigos úteis para solucionar problemas.</block>
+  <block id="fc3e8f3c2017c33d444d483913a485ba" category="paragraph">Junte-se à comunidade de fábrica de carga de trabalho para acompanhar discussões em andamento ou criar novas.</block>
+  <block id="ffa18fada5deeeb1e533786297855e7d" category="paragraph">Para usar o recurso *criar um caso*, primeiro você deve se Registrar para obter suporte. Associe as credenciais do site de suporte da NetApp ao login de fábrica da carga de trabalho. <block ref="d9fea24984986beabae03291c4b721de" category="inline-link-macro-rx"></block>.</block>
+  <block id="e13a5649dfef3a1c76c4be8e463226d7" category="list-text">No canto superior direito do console de fábrica da carga de trabalho, selecione *Ajuda &gt; suporte*.</block>
+  <block id="246fd576936aa6a7e609ed87c073c207" category="paragraph">A seção *Detalhes da coleta de dados* fornece o intervalo de datas e o número de horas de dados coletados usando o coletor de dados do Onboarding Advisor.</block>
+  <block id="43edfc2e70d40761eafc22f44f15e60a" category="paragraph">A seção *Resumo do inventário da VM* é preenchida a partir do arquivo de inventário para refletir o número de VMs e a capacidade total de armazenamento.</block>
+  <block id="694a4615408e2c20273a3b2eddddc05f" category="list-text">Na página *Escopo*, selecione as VMs na lista que você deseja incluir na migração da AWS. Você pode filtrar a lista pelo estado de energia de cada VM e em qual data center e cluster a VM reside.</block>
+  <block id="06be6f495115a5a35b66e96726f02c68" category="paragraph">Na lista VM, você pode selecionar quais tipos de informações da VM serão exibidas como colunas.</block>
+  <block id="42f16e28c3177812ada64d38e636ae26" category="list-text">Selecione *Gerenciar plano &gt; Salvar um plano* para salvar os dados do plano de implantação em sua conta, permitindo que você importe o plano posteriormente para usar como modelo ao implantar sistemas com requisitos semelhantes. Você pode nomear o plano antes de salvá-lo.</block>
+  <block id="a1d4e19ec2439c8dc7cd938fc77c75bf" category="list-text">Selecione *Gerenciar plano &gt; Exportar um plano* para salvar o plano de migração como um modelo em um formato .json no computador. Você pode importar o plano posteriormente para usar como modelo ao implantar sistemas com requisitos semelhantes.</block>
+  <block id="edb193ada9589bdd34ce3be340dd56b8" category="list-text">Selecione *Gerenciar plano &gt; Baixar um relatório* para fazer o download do plano de implantação em um formato .pdf para que você possa distribuir o plano para revisão.</block>
+  <block id="12b1a213ece510a085b9e12a71432992" category="list-text">Selecione *Manage plan &gt; Download instance storage deployment* (Gerenciar plano &gt; Transferir implantação de armazenamento de dados) para fazer o download do plano de implantação de armazenamento de dados externo em um formato .csv, para que você possa usá-lo para criar sua nova infraestrutura de dados inteligente baseada na nuvem.</block>
+  <block id="365d382b2d9ecca9b0d40171c69b38ff" category="list-text">Execute um dos seguintes procedimentos:</block>
+  <block id="1b0022b023293239665220628da7a16c" category="list-text">Selecione *carregar plano guardado*.</block>
+  <block id="f3029172ae69383e67245128a26c3e63" category="list-text">Na lista, selecione o plano que pretende importar.</block>
+  <block id="77e0db0ca8a943ba2d5e456b53ecdf89" category="list-text">Selecione *Load*.</block>
+  <block id="32411f6422d4823926cd1776f5933ad4" category="list-text">Selecione *no meu computador*.</block>
+  <block id="1faf4fef6046370079cb5fb1e673a625" category="paragraph">É apresentada a página *Review plan* (Plano de revisão). . Você pode selecionar *anterior* para acessar páginas anteriores e modificar as configurações do plano conforme descrito na seção anterior. . Depois de personalizar o plano de acordo com as suas necessidades, pode guardar o plano ou transferir o relatório do plano como um ficheiro PDF.</block>
+  <block id="ce638fcfafd4d79a49524062225d7fbc" category="paragraph">O Registro de suporte é necessário para receber suporte técnico específico para a fábrica de workloads da BlueXP  e suas soluções e serviços de storage. Você precisa se Registrar para obter suporte a partir do console BlueXP , que é um console baseado na Web separado da fábrica de workloads.</block>
+  <block id="2cbcc262b0a39ec19c5f69bffccb70fb" category="paragraph">O Registro para suporte não ativa o suporte do NetApp para um serviço de arquivos de provedor de nuvem. Para obter suporte técnico relacionado a um serviço de arquivo de provedor de nuvem, sua infraestrutura ou qualquer solução usando o serviço, consulte "obter ajuda" na documentação de fábrica de carga de trabalho desse produto.</block>
+  <block id="bd901b05034bb9be1d918012998e8f7b" category="section-title">5 de janeiro de 2025</block>
+  <block id="c12526e52dcc59e8997a1d5b998bdbcb" category="paragraph"><block ref="2dbb83c0d88f8aa5c12c5445b2b248ee" category="inline-link-rx"></block> 19 de setembro de 2024</block>
+  <block id="b5cef683aab00353096b98823a237e69" category="section-title">1 de setembro de 2024</block>
 </blocks>
