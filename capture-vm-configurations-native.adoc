@@ -34,7 +34,7 @@ Observe que se você planeja capturar estatísticas de longo prazo de suas VMs (
 
 .Passos
 . Efetue login na fábrica da carga de trabalho usando um dos https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["experiências de console"^].
-. No bloco cargas de trabalho VMware, selecione *Access and plan* e, em seguida, selecione *Migration to AWS native Compute*. A tela inicial do VMware Migration Advisor é exibida.
+. No bloco cargas de trabalho da VMware, selecione *avaliar e Planejar* e, em seguida, selecione *migração para computação nativa da AWS*. A tela inicial do VMware Migration Advisor é exibida.
 +
 Analise as informações para saber mais sobre os benefícios do consultor de migração.
 
