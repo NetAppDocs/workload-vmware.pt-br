@@ -17,7 +17,11 @@ Você pode usar o script de coletor de VM do consultor de migração ou RVTools 
 ====
 .Use o script de coletor de VM do consultor de migração
 --
-O script de coletor de VM do consultor de migração do NetApp reúne informações de configuração de VM do vCenter semelhantes ao que o RVTools coleta, no entanto, ele captura dados atuais de desempenho de VM para fornecer estatísticas reais de leitura e gravação de IOPS e taxa de transferência. Você pode usar o script em um dos dois modos: * Coleta de dados de curto prazo * coleta de dados de longo prazo
+O script de coletor de VM do consultor de migração do NetApp reúne informações de configuração de VM do vCenter semelhantes ao que o RVTools coleta, no entanto, ele captura dados atuais de desempenho de VM para fornecer estatísticas reais de leitura e gravação de IOPS e taxa de transferência. Você pode usar o script em um de dois modos:
+
+* Coleta de dados por hora
+* Coleta de dados diária
+
 
 Você precisa iniciar o consultor de migração para copiar o script de coletor de VM do consultor de migração da janela do Codebox.
 
