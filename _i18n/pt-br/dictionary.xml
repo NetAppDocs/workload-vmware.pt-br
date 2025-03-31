@@ -478,7 +478,6 @@
   <block id="b9fb9729caa36dac48ae61f984d2ec85" category="paragraph">A fábrica de carga de trabalho do BlueXP  para VMware fornece um consultor de migração que permite analisar as configurações atuais da máquina virtual em ambientes vSphere locais. Em seguida, o consultor de migração gera um plano para implantar layouts de VM recomendados para o Amazon EC2 ou VMware Cloud nos clusters do AWS vSphere e usar sistemas de arquivos personalizados do Amazon FSX para NetApp ONTAP como datastores externos.</block>
   <block id="428b0b39be2352757edeb5f9f12a7bdd" category="inline-link">Carga de trabalho de fábrica da BlueXP</block>
   <block id="7cf449620aa459bc5c449db69b07e507" category="paragraph"><block ref="7cf449620aa459bc5c449db69b07e507" category="inline-link-rx"></block></block>
-  <block id="5c8df45cbe01191b205c30373b7e5739" category="section-title">1 de dezembro de 2024</block>
   <block id="f292a76e9c79b833f21da297f0ad751c" category="doc">Capture suas configurações de VM antes de migrar para o Amazon EC2 com cargas de trabalho VMware</block>
   <block id="3a23349f8d161f7653f1e95b602af0f5" category="doc">Capture suas configurações de VM antes de migrar para o VMware Cloud com workloads da VMware</block>
   <block id="3173329d2df7808ef89c684e36fe95db" category="doc">Implante o sistema de arquivos FSX for ONTAP recomendado para cargas de trabalho da VMware</block>
@@ -539,10 +538,14 @@
   <block id="ff2dedc9d43416dc5120ca5c85f276db" category="paragraph">Na lista VM, você pode selecionar quais tipos de informações da VM serão exibidas como colunas. Por exemplo, selecionar _tipo de instância estimado_ exibe uma coluna com o tipo de instância estimado do Amazon EC2 para cada VM, com base nos requisitos de recursos da VM.</block>
   <block id="f56dc26bb43a8ffda27f608798af3995" category="admonition">Se um volume tiver requisitos de capacidade ou desempenho que excedam os recursos de um sistema de arquivos do Amazon FSX for NetApp ONTAP em uma região específica, o consultor de migração recomenda que o volume seja implantado em um sistema de arquivos do Amazon EBS.</block>
   <block id="6928ceecf566ab44f308d64b3806a0bc" category="section-title">2 de março de 2025</block>
-  <block id="a436f06d47357224bdd3d8f2871de84a" category="paragraph"><block ref="2dbb83c0d88f8aa5c12c5445b2b248ee" category="inline-link-rx"></block> 3 de novembro de 2024</block>
   <block id="123186fd98b69e2b3d463c83c49edfe7" category="section-title">19 de setembro de 2024</block>
   <block id="813011e2103649bb71f124adedcc10ea" category="sidebar">Blogs &amp; comunidade</block>
   <block id="dd490b81914dd945601e442a41cb4222" category="sidebar">Comunidade NetApp</block>
   <block id="abd0fe91ce589ecf3c7bad0543ccad16" category="sidebar">BlueXP  blogs</block>
   <block id="ad203e818e0c9d7f42f1c260b33875f3" category="sidebar">Webinars na nuvem</block>
+  <block id="6e62567f7c9b240a118b25fc64f2991f" category="list-text">*Orientação aprimorada de atribuição de volume*: As informações de atribuição de volume nas etapas "Classify" e "Package" do consultor de migração do EC2 apresentam maior legibilidade e usabilidade. Mais informações úteis são exibidas sobre cada volume, permitindo que você identifique melhor os volumes e determine como atribuí-los.</block>
+  <block id="5fc07f589f318bbf4f9475dbf3754c9f" category="list-text">*Melhorias na eficiência do script do coletor de dados*: O script do coletor de dados do consultor de migração do EC2 otimiza o uso da CPU ao coletar dados para implantações menores de VM.</block>
+  <block id="db54384248c75c5896f34bcb0879b66c" category="section-title">30 de março de 2025</block>
+  <block id="2b689bb88bc16807c840177b45816e7f" category="paragraph"><block ref="2dbb83c0d88f8aa5c12c5445b2b248ee" category="inline-link-rx"></block> 1 de dezembro de 2024</block>
+  <block id="d9f5899ddcae7952c9df69e075c822e2" category="section-title">3 de novembro de 2024</block>
 </blocks>
