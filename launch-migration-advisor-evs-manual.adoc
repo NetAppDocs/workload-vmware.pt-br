@@ -1,0 +1,54 @@
+---
+sidebar: sidebar 
+permalink: launch-migration-advisor-evs-manual.html 
+keywords: overview, concepts, features, use case, workloads, how workload factory works, migration, advisor, manual, specification, deploy, deployment, plan 
+summary: Faça login na fábrica de workloads do NetApp para acessar o consultor de migração do VMware. Siga as etapas do assistente para criar um plano de implantação ou plano de migração personalizado para suas necessidades. 
+---
+= Crie um plano de implantação para o Amazon EVS usando o consultor de migração de cargas de trabalho do VMware
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Faça login na fábrica de workloads do NetApp para acessar o consultor de migração do VMware. Siga as etapas do assistente para criar um plano de implantação ou plano de migração personalizado para suas necessidades.
+
+Tenha em atenção que tem de ter um nome de utilizador e uma palavra-passe para aceder à fábrica da carga de trabalho. Se você não tiver acesso, crie uma conta agora. Consulte as instruções https://docs.netapp.com/us-en/workload-setup-admin/quick-start.html["aqui"].
+
+
+
+== Crie um plano de implantação especificando manualmente os requisitos do ambiente
+
+Você pode especificar manualmente seus requisitos para máquinas virtuais no Amazon Elastic VMware Service e usar sistemas de arquivos Amazon FSx for NetApp ONTAP personalizados como armazenamentos de dados externos.
+
+.Requisitos
+* Você deve ter uma assinatura do Amazon Elastic VMware Service.
+
+
+.Passos
+. Efetue login na fábrica da carga de trabalho usando um dos https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["experiências de console"^].
+. Opcionalmente, se você acessou o Workload Factory no console do Workload Factory, no bloco de cargas de trabalho do VMware, selecione *Planejar e criar* e, em seguida, selecione *Serviço Amazon Elastic VMware*. A tela inicial do VMware Migration Advisor é exibida.
+. Selecione o bloco *Serviço Amazon Elastic VMware*.
+. Quando estiver pronto, selecione *vamos começar*.
+. Insira os requisitos para seu ambiente de VM.
++
+[NOTE]
+====
+Tenha em mente os seguintes requisitos e recomendações de desempenho de migração de VM:
+
+** Uma capacidade mínima de armazenamento de 10 TiB é recomendada para o inventário de VM por motivos de desempenho.
+** Uma taxa de transferência mínima é necessária para os armazenamentos de dados do Amazon Elastic VMware Service, dependendo do número necessário de IOPS especificado para esta implantação.
+** Dependendo da configuração do sistema de arquivos FSx para ONTAP, um número mínimo de armazenamentos de dados externos é necessário para que o ambiente do Amazon Elastic VMware Service atinja o desempenho ideal.
+
+
+====
+. Quando estiver pronto, selecione *Avançar* para revisar o plano de migração.
+. Reveja o plano. Expanda cada seção para ver os detalhes do plano.
+. Opcionalmente, quando estiver satisfeito com o plano de migração, você pode salvá-lo como um modelo ou PDF:
++
+** Selecione *Exportar plano* para salvar o plano de migração como um modelo em um  `.json` formato no seu computador. Você pode importar o plano posteriormente para usar como modelo ao implantar sistemas com requisitos semelhantes.
+** Selecione *Baixar plano* para baixar o plano de implantação em um  `.pdf` formato para que você possa distribuir o plano para revisão.
+
+
+. link:deploy-fsx-file-system-evs.html["Implante o sistema de arquivos FSX for ONTAP recomendado para cargas de trabalho da VMware"].
+

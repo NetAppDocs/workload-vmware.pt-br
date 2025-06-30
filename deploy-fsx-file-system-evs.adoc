@@ -1,0 +1,93 @@
+---
+sidebar: sidebar 
+permalink: deploy-fsx-file-system-evs.html 
+keywords: vm workloads, deploy fsx, deploy storage for vms, evs, elastic vmware service 
+summary: Depois de verificar se o sistema de arquivos FSX for ONTAP recomendado, ou sistemas de arquivos, em alguns casos, atende aos seus requisitos exatos, você pode usar a fábrica de carga de trabalho para implantar o sistema em seu ambiente AWS. 
+---
+= Implante o sistema de arquivos FSX for ONTAP recomendado
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Depois de verificar se o sistema de arquivos FSX for ONTAP recomendado (ou vários sistemas de arquivos em alguns casos) atende aos seus requisitos exatos, você pode usar a fábrica de carga de trabalho para implantar o sistema em seu ambiente AWS.
+
+Dependendo da política e das permissões adicionadas à sua conta do Workload Factory, você pode implantar o sistema de arquivos FSx para ONTAP completamente usando o Workload Factory (no modo de leitura/gravação). Se você tiver menos permissões (modo somente leitura) ou nenhuma permissão (modo Básico), será necessário usar o modelo CloudFormation do Codebox e implantar o sistema de arquivos FSx for ONTAP na AWS.
+
+.Requisitos para implantações no Amazon Elastic VMware Service
+* Você deve ter uma assinatura do Amazon Elastic VMware Service.
+* Você deve ter as permissões necessárias para criar um sistema de arquivos FSx para ONTAP na sua conta da AWS.
+
+
+.Passos
+. Na parte inferior da página *Plano de revisão*, selecione *implantar* e a página criar um sistema de arquivos FSX for ONTAP é exibida.
++
+A maioria dos campos que definem seu sistema de arquivos FSX for ONTAP são preenchidos com base nas informações fornecidas, mas existem alguns campos que você precisa preencher nesta página.
+
++
+Você pode usar a opção criação rápida ou criação avançada. Advanced Create oferece alguns parâmetros de armazenamento adicionais que você pode personalizar. https://docs.netapp.com/us-en/workload-fsx-ontap/create-file-system.html["Veja o que essas duas opções oferecem"].
+
+. Na seção "Configuração geral do sistema de arquivos", insira as seguintes informações:
++
+.. * Credenciais da AWS*: Selecione ou adicione credenciais que darão à fábrica de carga de trabalho as permissões necessárias para criar seu sistema de arquivos FSX for ONTAP diretamente. Você também pode selecionar o código do CloudFormation no Codebox e implantar o sistema de arquivos FSX for ONTAP na AWS.
+.. *Nome do sistema de arquivos*: Digite o nome que você deseja usar para este sistema de arquivos FSX for ONTAP.
+.. *Tags*: Opcionalmente, você pode adicionar tags para categorizar este FSx para o sistema de arquivos ONTAP.
+
+
+. Na secção "rede e segurança", introduza as seguintes informações:
++
+.. *Região e VPC*: Selecione a região e a VPC onde o sistema de arquivos FSx para ONTAP será implantado.
+.. *Grupo de segurança* (somente criação avançada): Ao usar a opção *Criação avançada*, você pode selecionar o grupo de segurança padrão para a VPC FSx for ONTAP para que todo o tráfego possa acessar o sistema de arquivos FSx for ONTAP. Você pode criar um novo grupo de segurança ou selecionar um existente.
++
+Se você habilitar a opção *Ajustar configuração do grupo de segurança para armazenamentos de dados NFS do EVS*, o Workload Factory configurará o grupo de segurança de acordo com as configurações para armazenamentos de dados NFS do EVS.
+
++
+Você pode adicionar uma regra de entrada ao grupo de segurança que restrinja quais outros serviços da AWS podem acessar o sistema de arquivos FSx para ONTAP. Isso reduzirá o número de serviços abertos. Estas são as portas e protocolos mínimos:
+
++
+[cols="15,10,55"]
+|===
+| Protocolos | Portas | Finalidade 
+
+
+| TCP, UDP | 111 | Portmapper (usado para negociar quais portas são usadas em solicitações NFS) 
+
+
+| TCP, UDP | 635 | Mountd NFS (recebe solicitações de montagem NFS) 
+
+
+| TCP, UDP | 2049 | Tráfego de rede NFS 
+
+
+| TCP, UDP | 4045 | Gerenciador de bloqueio de rede (NLM, lockd) - lida com solicitações de bloqueio. 
+
+
+| TCP, UDP | 4046 | Network Status Monitor (NSM, statd) - notifica os clientes NFS sobre reinicializações do servidor para gerenciamento de bloqueio. 
+|===
+.. *Zona de disponibilidade*: Selecione a zona de disponibilidade e a sub-rede.
++
+Você deve selecionar a mesma zona de disponibilidade em que o VMware SDDC é implantado se quiser evitar cobranças por tráfego entre zonas.
+
+.. *Criptografia* (somente criação avançada): Ao usar a opção *Criação avançada*, você pode selecionar o nome da chave de criptografia da AWS no menu suspenso.
+.. *Acesso aos datastores NFS* (somente criação avançada): Ao usar a opção *Criação avançada*, você pode selecionar se todos os hosts podem acessar os datastores ou se somente o host de gerenciamento do EVS pode acessá-los.
+
+
+. Na secção "Detalhes do sistema de ficheiros", introduza as seguintes informações:
++
+.. *Credenciais ONTAP*: Digite o nome de usuário e a senha do ONTAP.
+.. *Storage VM credentials* (somente criação avançada): Insira e confirme a senha da VM de armazenamento. A palavra-passe pode ser específica para este sistema de ficheiros ou pode utilizar a mesma palavra-passe introduzida para as credenciais ONTAP.
+
+
+. Na seção *Resumo*, você pode visualizar o sistema de arquivos FSX for ONTAP e a configuração de datastore que o consultor de migração da VMware projetou com base em suas informações.
+. Selecione *criar* para implantar o sistema de arquivos FSX for ONTAP. Este processo pode levar até 2 horas.
++
+Opcionalmente, na janela Codebox, você pode selecionar *Redirecionar para CloudFormation* para criar o sistema de arquivos e a configuração de VM recomendada usando uma pilha do CloudFormation.
+
++
+Em ambos os casos, você pode monitorar o progresso da criação no CloudFormation.
+
+
+
+.Resultado
+O sistema de arquivos FSX for ONTAP é implantado. Agora você pode usar o modelo do AWS CloudFormation no Codebox para implantar a configuração de VM recomendada no seu ambiente do Amazon Elastic VMware Service.
