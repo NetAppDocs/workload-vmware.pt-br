@@ -79,6 +79,16 @@ Você deve selecionar a mesma zona de disponibilidade em que o VMware SDDC é im
 .. *Storage VM credentials* (somente criação avançada): Insira e confirme a senha da VM de armazenamento. A palavra-passe pode ser específica para este sistema de ficheiros ou pode utilizar a mesma palavra-passe introduzida para as credenciais ONTAP.
 
 
+. Na seção "Anexo do cluster EVS", insira as seguintes informações:
++
+.. *Opções de montagem de armazenamento de dados*: Opcionalmente, ative a opção *Montar armazenamentos de dados no cluster EVS* para conectar automaticamente os armazenamentos de dados ao cluster Amazon EVS.  Esta opção também faz com que o Workload Factory configure as definições do host VMware ESXi para que correspondam às recomendações de práticas recomendadas do ONTAP .  Antes de implantar o sistema de arquivos, você pode revisar os detalhes do plano na seção *Resumo* para ver as configurações que foram alteradas.
+.. *Detalhes do console do EVS Cluster vSphere*: insira o endereço IP ou FQDN do servidor VMware vCenter que deve se conectar ao Amazon EVS.
+.. *ARN secreto das credenciais do administrador do vSphere*: escolha o ARN secreto para as credenciais do administrador do vSphere.  Essas credenciais são usadas para montar armazenamentos de dados e configurar as configurações recomendadas do VMware.
++
+Se o Amazon EVS não estiver disponível nesta região ou se sua conta não tiver permissões para recuperar a lista de ARNs secretos disponíveis, você poderá inserir manualmente um valor de ARN secreto.
+
+
+
 . Na seção *Resumo*, você pode visualizar o sistema de arquivos FSX for ONTAP e a configuração de datastore que o consultor de migração da VMware projetou com base em suas informações.
 . Selecione *criar* para implantar o sistema de arquivos FSX for ONTAP. Este processo pode levar até 2 horas.
 +

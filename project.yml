@@ -32,6 +32,8 @@ sidebar:
     entries:
     - title: Migrar para o Amazon Elastic VMware Service
       entries:
+      - title: Explorar economias
+        url: "/calculate-evs-savings.html"
       - title: Crie um plano de implantação usando o consultor de migração
         url: "/launch-migration-advisor-evs-manual.html"
       - title: Implante o sistema de arquivos FSX for ONTAP recomendado
