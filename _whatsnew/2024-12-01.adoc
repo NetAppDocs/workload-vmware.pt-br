@@ -6,10 +6,10 @@
 
 === Melhorias do consultor de migração do Amazon EC2
 
-Esta versão da fábrica de carga de trabalho do BlueXP  para VMware apresenta várias melhorias na experiência do consultor de migração:
+Esta versão do NetApp Workload Factory para VMware apresenta diversas melhorias na experiência do consultor de migração:
 
-* *Coleta de dados*: A fábrica de carga de trabalho do BlueXP  para VMware oferece suporte à capacidade de coletar dados por um período de tempo específico quando você usa o consultor de migração.
-* *Seleção de VM*: A fábrica de cargas de trabalho do BlueXP  para VMware agora oferece suporte à seleção de VMs que você deseja incluir na implantação de migração.
+* *Coleta de dados*: O BlueXP Workload Factory para VMware oferece suporte à capacidade de coletar dados por um período específico quando você usa o consultor de migração.
+* *Seleção de VM*: O BlueXP Workload Factory para VMware agora oferece suporte à seleção de VMs que você deseja incluir na sua implantação de migração.
 * * Experiência rápida vs. Avançada*: Quando você usa o consultor de migração, agora você pode escolher uma experiência de migração rápida, usando RVtools, ou a experiência avançada, que usa o coletor de dados do consultor de migração.
 
 

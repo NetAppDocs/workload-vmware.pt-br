@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: deploy-fsx-file-system-evs.html 
 keywords: vm workloads, deploy fsx, deploy storage for vms, evs, elastic vmware service 
-summary: Depois de verificar se o sistema de arquivos FSX for ONTAP recomendado, ou sistemas de arquivos, em alguns casos, atende aos seus requisitos exatos, você pode usar a fábrica de carga de trabalho para implantar o sistema em seu ambiente AWS. 
+summary: Depois de verificar se o sistema de arquivos FSx for ONTAP recomendado, ou sistemas de arquivos em alguns casos, atendem exatamente aos seus requisitos, você pode usar o Workload Factory para implantar o sistema no seu ambiente AWS. 
 ---
 = Implante o sistema de arquivos FSX for ONTAP recomendado
 :allow-uri-read: 
@@ -11,9 +11,9 @@ summary: Depois de verificar se o sistema de arquivos FSX for ONTAP recomendado,
 
 
 [role="lead"]
-Depois de verificar se o sistema de arquivos FSX for ONTAP recomendado (ou vários sistemas de arquivos em alguns casos) atende aos seus requisitos exatos, você pode usar a fábrica de carga de trabalho para implantar o sistema em seu ambiente AWS.
+Depois de verificar se o sistema de arquivos FSx recomendado para ONTAP (ou vários sistemas de arquivos em alguns casos) atende exatamente aos seus requisitos, você pode usar o Workload Factory para implantar o sistema no seu ambiente AWS.
 
-Dependendo da política e das permissões adicionadas à sua conta do Workload Factory, você pode implantar o sistema de arquivos FSx para ONTAP completamente usando o Workload Factory (no modo de leitura/gravação). Se você tiver menos permissões (modo somente leitura) ou nenhuma permissão (modo Básico), será necessário usar o modelo CloudFormation do Codebox e implantar o sistema de arquivos FSx for ONTAP na AWS.
+Dependendo da política e das permissões que você adicionou à sua conta do Workload Factory, você pode implantar o sistema de arquivos FSx para ONTAP completamente usando o Workload Factory (usando o modo de leitura/gravação).  Se você tiver menos permissões (modo somente leitura) ou nenhuma permissão (modo básico), será necessário usar o modelo CloudFormation do Codebox e implantar o sistema de arquivos FSx para ONTAP na AWS.
 
 .Requisitos para implantações no Amazon Elastic VMware Service
 * Você deve ter uma assinatura do Amazon Elastic VMware Service.
@@ -30,7 +30,7 @@ Você pode usar a opção criação rápida ou criação avançada. Advanced Cre
 
 . Na seção "Configuração geral do sistema de arquivos", insira as seguintes informações:
 +
-.. * Credenciais da AWS*: Selecione ou adicione credenciais que darão à fábrica de carga de trabalho as permissões necessárias para criar seu sistema de arquivos FSX for ONTAP diretamente. Você também pode selecionar o código do CloudFormation no Codebox e implantar o sistema de arquivos FSX for ONTAP na AWS.
+.. *Credenciais da AWS*: Selecione ou adicione credenciais que darão ao Workload Factory as permissões necessárias para criar seu sistema de arquivos FSx para ONTAP diretamente.  Você também pode selecionar o código do CloudFormation no Codebox e implantar o sistema de arquivos FSx para ONTAP na AWS.
 .. *Nome do sistema de arquivos*: Digite o nome que você deseja usar para este sistema de arquivos FSX for ONTAP.
 .. *Tags*: Opcionalmente, você pode adicionar tags para categorizar este FSx para o sistema de arquivos ONTAP.
 
@@ -40,7 +40,7 @@ Você pode usar a opção criação rápida ou criação avançada. Advanced Cre
 .. *Região e VPC*: Selecione a região e a VPC onde o sistema de arquivos FSx para ONTAP será implantado.
 .. *Grupo de segurança* (somente criação avançada): Ao usar a opção *Criação avançada*, você pode selecionar o grupo de segurança padrão para a VPC FSx for ONTAP para que todo o tráfego possa acessar o sistema de arquivos FSx for ONTAP. Você pode criar um novo grupo de segurança ou selecionar um existente.
 +
-Se você habilitar a opção *Ajustar configuração do grupo de segurança para armazenamentos de dados NFS do EVS*, o Workload Factory configurará o grupo de segurança de acordo com as configurações para armazenamentos de dados NFS do EVS.
+Se você habilitar a opção *Ajustar configuração do grupo de segurança para datastores EVS NFS*, o Workload Factory configurará o grupo de segurança de acordo com as configurações para datastores EVS NFS.
 
 +
 Você pode adicionar uma regra de entrada ao grupo de segurança que restrinja quais outros serviços da AWS podem acessar o sistema de arquivos FSx para ONTAP. Isso reduzirá o número de serviços abertos. Estas são as portas e protocolos mínimos:
@@ -81,7 +81,7 @@ Você deve selecionar a mesma zona de disponibilidade em que o VMware SDDC é im
 
 . Na seção "Anexo do cluster EVS", insira as seguintes informações:
 +
-.. *Opções de montagem de armazenamento de dados*: Opcionalmente, ative a opção *Montar armazenamentos de dados no cluster EVS* para conectar automaticamente os armazenamentos de dados ao cluster Amazon EVS.  Esta opção também faz com que o Workload Factory configure as definições do host VMware ESXi para que correspondam às recomendações de práticas recomendadas do ONTAP .  Antes de implantar o sistema de arquivos, você pode revisar os detalhes do plano na seção *Resumo* para ver as configurações que foram alteradas.
+.. *Opções de montagem de armazenamento de dados*: Opcionalmente, ative a opção *Montar armazenamentos de dados no cluster EVS* para conectar automaticamente os armazenamentos de dados ao cluster Amazon EVS. Esta opção também faz com que o Workload Factory configure as definições do host VMware ESXi para que correspondam às recomendações de práticas recomendadas do ONTAP . Antes de implantar o sistema de arquivos, você pode revisar os detalhes do plano na seção *Resumo* para ver as configurações que foram alteradas.
 .. *Detalhes do console do EVS Cluster vSphere*: insira o endereço IP ou FQDN do servidor VMware vCenter que deve se conectar ao Amazon EVS.
 .. *ARN secreto das credenciais do administrador do vSphere*: escolha o ARN secreto para as credenciais do administrador do vSphere.  Essas credenciais são usadas para montar armazenamentos de dados e configurar as configurações recomendadas do VMware.
 +

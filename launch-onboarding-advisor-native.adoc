@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: launch-onboarding-advisor-native.html 
-keywords: overview, concepts, features, use case, workloads, how workload factory works 
-summary: Faça login na fábrica de workloads do NetApp para acessar o consultor de migração do VMware. Siga as etapas do assistente para criar um plano de implantação ou plano de migração personalizado para suas necessidades. 
+keywords: overview, concepts, features, use case, workloads, how Workload Factory works 
+summary: Efetue login no NetApp Workload Factory para acessar o consultor de migração do VMware.  Você seguirá as etapas do assistente para criar um plano de implantação ou migração personalizado para suas necessidades. 
 ---
 = Crie um plano de implantação para o Amazon EC2 usando o consultor de migração de workloads da VMware
 :allow-uri-read: 
@@ -11,9 +11,9 @@ summary: Faça login na fábrica de workloads do NetApp para acessar o consultor
 
 
 [role="lead"]
-Faça login na fábrica de workloads do NetApp para acessar o consultor de migração do VMware. Siga as etapas do assistente para criar um plano de implantação ou plano de migração personalizado para suas necessidades.
+Efetue login no NetApp Workload Factory para acessar o consultor de migração do VMware.  Você seguirá as etapas do assistente para criar um plano de implantação ou migração personalizado para suas necessidades.
 
-Tenha em atenção que tem de ter um nome de utilizador e uma palavra-passe para aceder à fábrica da carga de trabalho. Se você não tiver acesso, crie uma conta agora. Consulte as instruções https://docs.netapp.com/us-en/workload-setup-admin/quick-start.html["aqui"].
+Observe que você precisa ter um nome de usuário e uma senha para acessar o Workload Factory.  Se você não tem acesso, crie uma conta agora.  Veja as instruções https://docs.netapp.com/us-en/workload-setup-admin/quick-start.html["aqui"] .
 
 
 
@@ -22,31 +22,18 @@ Tenha em atenção que tem de ter um nome de utilizador e uma palavra-passe para
 Você pode migrar suas configurações atuais de máquina virtual em ambientes vSphere locais para máquinas virtuais no Amazon EC2 e usar sistemas de arquivos personalizados do Amazon FSX para NetApp ONTAP como datastores externos.
 
 .Requisitos
-* Você deve ter criado o arquivo de inventário a partir de seus sistemas existentes usando o coletor VM do consultor de migração ( arquivo .zip) ou usando RVTools (arquivo .xlsx).
-* Você deve ter acesso ao arquivo de inventário do sistema no qual você está fazendo login na fábrica de carga de trabalho.
+* Você deve terlink:upload-vm-inventory.html["carregou um inventário de VM"] .
 
 
 .Passos
-. Efetue login na fábrica da carga de trabalho usando um dos https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["experiências de console"^].
-. No bloco cargas de trabalho da VMware, selecione *avaliar e Planejar* e, em seguida, selecione *migração para computação nativa da AWS*. A tela inicial do VMware Migration Advisor é exibida.
+. Faça login no Workload Factory usando um dos https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["experiências de console"^] .
+. No bloco de cargas de trabalho do VMware, selecione *Centro de planejamento do VMware*.
 +
-Analise as informações para saber mais sobre os benefícios do consultor de migração.
+O centro de planejamento é exibido.
 
-. Quando estiver pronto, selecione *vamos começar*.
-. Escolha o nível de detalhe e o método que preferir durante o processo de criação de um plano de implantação:
-+
-** *Avaliação rápida*: Esta opção usa um arquivo de inventário RVtools para recuperar informações sobre suas VMs durante um processo acelerado, resultando em um projeto de projeto para sua migração na nuvem.
-** *Planejamento detalhado*: Essas opções usam o arquivo de inventário do coletor de dados do consultor de migração ou acesso direto à API aos Insights da infraestrutura de dados do NetApp para coletar informações detalhadas, resultando em um projeto pronto para implantação.
-
-
-
-
-[role="tabbed-block"]
-====
-.RVTools (avaliação rápida)
---
-.Passos
-. Selecione o mosaico *RVTools* e selecione *Next*.
+. Se você ainda não carregou um inventário de VM, selecione *Carregar inventário de VM* e siga as instruções emlink:upload-vm-inventory.html["Carregar dados de inventário de VM"] .
+. Escolha um conjunto de dados de inventário de VM na lista e abra o menu *Iniciar planejamento* para o conjunto de dados.
+. Selecione *computação nativa da AWS*.
 +
 A página *Prepare for AWS Cloud onboarding* é exibida.
 
@@ -102,158 +89,16 @@ NOTE: Se um volume tiver requisitos de capacidade ou desempenho que excedam os r
 +
 O topo da página estima a economia mensal do FSX para sistemas de arquivos ONTAP e volumes EBS. Você pode expandir cada seção para ver detalhes da configuração sugerida do sistema de arquivos, divisão estimada de economia, suposições e isenções técnicas.
 
-
-
---
-.Coletor de dados do consultor de migração (Planejamento detalhado)
---
-.Passos
-. Selecione o bloco *Migration ADVISOR data Collector* e selecione *Next*.
 +
-A página *Prepare for AWS Cloud onboarding* é exibida.
-
-. Na seção _VM Configuration upload_, image:button-upload-file.png["o botão de carregamento"]selecione e selecione o arquivo .zip criado pelo coletor de dados do consultor de migração.
-+
-A seção *Detalhes da coleta de dados* fornece o intervalo de datas e o número de horas de dados coletados usando o coletor de dados do Onboarding Advisor.
+O plano de migração é salvo automaticamente na lista de planos no centro de planejamento por padrão.
 
 +
-A seção *Resumo do inventário da VM* é preenchida a partir do arquivo de inventário para refletir o número de VMs e a capacidade total de armazenamento.
-
-. Na seção _considerações de inventário da VM_, selecione a região em que os sistemas de arquivos do Amazon FSX for NetApp ONTAP serão implantados. Para um desempenho ideal e eficiência de custo, esta é normalmente a mesma região onde o Amazon EC2 SDDC existente é implantado.
-. Na seção _considerações de capacidade e proteção de destino_, selecione entre algumas opções de armazenamento.
-+
-.. *Armazenamento de VM a considerar*: Selecione se os armazenamentos de dados criados para cada VM integrada são dimensionados com base no tamanho utilizado atualmente (recomendado) ou no tamanho provisionado.
-+
-Os datastores externos serão implementados usando os volumes do sistema de arquivos do Amazon FSX for NetApp ONTAP.
-
-.. *Relação média de redução de dados*: Escolha entre as três relações comuns de redução de dados. Selecione "1:1 - sem redução", "1:1,25 - 20% de redução" ou "1:1,5 - 33% de redução".
-+
-Selecione *Ajude-me a decidir* se não tiver certeza de qual proporção escolher. A caixa de diálogo _Data Reduction Ratio Assistant_ (Assistente de redução de dados) Selecione quaisquer instruções que se apliquem ao inventário de VM e ao armazenamento de dados. O assistente recomendará uma taxa de redução de dados adequada. Selecione *Apply* (aplicar) para utilizar a proporção recomendada.
-
-.. *Porcentagem de espaço livre*: Insira a porcentagem de crescimento de capacidade que é adicionada à capacidade para seus sistemas de arquivos FSX for ONTAP.
-+
-Observe que, se você selecionar um valor inferior a 20%, não será possível criar snapshots de volume para proteção e backups de longo prazo.
-
-.. *Proteção de snapshot da VM*: Ative esta opção para proteger as VMs com snapshots.
-
-
-. Selecione *seguinte*.
-. Na página *Escopo*, selecione as VMs na lista que você deseja incluir na migração da AWS. Você pode filtrar a lista pelo estado de energia de cada VM e em qual data center e cluster a VM reside.
-+
-Na lista VM, você pode selecionar quais tipos de informações da VM serão exibidas como colunas. Por exemplo, selecionar _tipo de instância estimado_ exibe uma coluna com o tipo de instância estimado do Amazon EC2 para cada VM, com base nos requisitos de recursos da VM.
-
-. Selecione *seguinte*.
-. Na página *Classify*, revise as informações da VM, regras de classificação de volume, atribuições de volume e lista de volumes que serão migrados como parte da implantação e selecione *Next*.
-+
-
-NOTE: Se um volume tiver requisitos de capacidade ou desempenho que excedam os recursos de um sistema de arquivos do Amazon FSX for NetApp ONTAP em uma região específica, o consultor de migração recomenda que o volume seja implantado em um sistema de arquivos do Amazon EBS.
-
-. Na página *Pacote*, revise as instâncias EC2 e os volumes atribuídos a diferentes clusters FSX for ONTAP e selecione *Avançar*.
-. Na página *Review plan*, revise as estimativas de custo e economia mensais estimadas para todas as VMs que você planeja migrar.
-+
-O topo da página estima a economia mensal do FSX para sistemas de arquivos ONTAP e volumes EBS. Você pode expandir cada seção para ver detalhes da configuração sugerida do sistema de arquivos, divisão estimada de economia, suposições e isenções técnicas.
-
-
-
---
-.Insights da infraestrutura de dados do NetApp (Planejamento detalhado)
---
-.Passos
-. Selecione o bloco *informações de infraestrutura de dados do NetApp* e selecione *Avançar*.
-+
-A página *Prepare for AWS Cloud onboarding* é exibida.
-
-. Na seção _Configuração de conexão do Insights de infraestrutura de dados do NetApp_, insira o endpoint do locatário para informações de infraestrutura de dados.
-+
-Esse deve ser o URL usado para acessar o Data Infrastructure Insights.
-
-. Se você ainda não gerou um token de acesso à API para o Data Infrastructure Insights, siga as instruções na página para criar um. Caso contrário, cole seu token de acesso à API na caixa de texto *Inserir token de acesso à API*.
-. Selecione *Connect*.
-+
-A fábrica de carga de trabalho reúne informações do Data Infrastructure Insights.
-
-+
-A seção *Resumo do inventário da VM* é preenchida a partir das informações coletadas para refletir o número de VMs e a capacidade total de armazenamento.
-
-. Na seção _considerações de inventário da VM_, selecione a região em que os sistemas de arquivos do Amazon FSX for NetApp ONTAP serão implantados. Para um desempenho ideal e eficiência de custo, esta é normalmente a mesma região onde o Amazon EC2 SDDC existente é implantado.
-. Na seção _considerações de capacidade e proteção de destino_, selecione entre algumas opções de armazenamento.
-+
-.. *Armazenamento de VM a considerar*: Selecione se os armazenamentos de dados criados para cada VM integrada são dimensionados com base no tamanho utilizado atualmente (recomendado) ou no tamanho provisionado.
-+
-Os datastores externos serão implementados usando os volumes do sistema de arquivos do Amazon FSX for NetApp ONTAP.
-
-.. *Relação média de redução de dados*: Escolha entre as três relações comuns de redução de dados. Selecione "1:1 - sem redução", "1:1,25 - 20% de redução" ou "1:1,5 - 33% de redução".
-+
-Selecione *Ajude-me a decidir* se não tiver certeza de qual proporção escolher. A caixa de diálogo _Data Reduction Ratio Assistant_ (Assistente de redução de dados) Selecione quaisquer instruções que se apliquem ao inventário de VM e ao armazenamento de dados. O assistente recomendará uma taxa de redução de dados adequada. Selecione *Apply* (aplicar) para utilizar a proporção recomendada.
-
-.. *Porcentagem de espaço livre*: Insira a porcentagem de crescimento de capacidade que é adicionada à capacidade para seus sistemas de arquivos FSX for ONTAP.
-+
-Observe que, se você selecionar um valor inferior a 20%, não será possível criar snapshots de volume para proteção e backups de longo prazo.
-
-.. *Proteção de snapshot da VM*: Ative esta opção para proteger as VMs com snapshots.
-
-
-. Selecione *seguinte*.
-. Na página *Escopo*, selecione as VMs na lista que você deseja incluir na migração da AWS. Você pode filtrar a lista pelo estado de energia de cada VM e em qual data center e cluster a VM reside.
-+
-Na lista VM, você pode selecionar quais tipos de informações da VM serão exibidas como colunas. Por exemplo, selecionar _tipo de instância estimado_ exibe uma coluna com o tipo de instância estimado do Amazon EC2 para cada VM, com base nos requisitos de recursos da VM.
-
-. Selecione *seguinte*.
-. Na página *Classify*, revise as informações da VM, regras de classificação de volume, atribuições de volume e lista de volumes que serão migrados como parte da implantação e selecione *Next*.
-+
-
-NOTE: Se um volume tiver requisitos de capacidade ou desempenho que excedam os recursos de um sistema de arquivos do Amazon FSX for NetApp ONTAP em uma região específica, o consultor de migração recomenda que o volume seja implantado em um sistema de arquivos do Amazon EBS.
-
-. Na página *Pacote*, revise as instâncias EC2 e os volumes atribuídos a diferentes clusters FSX for ONTAP e selecione *Avançar*.
-. Na página *Review plan*, revise as estimativas de custo e economia mensais estimadas para todas as VMs que você planeja migrar.
-+
-O topo da página estima a economia mensal do FSX para sistemas de arquivos ONTAP e volumes EBS. Você pode expandir cada seção para ver detalhes da configuração sugerida do sistema de arquivos, divisão estimada de economia, suposições e isenções técnicas.
-
-
-
---
-====
 Quando você estiver satisfeito com o plano de migração, você terá algumas opções:
 
-* Selecione *Gerenciar plano > Salvar um plano* para salvar os dados do plano de implantação em sua conta, permitindo que você importe o plano posteriormente para usar como modelo ao implantar sistemas com requisitos semelhantes. Você pode nomear o plano antes de salvá-lo (o nome de usuário e o carimbo de data/hora são adicionados ao nome fornecido).
-* Selecione *Gerenciar plano > Exportar um plano* para salvar o plano de migração como um modelo em um formato .json no computador. Você pode importar o plano posteriormente para usar como modelo ao implantar sistemas com requisitos semelhantes.
-* Selecione *Gerenciar plano > Baixar um relatório* para fazer o download do plano de implantação em um formato .pdf para que você possa distribuir o plano para revisão.
-* Selecione *Manage plan > Download instance storage deployment* (Gerenciar plano > Transferir implantação de armazenamento de dados) para fazer o download do plano de implantação de armazenamento de dados externo em um formato .csv, para que você possa usá-lo para criar sua nova infraestrutura de dados inteligente baseada na nuvem.
-
-
-Você pode selecionar *Done* para retornar à página de consultores de migração da VMware.
-
-
-
-== Crie um plano de implantação com base em um plano existente
-
-Se você estiver planejando uma nova implantação semelhante a um plano de implantação existente que já usou no passado, você poderá importar esse plano, fazer alterações e salvá-lo como um novo plano de implantação.
-
-.Requisitos
-Você deve ter acesso ao arquivo .json para o plano de implantação existente a partir do sistema no qual você está fazendo login na fábrica de carga de trabalho.
-
-.Passos
-. Efetue login na fábrica da carga de trabalho usando um dos https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["experiências de console"^].
-. No bloco cargas de trabalho da VMware, selecione *avaliar e Planejar* e, em seguida, selecione *migração para computação nativa da AWS*.
-. Selecione *Importar plano*.
-. Execute um dos seguintes procedimentos:
 +
-** Selecione *carregar plano guardado*.
-+
-... Na lista, selecione o plano que pretende importar.
-... Selecione *Load*.
+** Selecione *Baixar plano > Baixar um relatório* para baixar o plano de implantação em formato .pdf para que você possa distribuir o plano para revisão.
+** Selecione *Baixar plano > Baixar implantação de armazenamento de instância* para baixar o plano de implantação de armazenamento de dados externo em um formato .csv para que você possa usá-lo para criar sua nova infraestrutura de dados inteligente baseada em nuvem.
+** Selecione *Provisionar* para começar a implantar o sistema de arquivos Amazon FSx for NetApp ONTAP .
 
 
-** Selecione *no meu computador*.
-+
-... Selecione o arquivo de plano .json existente que você deseja importar no consultor de migração e selecione *Open*.
-+
-É apresentada a página *Review plan* (Plano de revisão).
-
-
-
-
-
-. Você pode selecionar *anterior* para acessar páginas anteriores e modificar as configurações do plano conforme descrito na seção anterior.
-. Depois de personalizar o plano de acordo com as suas necessidades, pode guardar o plano ou transferir o relatório do plano como um ficheiro PDF.
 

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords:  
 summary:  
 ---
-= Avisos legais para a fábrica de cargas de trabalho do BlueXP  para VMware
+= Avisos legais para NetApp Workload Factory para VMware
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
@@ -47,4 +47,4 @@ link:https://www.netapp.com/company/legal/privacy-policy/["https://www.netapp.co
 
 Os arquivos de aviso fornecem informações sobre direitos autorais de terceiros e licenças usadas no software NetApp.
 
-https://docs.netapp.com/us-en/workload-family/media/workload-factory-notice.pdf["Carga de trabalho de fábrica da BlueXP"^]
+https://docs.netapp.com/us-en/workload-family/media/workload-factory-notice.pdf["Fábrica de carga de trabalho da NetApp"^]

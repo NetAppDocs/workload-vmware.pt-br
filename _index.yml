@@ -1,6 +1,6 @@
 ---
 indexpage:
-  title: Fábrica de carga de trabalho da BlueXP  para documentação da VMware
+  title: Documentação do NetApp Workload Factory para VMware
   summary: Simplifique as migrações de ambientes vSphere locais para o VMware Cloud
     na AWS e implemente sistemas de arquivos FSX para ONTAP personalizados como datastores
     externos.
@@ -11,7 +11,7 @@ indexpage:
   tiles:
   - title: Comece agora
     links:
-    - title: Saiba mais sobre a fábrica de cargas de trabalho do BlueXP  para VMware
+    - title: Saiba mais sobre o NetApp Workload Factory para VMware
       url: learn-about-vmware-workloads.html
     - title: 'Início rápido: Migrar para o Amazon Elastic VMware Service'
       url: quick-start-evs.html
@@ -19,26 +19,26 @@ indexpage:
       url: quick-start.html
     - title: 'Início rápido: Migrar para o Amazon EC2'
       url: quick-start-native.html
+    - title: Explore o centro de planejamento da VMware
+      url: explore-planning-center.html
   - title: Migrar para o Amazon Elastic VMware Service
     links:
     - title: Explorar economias
       url: calculate-evs-savings.html
-    - title: Crie um plano de implantação usando o consultor de migração
+    - title: Criar manualmente um plano de implantação
       url: launch-migration-advisor-evs-manual.html
+    - title: Crie um plano de implantação usando o consultor de migração
+      url: launch-migration-advisor-evs.html
     - title: Implante o sistema de arquivos FSX for ONTAP recomendado
       url: deploy-fsx-file-system.html
   - title: Migrar para o Amazon EC2
     links:
-    - title: Capture suas configurações atuais de VM
-      url: capture-vm-configurations-native.html
     - title: Crie um plano de implantação usando o consultor de migração
       url: launch-onboarding-advisor-native.html
     - title: Implante o sistema de arquivos FSX for ONTAP recomendado
       url: deploy-fsx-file-system.html
   - title: Migre para o VMware Cloud na AWS
     links:
-    - title: Capture suas configurações atuais de VM
-      url: capture-vm-configurations.html
     - title: Crie um plano de implantação usando o consultor de migração
       url: launch-onboarding-advisor.html
     - title: Implante o sistema de arquivos FSX for ONTAP recomendado
@@ -49,9 +49,9 @@ indexpage:
       url: migrate-data.html
   - title: Blogs & comunidade
     links:
+    - title: Console NetApp
+      url: https://www.netapp.com/console
+    - title: Serviços de dados NetApp
+      url: https://www.netapp.com/data-services/
     - title: Comunidade NetApp
-      url: https://community.netapp.com/t5/BlueXP-and-Services/ct-p/CDS
-    - title: BlueXP  blogs
-      url: https://bluexp.netapp.com/blog
-    - title: Webinars na nuvem
-      url: https://bluexp.netapp.com/events
+      url: https://community.netapp.com/

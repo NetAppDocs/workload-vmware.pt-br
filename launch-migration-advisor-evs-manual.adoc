@@ -1,19 +1,19 @@
 ---
 sidebar: sidebar 
 permalink: launch-migration-advisor-evs-manual.html 
-keywords: overview, concepts, features, use case, workloads, how workload factory works, migration, advisor, manual, specification, deploy, deployment, plan 
-summary: Faça login na fábrica de workloads do NetApp para acessar o consultor de migração do VMware. Siga as etapas do assistente para criar um plano de implantação ou plano de migração personalizado para suas necessidades. 
+keywords: overview, concepts, features, use case, workloads, how Workload Factory works, migration, manual, specification, deploy, deployment, plan 
+summary: Efetue login no NetApp Workload Factory para acessar o centro de planejamento do VMware.  Você pode criar um plano de implantação para o EVS manualmente. 
 ---
-= Crie um plano de implantação para o Amazon EVS usando o consultor de migração de cargas de trabalho do VMware
+= Crie manualmente um plano de implantação para o Amazon EVS
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 
 
 [role="lead"]
-Faça login na fábrica de workloads do NetApp para acessar o consultor de migração do VMware. Siga as etapas do assistente para criar um plano de implantação ou plano de migração personalizado para suas necessidades.
+Efetue login no NetApp Workload Factory para acessar o centro de planejamento do VMware.  A partir daí, você pode criar manualmente um plano de implantação ou migração para o Amazon EVS personalizado para suas necessidades.
 
-Tenha em atenção que tem de ter um nome de utilizador e uma palavra-passe para aceder à fábrica da carga de trabalho. Se você não tiver acesso, crie uma conta agora. Consulte as instruções https://docs.netapp.com/us-en/workload-setup-admin/quick-start.html["aqui"].
+Observe que você precisa ter um nome de usuário e uma senha para acessar o Workload Factory.  Se você não tem acesso, crie uma conta agora.  Veja as instruções https://docs.netapp.com/us-en/workload-setup-admin/quick-start.html["aqui"] .
 
 
 
@@ -26,10 +26,9 @@ Você pode especificar manualmente seus requisitos para máquinas virtuais no Am
 
 
 .Passos
-. Efetue login na fábrica da carga de trabalho usando um dos https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["experiências de console"^].
-. Opcionalmente, se você acessou o Workload Factory no console do Workload Factory, no bloco de cargas de trabalho do VMware, selecione *Planejar e criar* e, em seguida, selecione *Serviço Amazon Elastic VMware*. A tela inicial do VMware Migration Advisor é exibida.
-. Selecione o bloco *Serviço Amazon Elastic VMware*.
-. Quando estiver pronto, selecione *vamos começar*.
+. Faça login no Workload Factory usando um dos https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["experiências de console"^] .
+. Opcionalmente, se você acessou o Workload Factory no console do Workload Factory, no bloco de cargas de trabalho do VMware, selecione *VMware planning center* e, em seguida, selecione *VMware planning center*.  O centro de planejamento do VMware é exibido.
+. Selecione *Criar plano EVS manualmente*.
 . Insira os requisitos para seu ambiente de VM.
 +
 [NOTE]
@@ -42,13 +41,13 @@ Tenha em mente os seguintes requisitos e recomendações de desempenho de migra�
 
 
 ====
-. Quando estiver pronto, selecione *Avançar* para revisar o plano de migração.
+. Quando estiver pronto, selecione *Revisar plano* para revisar o plano de migração.
 . Reveja o plano. Expanda cada seção para ver os detalhes do plano.
-. Opcionalmente, quando estiver satisfeito com o plano de migração, você pode salvá-lo como um modelo ou PDF:
 +
-** Selecione *Exportar plano* para salvar o plano de migração como um modelo em um  `.json` formato no seu computador. Você pode importar o plano posteriormente para usar como modelo ao implantar sistemas com requisitos semelhantes.
-** Selecione *Baixar plano* para baixar o plano de implantação em um  `.pdf` formato para que você possa distribuir o plano para revisão.
+Por padrão, o Workload Factory salva o plano de migração no centro de planejamento.  Você pode desmarcar esta opção perto do topo da página.
+
+. Opcionalmente, quando estiver satisfeito com o plano de migração, você pode baixar os detalhes do plano como um documento PDF selecionando *Exportar plano (PDF)*.
+. Quando estiver pronto para provisionar o plano de implantação, selecione *Provisionar*.
 
 
-. link:deploy-fsx-file-system-evs.html["Implante o sistema de arquivos FSX for ONTAP recomendado para cargas de trabalho da VMware"].
-
+link:deploy-fsx-file-system-evs.html["Implante o sistema de arquivos FSX for ONTAP recomendado para cargas de trabalho da VMware"].

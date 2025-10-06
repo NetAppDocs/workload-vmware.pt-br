@@ -15,25 +15,32 @@ Comece a usar o consultor de migração da VMware para mover sua infraestrutura 
 
 Antes de começar, você deve ter uma compreensão https://docs.netapp.com/us-en/workload-setup-admin/operational-modes.html["modos operacionais"^] de .
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["Um"] Faça login na fábrica da carga de trabalho
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["Um"]Efetue login no Workload Factory
 [role="quick-margin-para"]
-Você precisará https://docs.netapp.com/us-en/workload-setup-admin/sign-up-saas.html["configure uma conta com a fábrica de carga de trabalho"^] fazer login usando um dos https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["experiências de console"^].
+Você precisará https://docs.netapp.com/us-en/workload-setup-admin/sign-up-saas.html["crie uma conta no Workload Factory"^] e faça login usando um dos https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["experiências de console"^] .
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["Dois"] Adicione credenciais e permissões da AWS à sua conta
 [role="quick-margin-para"]
-Você pode usar a fábrica de carga de trabalho no modo _Basic_ sem adicionar credenciais para acessar sua conta da AWS. Adicionar credenciais da AWS ao workload factory no modo _somente leitura_ ou _leitura/gravação_ fornece à sua conta do workload factory as permissões necessárias para criar e gerenciar sistemas de arquivos FSx for ONTAP e para implantar e gerenciar workloads no Amazon EC2.
+Você pode usar o Workload Factory no modo _Básico_ sem adicionar credenciais para acessar sua conta da AWS. Adicionar credenciais da AWS ao Workload Factory no modo _somente leitura_ ou _leitura/gravação_ fornece à sua conta do Workload Factory as permissões necessárias para criar e gerenciar sistemas de arquivos FSx para ONTAP e para implantar e gerenciar cargas de trabalho no Amazon EC2.
 
 [role="quick-margin-para"]
 https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["Saiba como adicionar credenciais e permissões"^].
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["Três"] Crie um plano de implantação usando o consultor de migração da VMware
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["Três"]Carregar dados de inventário de VM
+[role="quick-margin-para"]
+Você pode usar o centro de planejamento para carregar detalhes de inventário sobre seu ambiente de VM atual.  Use o script do coletor de dados, o RVTools ou o NetApp Data Infrastructure Insights para capturar sua configuração atual de VM e carregar os dados no centro de planejamento.
+
+[role="quick-margin-para"]
+link:upload-vm-inventory.html["Aprenda a fazer upload de dados de inventário de VM"^] .
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["Quatro"] Crie um plano de implantação usando o consultor de migração da VMware
 [role="quick-margin-para"]
 Inicie o consultor de migração do VMware e configure manualmente o ambiente de VM que você deseja criar na infraestrutura do Amazon Elastic VMWare Service usando um sistema de arquivos Amazon FSx para ONTAP como armazenamentos de dados NFS externos.
 
 [role="quick-margin-para"]
-link:launch-migration-advisor-evs-manual.html["Saiba como usar o consultor de migração da VMware para criar um plano de implantação"].
+link:launch-migration-advisor-evs.html["Saiba como usar o consultor de migração da VMware para criar um plano de implantação"] .
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["Quatro"] Implante o sistema de arquivos FSX for ONTAP recomendado
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png["Cinco"] Implante o sistema de arquivos FSX for ONTAP recomendado
 [role="quick-margin-para"]
 Implante o novo sistema de arquivos FSX for ONTAP que fornecerá os armazenamentos de dados para suas VMs em sua infraestrutura do Amazon EC2.
 

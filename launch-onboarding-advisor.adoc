@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: launch-onboarding-advisor.html 
-keywords: overview, concepts, features, use case, workloads, how workload factory works 
-summary: Faça login na fábrica de workloads do NetApp para acessar o consultor de migração do VMware. Siga as etapas do assistente para criar um plano de implantação ou plano de migração personalizado para suas necessidades. 
+keywords: overview, concepts, features, use case, workloads, how Workload Factory works 
+summary: Efetue login no NetApp Workload Factory para acessar o consultor de migração do VMware.  Você seguirá as etapas do assistente para criar um plano de implantação ou migração personalizado para suas necessidades. 
 ---
 = Crie um plano de implantação para o VMware Cloud on AWS usando o consultor de migração de workloads da VMware
 :allow-uri-read: 
@@ -11,15 +11,15 @@ summary: Faça login na fábrica de workloads do NetApp para acessar o consultor
 
 
 [role="lead"]
-Faça login na fábrica de workloads do NetApp para acessar o consultor de migração do VMware. Siga as etapas do assistente para criar um plano de implantação ou plano de migração personalizado para suas necessidades.
+Efetue login no NetApp Workload Factory para acessar o consultor de migração do VMware.  Você seguirá as etapas do assistente para criar um plano de implantação ou migração personalizado para suas necessidades.
 
 Ao migrar para o VMware Cloud, você pode usar o consultor de migração para criar um plano de implantação para os seguintes cenários:
 
 * <<Crie um plano de implantação com base em um ambiente vSphere local,Para migrar seu ambiente vSphere local atual para a nuvem VMware.>>
-* <<Crie um plano de implantação com base em um plano existente,Para implantar um sistema na nuvem com base em um plano de implantação existente que tenha requisitos semelhantes.>>
+* <<Create a deployment plan based on an existing plan,Para implantar um sistema na nuvem com base em um plano de implantação existente que tenha requisitos semelhantes.>>
 
 
-Tenha em atenção que tem de ter um nome de utilizador e uma palavra-passe para aceder à fábrica da carga de trabalho. Se você não tiver acesso, crie uma conta agora. Consulte as instruções https://docs.netapp.com/us-en/workload-setup-admin/quick-start.html["aqui"].
+Observe que você precisa ter um nome de usuário e uma senha para acessar o Workload Factory.  Se você não tem acesso, crie uma conta agora.  Veja as instruções https://docs.netapp.com/us-en/workload-setup-admin/quick-start.html["aqui"] .
 
 
 
@@ -29,17 +29,17 @@ Você pode migrar suas configurações atuais de máquina virtual em ambientes v
 
 .Requisitos
 * Você deve ter criado o arquivo de inventário a partir de seus sistemas existentes usando o coletor VM do consultor de migração ( arquivo .csv) ou usando RVTools (arquivo .xlsx).
-* Você deve ter acesso ao arquivo de inventário do sistema no qual você está fazendo login na fábrica de carga de trabalho.
+* Você deve ter acesso ao arquivo de inventário do sistema no qual está efetuando login no Workload Factory.
 
 
 .Passos
-. Efetue login na fábrica da carga de trabalho usando um dos https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["experiências de console"^].
-. No bloco cargas de trabalho da VMware, selecione *avaliar e Planejar* e, em seguida, selecione *migração para o VMware Cloud na AWS*.
+. Faça login no Workload Factory usando um dos https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["experiências de console"^] .
+. No bloco de cargas de trabalho do VMware, selecione *Centro de planejamento do VMware*.
 +
-A página principal do VMware Migration Advisor é exibida.
+O centro de planejamento é exibido.
 
-. Selecione *criar um novo plano de implantação*.
-. Selecione o tipo de arquivo de inventário que você usará para preencher a fábrica de carga de trabalho com sua configuração atual de VM e selecione *Next*.
+. Selecione *Planejar e criar VMC*.
+. Selecione o tipo de arquivo de inventário que você usará para preencher o Workload Factory com sua configuração de VM atual e selecione *Avançar*.
 +
 ** Selecione *Use o coletor de dados VMware do consultor de migração* para usar o arquivo .csv criado usando o coletor de dados VMware.
 ** Selecione *Use RVTools* para usar o arquivo .xlsx que você criou usando RVTools.
@@ -145,23 +145,4 @@ O topo da página descreve o custo mensal de todas as VMs implantadas e do FSX p
 ** Selecione *Exportar plano* para salvar o plano de migração como um modelo em formato .json. Você pode importar o plano posteriormente para usar como modelo ao implantar sistemas com requisitos semelhantes.
 
 
-
-
-
-
-== Crie um plano de implantação com base em um plano existente
-
-Se você estiver planejando uma nova implantação semelhante a um plano de implantação existente que já usou no passado, você poderá importar esse plano, fazer edições e salvá-lo como um novo plano de implantação.
-
-.Requisitos
-Você deve ter acesso ao arquivo .json para o plano de implantação existente a partir do sistema no qual você está fazendo login na fábrica de carga de trabalho.
-
-.Passos
-. Efetue login na fábrica da carga de trabalho usando um dos https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["experiências de console"^].
-. No bloco cargas de trabalho da VMware, selecione *avaliar e Planejar* e, em seguida, selecione *migração para o VMware Cloud na AWS*. A página principal do VMware Migration Advisor é exibida.
-. Selecione *Importar um plano de implantação existente*.
-. image:button-upload-file.png["o botão de carregamento"]Selecione e selecione o arquivo de plano existente que você deseja importar no consultor de migração.
-. Selecione *Next* (seguinte) e a página Review plan (Plano de revisão) é apresentada.
-. Você pode selecionar *Previous* para acessar a página _Prepare for VMware Cloud onboarding_ e a página _Select VMs_ para modificar as configurações do plano conforme descrito na seção anterior.
-. Depois de personalizar o plano de acordo com suas necessidades, você pode salvar o plano ou iniciar o processo de implantação para seus datastores no FSX for ONTAP.
 

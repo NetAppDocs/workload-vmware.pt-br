@@ -6,7 +6,7 @@
 
 === Melhorias do consultor de migração do Amazon EC2
 
-Esta versão da fábrica de carga de trabalho do BlueXP  para VMware apresenta várias melhorias na experiência do consultor de migração do Amazon EC2:
+Esta versão do BlueXP Workload Factory para VMware apresenta diversas melhorias na experiência do consultor de migração do Amazon EC2:
 
 * *Orientação aprimorada de atribuição de volume*: As informações de atribuição de volume nas etapas "Classify" e "Package" do consultor de migração do EC2 apresentam maior legibilidade e usabilidade. Mais informações úteis são exibidas sobre cada volume, permitindo que você identifique melhor os volumes e determine como atribuí-los.
 * *Melhorias na eficiência do script do coletor de dados*: O script do coletor de dados do consultor de migração do EC2 otimiza o uso da CPU ao coletar dados para implantações menores de VM.

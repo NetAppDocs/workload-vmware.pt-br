@@ -2,16 +2,34 @@
 sidebar: sidebar 
 permalink: whats-new.html 
 keywords: 'what"s new, features, new, release notes, enhancements, fixes' 
-summary: Saiba o que há de novo com o componente VMware Migration Advisor da fábrica de carga de trabalho. 
+summary: Saiba o que há de novo no componente VMware Migration Advisor do Workload Factory. 
 ---
-= Novidades na fábrica de workloads da BlueXP  para VMware
+= Novidades do NetApp Workload Factory para VMware
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 
 
 [role="lead"]
-Saiba o que há de novo com o componente VMware Migration Advisor da fábrica de carga de trabalho.
+Saiba o que há de novo no componente VMware Migration Advisor do Workload Factory.
+
+
+
+== 5 de outubro de 2025
+
+
+
+=== BlueXP workload factory agora NetApp Workload Factory
+
+O BlueXP foi renomeado e redesenhado para refletir melhor o papel que ele tem no gerenciamento da sua infraestrutura de dados. Como resultado, a BlueXP workload factory foi renomeada para NetApp Workload Factory.
+
+
+
+=== Apresentando o Centro de Planejamento de Cargas de Trabalho da VMware
+
+O centro de planejamento de cargas de trabalho da VMware permite que você visualize e gerencie seu inventário de VMs e planos de migração em um só lugar.  Você pode carregar e salvar vários inventários de VMs de diferentes ambientes e começar a planejar uma migração para o serviço AWS EC2 ou Amazon Elastic VMware para qualquer um deles.  Você também pode criar e salvar planos de migração do AWS EC2 ou EVS.
+
+https://docs.netapp.com/us-en/workload-vmware/explore-planning-center.html["Explore o centro de planejamento de cargas de trabalho da VMware"]
 
 
 
@@ -31,7 +49,7 @@ https://docs.netapp.com/us-en/workload-vmware/launch-migration-advisor-evs-manua
 
 Agora você pode explorar as possíveis economias ao migrar suas cargas de trabalho do VMware para o Amazon Elastic VMware Service (EVS).  A calculadora de economia permite que você compare os custos de uso do Amazon EVS com e sem o Amazon FSx for NetApp ONTAP como armazenamento subjacente.  A calculadora exibe potenciais economias em tempo real à medida que você ajusta as características do seu ambiente.
 
-https://docs.netapp.com/us-en/workload-vmware/calculate-evs-savings.html["Explore as economias do Amazon Elastic VMware Service com a BlueXP workload factory"]
+https://docs.netapp.com/us-en/workload-vmware/calculate-evs-savings.html["Explore as economias do Amazon Elastic VMware Service com o BlueXP Workload Factory"]
 
 
 
@@ -41,7 +59,7 @@ https://docs.netapp.com/us-en/workload-vmware/calculate-evs-savings.html["Explor
 
 === Apresentando o suporte do consultor de migração para o Amazon Elastic VMWare Service
 
-A fábrica de cargas de trabalho BlueXP para VMware agora oferece suporte ao Amazon Elastic VMware Service. Você pode migrar rapidamente suas cargas de trabalho VMware locais para o Amazon Elastic VMware Service usando o Migration Advisor, otimizando custos e permitindo maior controle sobre seu ambiente VMware sem precisar refatorar ou reestruturar seus aplicativos.
+O BlueXP Workload Factory para VMware agora oferece suporte ao Amazon Elastic VMware Service.  Você pode migrar rapidamente suas cargas de trabalho VMware locais para o Amazon Elastic VMware Service usando o consultor de migração, otimizando custos e permitindo mais controle sobre seu ambiente VMware sem precisar refatorar ou reestruturar seus aplicativos.
 
 https://docs.netapp.com/us-en/workload-vmware/launch-migration-advisor-evs-manual.html["Crie um plano de implantação para o Amazon EVS usando o consultor de migração"]
 
@@ -53,7 +71,7 @@ https://docs.netapp.com/us-en/workload-vmware/launch-migration-advisor-evs-manua
 
 === Melhorias do consultor de migração do Amazon EC2
 
-Esta versão da fábrica de carga de trabalho do BlueXP  para VMware apresenta a seguinte melhoria para a experiência do consultor de migração do Amazon EC2:
+Esta versão do BlueXP Workload Factory para VMware apresenta a seguinte melhoria na experiência do consultor de migração do Amazon EC2:
 
 *Insights de infraestrutura de dados da NetApp como fonte de dados*: A fábrica de carga de trabalho agora se coneta diretamente com os insights de infraestrutura de dados da NetApp para coletar informações de implantação da VMware quando você usa o coletor de dados do consultor de migração do EC2.
 
@@ -73,7 +91,7 @@ A interface do usuário e a documentação do Workload Factory agora usam "somen
 
 === Melhorias do consultor de migração do Amazon EC2
 
-Esta versão da fábrica de carga de trabalho do BlueXP  para VMware apresenta várias melhorias na experiência do consultor de migração do Amazon EC2:
+Esta versão do BlueXP Workload Factory para VMware apresenta diversas melhorias na experiência do consultor de migração do Amazon EC2:
 
 * *Orientação aprimorada de atribuição de volume*: As informações de atribuição de volume nas etapas "Classify" e "Package" do consultor de migração do EC2 apresentam maior legibilidade e usabilidade. Mais informações úteis são exibidas sobre cada volume, permitindo que você identifique melhor os volumes e determine como atribuí-los.
 * *Melhorias na eficiência do script do coletor de dados*: O script do coletor de dados do consultor de migração do EC2 otimiza o uso da CPU ao coletar dados para implantações menores de VM.
@@ -89,7 +107,7 @@ https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.h
 
 === Melhorias do consultor de migração do Amazon EC2
 
-Esta versão da fábrica de carga de trabalho do BlueXP  para VMware apresenta várias melhorias na experiência do consultor de migração do Amazon EC2:
+Esta versão do BlueXP Workload Factory para VMware apresenta diversas melhorias na experiência do consultor de migração do Amazon EC2:
 
 * *Tipo de instância estimado*: O Migration Advisor agora pode examinar os requisitos do seu ambiente e fornecer um tipo de instância estimado do Amazon EC2 para cada VM. Você pode optar por incluir o tipo de instância estimado para cada VM durante a etapa de escopo do consultor de migração.
 * * Capacidade de recomendar volumes do Amazon EBS*: O consultor de migração agora pode recomendar a migração de volumes de dados para o Amazon Elastic Block Store (EBS) em vez do Amazon FSX for NetApp ONTAP devido a necessidades específicas de capacidade ou desempenho de uma determinada região.
@@ -106,10 +124,10 @@ https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.h
 
 === Melhorias do consultor de migração do Amazon EC2
 
-Esta versão da fábrica de carga de trabalho do BlueXP  para VMware apresenta várias melhorias na experiência do consultor de migração:
+Esta versão do BlueXP Workload Factory para VMware apresenta diversas melhorias na experiência do consultor de migração:
 
-* *Salvar ou baixar um plano de migração*: Agora você pode salvar ou baixar um plano de migração e carregar o plano de migração para preencher o consultor de migração. Quando você salva um plano de migração, o plano é salvo com sua conta de fábrica de carga de trabalho.
-* *Seleção aprimorada de VM*: A fábrica de cargas de trabalho do BlueXP  para VMware agora oferece suporte à filtragem e pesquisa da lista de VMs que você deseja incluir em sua implantação de migração.
+* *Salvar ou baixar um plano de migração*: Agora você pode salvar ou baixar um plano de migração e carregá-lo para preencher o consultor de migração.  Quando você salva um plano de migração, o plano é salvo com sua conta do Workload Factory.
+* *Seleção de VM aprimorada*: o BlueXP Workload Factory para VMware agora oferece suporte à filtragem e pesquisa da lista de VMs que você deseja incluir na sua implantação de migração.
 
 
 https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.html["Crie um plano de implantação para o Amazon EC2 usando o consultor de migração"]
@@ -122,10 +140,10 @@ https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.h
 
 === Melhorias do consultor de migração do Amazon EC2
 
-Esta versão da fábrica de carga de trabalho do BlueXP  para VMware apresenta várias melhorias na experiência do consultor de migração:
+Esta versão do NetApp Workload Factory para VMware apresenta diversas melhorias na experiência do consultor de migração:
 
-* *Coleta de dados*: A fábrica de carga de trabalho do BlueXP  para VMware oferece suporte à capacidade de coletar dados por um período de tempo específico quando você usa o consultor de migração.
-* *Seleção de VM*: A fábrica de cargas de trabalho do BlueXP  para VMware agora oferece suporte à seleção de VMs que você deseja incluir na implantação de migração.
+* *Coleta de dados*: O BlueXP Workload Factory para VMware oferece suporte à capacidade de coletar dados por um período específico quando você usa o consultor de migração.
+* *Seleção de VM*: O BlueXP Workload Factory para VMware agora oferece suporte à seleção de VMs que você deseja incluir na sua implantação de migração.
 * * Experiência rápida vs. Avançada*: Quando você usa o consultor de migração, agora você pode escolher uma experiência de migração rápida, usando RVtools, ou a experiência avançada, que usa o coletor de dados do consultor de migração.
 
 
@@ -151,7 +169,7 @@ https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.h
 
 === Aprimoramentos do VMware Migration Advisor
 
-Esta versão da fábrica de carga de trabalho para VMware apresenta melhorias de funcionalidade e estabilidade, bem como a capacidade de importar e exportar planos de migração ao usar o consultor de migração da VMware.
+Esta versão do Workload Factory para VMware apresenta melhorias de funcionalidade e estabilidade, bem como a capacidade de importar e exportar planos de migração ao usar o consultor de migração do VMware.
 
 https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.html["Crie um plano de implantação para o Amazon EC2 usando o consultor de migração"]
 
@@ -171,6 +189,6 @@ A fábrica de workloads para VMware agora oferece suporte à migração para o A
 
 
 
-=== Lançamento inicial da fábrica de carga de trabalho para VMware
+=== Lançamento inicial do Workload Factory para VMware
 
 A versão inicial inclui a capacidade de usar o consultor de migração da VMware para analisar as configurações atuais da máquina virtual em ambientes vSphere locais e gerar um plano para implantar layouts de VM recomendados no VMware Cloud na AWS e usar sistemas de arquivos personalizados do Amazon FSX for NetApp ONTAP como datastores externos.

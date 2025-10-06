@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: deploy-fsx-file-system-native.html 
 keywords: vm workloads, deploy fsx, deploy storage for vms 
-summary: Depois de verificar se o sistema de arquivos FSX for ONTAP recomendado, ou sistemas de arquivos, em alguns casos, atende aos seus requisitos exatos, você pode usar a fábrica de carga de trabalho para implantar o sistema em seu ambiente AWS. 
+summary: Depois de verificar se o sistema de arquivos FSx for ONTAP recomendado, ou sistemas de arquivos em alguns casos, atendem exatamente aos seus requisitos, você pode usar o Workload Factory para implantar o sistema no seu ambiente AWS. 
 ---
 = Implante o sistema de arquivos FSX for ONTAP recomendado
 :allow-uri-read: 
@@ -11,6 +11,6 @@ summary: Depois de verificar se o sistema de arquivos FSX for ONTAP recomendado,
 
 
 [role="lead"]
-Depois de verificar se o sistema de arquivos FSX for ONTAP recomendado (ou vários sistemas de arquivos em alguns casos) atende aos seus requisitos exatos, você pode usar a fábrica de carga de trabalho para implantar o sistema em seu ambiente AWS.
+Depois de verificar se o sistema de arquivos FSx recomendado para ONTAP (ou vários sistemas de arquivos em alguns casos) atende exatamente aos seus requisitos, você pode usar o Workload Factory para implantar o sistema no seu ambiente AWS.
 
-Siga as instruções em link:https://docs.netapp.com/us-en/workload-fsx-ontap/create-file-system.html["Crie um sistema de arquivos FSX for ONTAP na fábrica de cargas de trabalho do BlueXP"^] para implantar o sistema de arquivos FSX for ONTAP de acordo com a configuração recomendada pela fábrica de carga de trabalho. Você pode usar as etapas *Advanced Create* nas instruções para personalizar totalmente o sistema de arquivos.
+Siga as instruções emlink:https://docs.netapp.com/us-en/workload-fsx-ontap/create-file-system.html["Crie um sistema de arquivos FSx para ONTAP no NetApp Workload Factory"^] para implantar o sistema de arquivos FSx para ONTAP de acordo com a configuração recomendada pelo Workload Factory.  Você pode usar as etapas de *Criação avançada* nas instruções para personalizar completamente o sistema de arquivos.
