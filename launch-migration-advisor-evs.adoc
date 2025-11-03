@@ -13,19 +13,20 @@ summary: No centro de planejamento da VMware, você pode iniciar o consultor de 
 [role="lead"]
 No centro de planejamento da VMware, você pode iniciar o consultor de migração do Amazon EVS para ajudar a criar um plano de migração personalizado para suas necessidades.
 
-Observe que você precisa ter um nome de usuário e uma senha para acessar o Workload Factory.  Se você não tem acesso, crie uma conta agora.  Veja as instruções https://docs.netapp.com/us-en/workload-setup-admin/quick-start.html["aqui"] .
-
-
-
-== Crie um plano de implantação usando o consultor de migração
-
 Você pode criar um plano de implantação para migrar máquinas virtuais para o Amazon Elastic VMware Service e usar sistemas de arquivos Amazon FSx for NetApp ONTAP personalizados como armazenamentos de dados externos.  As opções no consultor de migração podem ser diferentes dependendo da ferramenta usada para coletar os dados de inventário da VM.
 
-.Requisitos
+
+
+== Requisitos
+
+* Você precisa de um nome de usuário e senha para acessar o Workload Factory.  Se você não tem acesso, crie uma conta agora.  Consulte as instruções. https://docs.netapp.com/us-en/workload-setup-admin/quick-start.html["aqui"] .
 * Você deve ter uma assinatura do Amazon Elastic VMware Service.
 
 
-.Passos
+
+
+== Passos
+
 . Faça login no Workload Factory usando um dos https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["experiências de console"^] .
 . Opcionalmente, se você acessou o Workload Factory no console do Workload Factory, no bloco de cargas de trabalho do VMware, selecione *VMware planning center* e, em seguida, selecione *VMware planning center*.  O centro de planejamento do VMware é exibido.
 . Selecione um inventário de VM na lista que você deseja usar para criar um plano de implantação e selecione *Iniciar planejamento* nessa linha.
@@ -91,7 +92,7 @@ Na lista de VMs, você pode selecionar quais tipos de informações de VM serão
 [discrete]
 ===== Projeto
 
-. Na página *Atribuição de armazenamento de instância ClassReview*, revise as informações da VM, as regras de classificação de volume, as atribuições de volume e a lista de volumes que serão migrados como parte da implantação e selecione *Avançar*.
+* Na página *Atribuição de armazenamento de instância ClassReview*, revise as informações da VM, as regras de classificação de volume, as atribuições de volume e a lista de volumes que serão migrados como parte da implantação e selecione *Avançar*.
 
 
 [discrete]
@@ -103,6 +104,10 @@ O topo da página estima a economia mensal do FSX para sistemas de arquivos ONTA
 
 +
 O plano de migração é salvo automaticamente na lista de planos no centro de planejamento por padrão.
+
+. Opcionalmente, você pode exportar o plano de migração como um arquivo PDF ou CSV selecionando *Gerenciar plano* no canto superior direito da página e, em seguida, selecionando *Baixar um relatório (.pdf)* ou *Baixar implantação de armazenamento de VM (.csv)*.
++
+O arquivo .csv cria um mapa de todas as VMs incluídas no plano de migração, juntamente com seus volumes de armazenamento atribuídos.
 
 . Quando estiver pronto para prosseguir com o plano, selecione *Provisionar* para começar a implantar o sistema de arquivos Amazon FSx for NetApp ONTAP recomendado.
 
