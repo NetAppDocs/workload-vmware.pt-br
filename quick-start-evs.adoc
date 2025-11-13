@@ -13,7 +13,7 @@ summary: Comece a usar o consultor de migração da VMware para mover sua infrae
 [role="lead"]
 Comece a usar o consultor de migração da VMware para mover sua infraestrutura atual para o Amazon EVS usando o Amazon FSx para ONTAP como armazenamentos de dados NFS externos.
 
-Antes de começar, você deve ter uma compreensão https://docs.netapp.com/us-en/workload-setup-admin/operational-modes.html["modos operacionais"^] de .
+Antes de começar, você deve entender o seguinte: https://docs.netapp.com/us-en/workload-setup-admin/permissions-reference.html [permissões para o NetApp Workload Factory^].
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["Um"]Efetue login no Workload Factory
 [role="quick-margin-para"]

@@ -37,14 +37,11 @@
   <block id="3f8f9b99b287380b37d3886a9f7e40f7" category="open-title">Use o software RVTools</block>
   <block id="18498b95c15ee1034dbf55a71b7c7b9d" category="paragraph">O RVTools é um aplicativo do Windows que interage com o vCenter e o VMware ESX Server (5.x a 8,0) para capturar informações sobre seus ambientes virtuais VMware. Ele reúne informações sobre VMs, CPU, memória, discos, clusters, hosts ESX, datastores e muito mais. Você pode exportar essas informações para um arquivo xlsx para usar com o consultor de migração.</block>
   <block id="344899ab535d99090285d73527e8b852" category="inline-link">Saiba mais sobre RVTools</block>
-  <block id="707b583376def9edad1fc8a7199124ea" category="paragraph"><block ref="707b583376def9edad1fc8a7199124ea" category="inline-link-rx"></block></block>
   <block id="5525d9548d578c70365c720a2035b2fa" category="inline-link">Site da RVTools</block>
-  <block id="13613d07869f39104d3c7dc70d0a584e" category="list-text">Baixe e instale o RVTools 4.4.2 ou superior de<block ref="c7c9965d016bc084e3044c04ae01ffcd" category="inline-link-rx"></block></block>
   <block id="93768280696f91c787d919221b25e927" category="list-text">Inicie o RVTools e faça login no vCenter Server de destino.</block>
   <block id="1121913c71bf9c4dfefecfd1802408c4" category="paragraph">Isso capturará informações sobre esse vCenter Server.</block>
   <block id="418e7e2732f5b077d0a55b9086325810" category="list-text">Exporte suas informações da VMware para um arquivo xlsx ou xls.</block>
   <block id="1abe5a39abd90cfac9ffa06b90b781c1" category="inline-link">Documentação do RVTools</block>
-  <block id="10ffe7f124f69e3702ce69e56c43925c" category="paragraph">Consulte o capítulo sobre "parâmetros de linha de comandos" na<block ref="cd808e8fbbf761268520721bfefac00c" category="inline-link-rx"></block> para obter mais detalhes.</block>
   <block id="67ec8486a529d78b43140379c2ad7aff" category="paragraph">O arquivo xlsx ou xls que contém os resultados é salvo no diretório de trabalho.</block>
   <block id="58eaebf972358f1cf03d386a4ade1a0f" category="paragraph-title">O que se segue?</block>
   <block id="bf9f27fc21322ff6302a870d86e2e722" category="inline-link-macro">Crie um plano de implantação do Amazon EC2 usando o consultor de migração</block>
@@ -282,7 +279,6 @@
   <block id="1cdaa881e46a57173b4ffb5ec3faacc3" category="paragraph"><block ref="cef3bc29c9f27088570c1e3262538cf8" category="inline-link-rx"></block> para mais detalhes.</block>
   <block id="5944c69245ff8965d3ea01f690fb5c93" category="paragraph">Agora que você migrou seus dados para o VMware Cloud no AWS e o Amazon FSX for NetApp ONTAP armazenamentos externos, você pode fazer backup e proteger os dados importantes no seu sistema de arquivos FSX for ONTAP para garantir que seus dados estejam sempre disponíveis.</block>
   <block id="e893ba46613a19a9294b7b151c4df83e" category="summary">Comece com o consultor de migração da VMware para mover sua infraestrutura atual para o Amazon EC2 usando o Amazon FSX for ONTAP como datastores NFS externos.</block>
-  <block id="ba8b072b83c1e6db56e40bf48ddb0871" category="inline-link">modos operacionais</block>
   <block id="06c2cea18679d64399783748fa367bdd" category="inline-image-macro">Um</block>
   <block id="aada29daee1d64ed0fe907043855cb7e" category="inline-image-macro">Dois</block>
   <block id="fb391f4cf6483b8b419032dc188bd9d8" category="inline-link">Saiba como adicionar credenciais e permissões</block>
@@ -358,7 +354,6 @@
   <block id="dc9ea462821ad27445bd89faaafc765c" category="paragraph">Selecione *Ajude-me a decidir* se não tiver certeza de qual proporção escolher. A caixa de diálogo _Data Reduction Ratio Assistant_ (Assistente de redução de dados) Selecione quaisquer instruções que se apliquem ao inventário de VM e ao armazenamento de dados. O assistente recomendará uma taxa de redução de dados adequada. Selecione *Apply* (aplicar) para utilizar a proporção recomendada.</block>
   <block id="c9b4182f157d4d581536f53df8cd512d" category="paragraph">A fábrica de workloads para VMware agora oferece suporte à migração para o Amazon EC2 usando o consultor de migração da VMware.</block>
   <block id="dcafe9cce796ce855e87b270f0a5af59" category="inline-link">experiências de console</block>
-  <block id="80d4b078f6c58ce0995857130402115f" category="paragraph">Antes de começar, você deve ter uma compreensão<block ref="34271bc3c8a46444362a7c5af7a1adeb" category="inline-link-rx"></block> de .</block>
   <block id="c01367c7ec78f01defe37cab59b14851" category="paragraph"><block ref="d162e97fcdf643050da77419fb18d12e" category="inline-link-rx"></block>.</block>
   <block id="65b67cfacaf9f942b7e72202ad4253cf" category="paragraph"><block ref="f440c867abbb2e895fda5fc4c7c4b4d3" category="inline-link-macro-rx"></block>.</block>
   <block id="99518c9c883f7beb3f0b6f82063520fd" category="inline-link-macro">Saiba como conetar seus sistemas de arquivos FSX for ONTAP</block>
@@ -761,4 +756,15 @@
   <block id="ce8e7e98b5597e78e8fd7d6bc94729cb" category="inline-link">Adicionar credenciais a uma conta manualmente</block>
   <block id="89de75212fc10daeec1259e132f3752a" category="paragraph">Se optar por conceder permissões, você precisará<block ref="869f3c251b5d8f71098ec6e85e90e6d1" category="inline-link-rx"></block> Isso inclui selecionar as capacidades da carga de trabalho, como Bancos de Dados e IA, e criar as políticas de IAM para as permissões necessárias.</block>
   <block id="78a1fd3770ad9cba75be7a432485a77e" category="section-title">2 de novembro de 2025</block>
+  <block id="50d2e9de63b2a2c16916c2f1b6818a38" category="paragraph"><block ref="50d2e9de63b2a2c16916c2f1b6818a38" category="inline-link-rx"></block></block>
+  <block id="a64a69c3508f33cfd62281ba53751057" category="list-text">Baixe e instale o RVTools 4.4.2 ou superior em<block ref="549b9bee8bb8949ccc74a6c46c4c0a8d" category="inline-link-rx"></block></block>
+  <block id="862ba35dfdf3a7836d71ed579dfca3ec" category="paragraph">Consulte o capítulo sobre "parâmetros de linha de comando" no<block ref="cb13b358aa71a504b38a0472274f8ec0" category="inline-link-rx"></block> Para mais detalhes.</block>
+  <block id="d6add28cedc07b8a80ae0bda37f86523" category="list-text">Baixe e instale o RVTools 4.4.2 ou superior no<block ref="549b9bee8bb8949ccc74a6c46c4c0a8d" category="inline-link-rx"></block></block>
+  <block id="33daaeb5c5025e30dc44f9f5bb7098a6" category="inline-link">A documentação do RVTools está disponível na seção Recursos.</block>
+  <block id="bc7e9c87828b6c8d46b8ee715cdad433" category="paragraph">Consulte o capítulo sobre "parâmetros de linha de comando" no<block ref="cba36d23348879ff4ac7b19a18786876" category="inline-link-rx"></block> Para mais detalhes.</block>
+  <block id="c6e53b973f12d3e5f6edcac94bd4cafc" category="paragraph">Antes de começar, você deve entender o seguinte: https://docs.netapp.com/us-en/workload-setup-admin/permissions-reference.html [permissões para o NetApp Workload Factory^].</block>
+  <block id="ed642dbc1cfaad7c138d0206f75e0100" category="paragraph">no<block ref="bf6bdc955de5a25fe27ac07cc3dd7f22" category="inline-link-rx"></block></block>
+  <block id="3ef26b6ecf935dd06dce4ca8f1b4e86c" category="list-text">Baixe e instale o RVTools 4.4.2 ou superior a partir do site oficial.<block ref="549b9bee8bb8949ccc74a6c46c4c0a8d" category="inline-link-rx"></block></block>
+  <block id="3863e26226a4a1c8c510cbf42f224905" category="inline-link">A documentação do RVTools está localizada na seção Recursos.</block>
+  <block id="aab95159d263780315dd964c73eaae67" category="paragraph">Consulte o capítulo sobre "parâmetros de linha de comando" no<block ref="bf8d7f7ef3081abb6d102edd73562460" category="inline-link-rx"></block> Para mais detalhes.</block>
 </blocks>
