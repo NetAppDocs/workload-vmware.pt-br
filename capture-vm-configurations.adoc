@@ -13,8 +13,6 @@ summary: Você pode usar o script de coletor de VM do consultor de migração ou
 [role="lead"]
 Você pode usar o script de coletor de VM do consultor de migração ou RVTools para capturar suas configurações atuais de VM. Recomendamos que você use o script de coletor de VM do consultor de migração porque ele reúne dados de configuração e desempenho da VM para o plano mais preciso.
 
-Se você planeja implantar um novo sistema com base em um plano de implantação existente que você salvou localmente anteriormente, você pode ignorar esta etapa e selecionar o plano de implantação existente. link:launch-onboarding-advisor.html#create-a-deployment-plan-based-on-an-existing-plan["Saiba como usar um plano existente para criar um novo plano"].
-
 [role="tabbed-block"]
 ====
 .Use o script de coletor de VM do consultor de migração

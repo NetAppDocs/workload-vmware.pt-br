@@ -46,8 +46,6 @@
   <block id="58eaebf972358f1cf03d386a4ade1a0f" category="paragraph-title">O que se segue?</block>
   <block id="bf9f27fc21322ff6302a870d86e2e722" category="inline-link-macro">Crie um plano de implantação do Amazon EC2 usando o consultor de migração</block>
   <block id="414196819b55791be7e7314c3ef3e1cb" category="paragraph"><block ref="256f57bc6446332fd4641ea86650235a" category="inline-link-macro-rx"></block>.</block>
-  <block id="29f021e47d424b1dde8f4e01c9c530a8" category="inline-link-macro">Saiba como usar um plano existente para criar um novo plano</block>
-  <block id="b16e57a351e118b35fdca27cf5d83661" category="paragraph">Se você planeja implantar um novo sistema com base em um plano de implantação existente que você salvou localmente anteriormente, você pode ignorar esta etapa e selecionar o plano de implantação existente. <block ref="d2cbff8d3a997fc87993c98dd8782aa2" category="inline-link-macro-rx"></block>.</block>
   <block id="f04f84e2375dd70545e2146f2d203aa3" category="paragraph">A página principal do VMware Migration Advisor é exibida.</block>
   <block id="1638657861eed27566f94f3aac3cd641" category="paragraph">O script produz um arquivo CSV chamado<block ref="d79e984209d9daa189a55436e4ddcc1c" prefix=" " category="inline-code"></block> no diretório de trabalho atual. O arquivo CSV contém uma lista de todas as VMs e suas propriedades, juntamente com seus IOPS e dados de taxa de transferência.</block>
   <block id="0c9cddf33e5d4dde0908a43c0281f4c9" category="inline-link-macro">Crie um plano de implantação do VMware Cloud on AWS usando o consultor de migração</block>
@@ -190,11 +188,6 @@
   <block id="ef3c7f794852a9bd24d0e9c87cce7d80" category="paragraph">O topo da página estima a economia mensal do FSX para sistemas de arquivos ONTAP e volumes EBS. Você pode expandir cada seção para ver detalhes da configuração sugerida do sistema de arquivos, divisão estimada de economia, suposições e isenções técnicas.</block>
   <block id="8687a48178491c960e3d406f98cbf29c" category="list-text">Quando você estiver satisfeito com o plano de migração, você terá algumas opções:</block>
   <block id="a8e3f2e23f07d3e3b894748c162a207a" category="list-text">Selecione *Exportar plano* para salvar o plano de migração como um modelo em formato .json. Você pode importar o plano posteriormente para usar como modelo ao implantar sistemas com requisitos semelhantes.</block>
-  <block id="be0af0f3e1f270dc982344a36c5f734f" category="paragraph">Ao migrar para o VMware Cloud, você pode usar o consultor de migração para criar um plano de implantação para os seguintes cenários:</block>
-  <block id="dafb3c70bc12caaeab402760a87e98d9" category="inline-xref">Para migrar seu ambiente vSphere local atual para a nuvem VMware.</block>
-  <block id="59bf0f7e79d795451ad94f36b9896e02" category="list-text"><block ref="d7d9086f96876c516cd0685f13fc1fe9" category="inline-xref-macro-rx"></block></block>
-  <block id="28a3e421e42b408e3e4ff1bca62ee052" category="inline-xref">Para implantar um sistema na nuvem com base em um plano de implantação existente que tenha requisitos semelhantes.</block>
-  <block id="c31c21e843fdb59a8add150356c11304" category="list-text"><block ref="5fa6f23430006bdd76a7952ab9b38e33" category="inline-xref-macro-rx"></block></block>
   <block id="c9ff8945d5f4f913ea03f4ded22549da" category="paragraph">Você pode migrar suas configurações atuais de máquina virtual em ambientes vSphere locais para máquinas virtuais no VMware Cloud on AWS e usar sistemas de arquivos personalizados do Amazon FSX for NetApp ONTAP como datastores externos.</block>
   <block id="b315d9d256afa359134156c4a3ba121a" category="list-text">Você deve ter criado o arquivo de inventário a partir de seus sistemas existentes usando o coletor VM do consultor de migração ( arquivo .csv) ou usando RVTools (arquivo .xlsx).</block>
   <block id="e7864d4b66ace757c2a108b5b0e4db3e" category="list-text">Selecione *Use o coletor de dados VMware do consultor de migração* para usar o arquivo .csv criado usando o coletor de dados VMware.</block>
@@ -767,4 +760,5 @@
   <block id="3ef26b6ecf935dd06dce4ca8f1b4e86c" category="list-text">Baixe e instale o RVTools 4.4.2 ou superior a partir do site oficial.<block ref="549b9bee8bb8949ccc74a6c46c4c0a8d" category="inline-link-rx"></block></block>
   <block id="3863e26226a4a1c8c510cbf42f224905" category="inline-link">A documentação do RVTools está localizada na seção Recursos.</block>
   <block id="aab95159d263780315dd964c73eaae67" category="paragraph">Consulte o capítulo sobre "parâmetros de linha de comando" no<block ref="bf8d7f7ef3081abb6d102edd73562460" category="inline-link-rx"></block> Para mais detalhes.</block>
+  <block id="1e884770040a1369dfb00ff9fba06330" category="paragraph">Ao migrar para a VMware Cloud, você pode usar o assistente de migração para migrar seu ambiente vSphere local atual para a VMware Cloud.</block>
 </blocks>
