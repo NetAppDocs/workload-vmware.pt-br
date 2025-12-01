@@ -468,14 +468,11 @@
   <block id="15783568389e909d8a2f1f68183d26bb" category="paragraph">Siga estas etapas para explorar possíveis economias em uma migração planejada para um ambiente Amazon EVS.</block>
   <block id="37ef970024a5557ba41801e6f2130fd9" category="admonition">Antes de prosseguir, revise o aviso de isenção de responsabilidade na parte inferior da calculadora de economia para entender mais sobre como as estimativas de preços são calculadas.</block>
   <block id="1811dba1a30bbfb16d7bd36ec7e8759c" category="list-text">No bloco de cargas de trabalho do VMware, selecione *Explorar economias* e depois *Amazon Elastic VMware Service (EVS)*.  A calculadora de economia é exibida.</block>
-  <block id="d8307a61b3e78cafe3dd2ba07854d83f" category="paragraph">O painel *Preferências de ambiente* fornece controles deslizantes que você pode ajustar dependendo das necessidades do seu ambiente.</block>
   <block id="a48f1fc19140e11332765f3ad9d224e1" category="list-text">Ajuste os controles deslizantes a seguir conforme necessário para ver cálculos de economia em tempo real para os valores escolhidos.  Se estiver usando um teclado, você pode fazer pequenos ajustes usando as teclas de seta:</block>
   <block id="b17baab6ba72f6d1c79c0b2294137330" category="list-text">*CPU física necessária (contagem)*</block>
   <block id="f1696c7a8437d9eca6a19bba82e206b9" category="list-text">*Memória física necessária (GiB)*</block>
   <block id="739cbbb6eaaeacf2d24f8a62a80b3ffe" category="list-text">*Armazenamento de VM necessário (TiB)*</block>
-  <block id="24bfaef9fff964e64a0151dab805a3f3" category="list-text">*Plano de cobrança do SVE*</block>
   <block id="7f2cda45c5fe4fce268e76d710242e93" category="inline-link-macro">criar um plano de implantação</block>
-  <block id="daf54dbe224e77cbcdfb24a59c9f9099" category="list-text">Para usar o consultor de migração para<block ref="9c54a102b37172c71de5c1a9f4ba94d1" category="inline-link-macro-rx"></block> para um ambiente Amazon EVS, selecione *Criar uma avaliação detalhada*.</block>
   <block id="27cecac020f0eb3b6379d7eaa39d9edb" category="list-text">Selecione *Fechar* para fechar a calculadora de TCO.</block>
   <block id="f38938fbcb9223342e98b8ed0b99af19" category="list-text">Na seção "Anexo do cluster EVS", insira as seguintes informações:</block>
   <block id="a1a0d005c4592b98541d6f6fb0d51c8e" category="list-text">*Detalhes do console do EVS Cluster vSphere*: insira o endereço IP ou FQDN do servidor VMware vCenter que deve se conectar ao Amazon EVS.</block>
@@ -761,4 +758,13 @@
   <block id="3863e26226a4a1c8c510cbf42f224905" category="inline-link">A documentação do RVTools está localizada na seção Recursos.</block>
   <block id="aab95159d263780315dd964c73eaae67" category="paragraph">Consulte o capítulo sobre "parâmetros de linha de comando" no<block ref="bf8d7f7ef3081abb6d102edd73562460" category="inline-link-rx"></block> Para mais detalhes.</block>
   <block id="1e884770040a1369dfb00ff9fba06330" category="paragraph">Ao migrar para a VMware Cloud, você pode usar o assistente de migração para migrar seu ambiente vSphere local atual para a VMware Cloud.</block>
+  <block id="e738192b7a8dc90f6d5e566ceb909da3" category="doc">Calcule a economia de custos da migração para o Amazon Elastic VMware Service em regiões específicas.</block>
+  <block id="d4a40d01192a627963ffd40503ef4713" category="paragraph">Agora você pode explorar o valor de diferentes opções de implantação para sua migração para a nuvem, otimizar os esforços investidos na avaliação de soluções e analisar em detalhes as soluções que têm o potencial de gerar valor e economia na nuvem.</block>
+  <block id="de480346f69aff69cc4e4e1e5d52ea98" category="paragraph">Você também pode analisar a economia de núcleos de vCPU que pode ser alcançada usando o FSx para ONTAP em uma implementação EVS.</block>
+  <block id="389870bd93c88ff4cb5e7f6216054ce2" category="paragraph"><block ref="389870bd93c88ff4cb5e7f6216054ce2" category="inline-link-rx"></block></block>
+  <block id="0031d357ae0128729164b1d7b297533b" category="paragraph">No painel *Preferências do ambiente*, você pode selecionar a região de implantação do EVS e ajustar o Custo Total de Propriedade (TCO) e as previsões de economia de acordo.</block>
+  <block id="66171c1365145e2d4c36586982cac308" category="list-text">Na lista suspensa *Região*, selecione a região de implantação do EVS para calcular a economia.</block>
+  <block id="6706b7bf4c170433cc0ab592c9e594f8" category="list-text">Em *Plano de faturamento EVS*, selecione o plano que você utiliza.</block>
+  <block id="74ce259d0d76a9e0cd46f6300bcc2371" category="list-text">Para usar o consultor de migração para <block ref="9c54a102b37172c71de5c1a9f4ba94d1" category="inline-link-macro-rx"></block> Para um ambiente Amazon EVS, selecione *Planejar migração para o EVS*.</block>
+  <block id="815e75619b370a1b845eccec6979ed74" category="section-title">27 de novembro de 2025</block>
 </blocks>

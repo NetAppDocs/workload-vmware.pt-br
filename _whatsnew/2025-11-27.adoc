@@ -1,0 +1,13 @@
+= Calcule a economia de custos da migração para o Amazon Elastic VMware Service em regiões específicas.
+:allow-uri-read: 
+
+
+
+
+=== Calcule a economia de custos da migração para o Amazon Elastic VMware Service em regiões específicas.
+
+Agora você pode explorar o valor de diferentes opções de implantação para sua migração para a nuvem, otimizar os esforços investidos na avaliação de soluções e analisar em detalhes as soluções que têm o potencial de gerar valor e economia na nuvem.
+
+Você também pode analisar a economia de núcleos de vCPU que pode ser alcançada usando o FSx para ONTAP em uma implementação EVS.
+
+https://docs.netapp.com/us-en/workload-vmware/calculate-evs-savings.html["Explore as economias do Amazon Elastic VMware Service com o NetApp Workload Factory"]
