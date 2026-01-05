@@ -1,0 +1,9 @@
+= Integração da página inicial do assistente de IA "Pergunte-me"
+:allow-uri-read: 
+
+
+
+
+=== Integração da página inicial do assistente de IA "Pergunte-me"
+
+A página inicial do console do Workload Factory incorpora o assistente de IA "Pergunte-me", permitindo que você faça perguntas sobre seu próprio ambiente de armazenamento, obtenha insights personalizados diretamente do seu ambiente e consulte conversas anteriores. Você pode interagir com o recurso "Pergunte-me" para entender suas cargas de trabalho, solucionar problemas e aprender mais sobre o Workload Factory — tudo isso sem sair do console.
