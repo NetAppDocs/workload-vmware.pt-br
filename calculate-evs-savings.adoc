@@ -26,7 +26,11 @@ NOTE: Antes de prosseguir, revise o aviso de isenção de responsabilidade na pa
 
 .Passos
 . Faça login no Workload Factory usando um dos https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["experiências de console"^] .
-. No bloco de cargas de trabalho do VMware, selecione *Explorar economias* e depois *Amazon Elastic VMware Service (EVS)*.  A calculadora de economia é exibida.
+. Selecione o menu image:workloads-menu-icon.png["O ícone do menu hambúrguer é usado para navegar até cargas de trabalho como armazenamento, EDA, IA, bancos de dados, VMware e administração."] e então selecione *VMware*.
++
+O centro de planejamento é exibido.
+
+. No menu da VMware, selecione *Explorar economias*. A calculadora de poupança é exibida.
 +
 No painel *Preferências do ambiente*, você pode selecionar a região de implantação do EVS e ajustar o Custo Total de Propriedade (TCO) e as previsões de economia de acordo.
 

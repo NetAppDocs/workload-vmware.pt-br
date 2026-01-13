@@ -33,7 +33,10 @@ Você pode alterar o nome de um conjunto de dados salvo.
 
 .Passos
 . Faça login no Workload Factory usando um dos https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["experiências de console"^] .
-. No bloco de cargas de trabalho do VMware, selecione *Centro de planejamento do VMware*.  O centro de planejamento aparece.
+. Selecione o menu image:workloads-menu-icon.png["O ícone do menu hambúrguer é usado para navegar até cargas de trabalho como armazenamento, EDA, IA, bancos de dados, VMware e administração."] e então selecione *VMware*.
++
+O centro de planejamento é exibido.
+
 . Selecione o menu Ações (...) para o conjunto de dados que você deseja renomear e selecione *Renomear*.
 . Digite um novo nome para o conjunto de dados e selecione *Salvar*.
 
@@ -46,7 +49,10 @@ Quando um conjunto de dados não for mais necessário, você pode excluí-lo a q
 
 .Passos
 . Faça login no Workload Factory usando um dos https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["experiências de console"^] .
-. No bloco de cargas de trabalho do VMware, selecione *Centro de planejamento do VMware*.  O centro de planejamento aparece.
+. Selecione o menu image:workloads-menu-icon.png["O ícone do menu hambúrguer é usado para navegar até cargas de trabalho como armazenamento, EDA, IA, bancos de dados, VMware e administração."] e então selecione *VMware*.
++
+O centro de planejamento é exibido.
+
 . Selecione o menu Ações (...) para o conjunto de dados que você deseja excluir e selecione *Excluir*.
 . Selecione *Excluir* para confirmar a ação.
 
@@ -65,8 +71,11 @@ Você pode selecionar um plano de migração e provisioná-lo para que as VMs se
 
 .Passos
 . Faça login no Workload Factory usando um dos https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["experiências de console"^] .
-. No bloco de cargas de trabalho do VMware, selecione *Centro de planejamento do VMware*.  O centro de planejamento aparece.
-. Selecione o menu *Planos de migração*.
+. Selecione o menu image:workloads-menu-icon.png["O ícone do menu hambúrguer é usado para navegar até cargas de trabalho como armazenamento, EDA, IA, bancos de dados, VMware e administração."] e então selecione *VMware*.
++
+O centro de planejamento é exibido.
+
+. Selecione *Planos de migração*.
 . Selecione o menu Ações (...) para o plano de migração que você deseja provisionar e selecione *Provisionar*.
 . Dependendo do plano de migração, consulte as instruções para implantar o sistema de arquivos:
 +
@@ -85,8 +94,11 @@ Se você precisar alterar os detalhes do comentário para um plano de migração
 
 .Passos
 . Faça login no Workload Factory usando um dos https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["experiências de console"^] .
-. No bloco de cargas de trabalho do VMware, selecione *Centro de planejamento do VMware*.  O centro de planejamento aparece.
-. Selecione os *Planos de migração*.
+. Selecione o menu image:workloads-menu-icon.png["O ícone do menu hambúrguer é usado para navegar até cargas de trabalho como armazenamento, EDA, IA, bancos de dados, VMware e administração."] e então selecione *VMware*.
++
+O centro de planejamento é exibido.
+
+. Selecione *Planos de migração*.
 . Selecione o menu Ações (...) para o plano de migração que você deseja editar e selecione *Editar comentário*.
 . Insira um comentário e selecione *Salvar*.
 
@@ -99,7 +111,10 @@ Crie um relatório em PDF ou CSV com os detalhes de um plano de migração.
 
 .Passos
 . Faça login no Workload Factory usando um dos https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["experiências de console"^] .
-. No bloco de cargas de trabalho do VMware, selecione *Centro de planejamento do VMware*.  O centro de planejamento aparece.
+. Selecione o menu image:workloads-menu-icon.png["O ícone do menu hambúrguer é usado para navegar até cargas de trabalho como armazenamento, EDA, IA, bancos de dados, VMware e administração."] e então selecione *VMware*.
++
+O centro de planejamento é exibido.
+
 . Selecione *Planos de migração*.
 . Selecione o menu Ações (...) para o plano de migração para o qual deseja criar um relatório em PDF ou CSV e selecione *Baixar plano (PDF)* ou *Baixar relatório da VM (CSV)*.
 . Insira um nome para o relatório e selecione *Salvar*.
@@ -113,8 +128,11 @@ Quando um plano de migração não for mais necessário, você poderá excluí-l
 
 .Passos
 . Faça login no Workload Factory usando um dos https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["experiências de console"^] .
-. No bloco de cargas de trabalho do VMware, selecione *Centro de planejamento do VMware*.  O centro de planejamento aparece.
-. Selecione os *Planos de migração*.
+. Selecione o menu image:workloads-menu-icon.png["O ícone do menu hambúrguer é usado para navegar até cargas de trabalho como armazenamento, EDA, IA, bancos de dados, VMware e administração."] e então selecione *VMware*.
++
+O centro de planejamento é exibido.
+
+. Selecione *Planos de migração*.
 . Selecione o menu Ações (...) para o plano de migração que você deseja excluir e selecione *Excluir*.
 . Confirme a ação selecionando *Excluir*.
 

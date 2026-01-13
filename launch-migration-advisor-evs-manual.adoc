@@ -28,7 +28,10 @@ Você pode especificar manualmente seus requisitos para máquinas virtuais no Am
 == Passos
 
 . Faça login no Workload Factory usando um dos https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["experiências de console"^] .
-. Opcionalmente, se você acessou o Workload Factory no console do Workload Factory, no bloco de cargas de trabalho do VMware, selecione *VMware planning center* e, em seguida, selecione *VMware planning center*.  O centro de planejamento do VMware é exibido.
+. Selecione o menu image:workloads-menu-icon.png["O ícone do menu hambúrguer é usado para navegar até cargas de trabalho como armazenamento, EDA, IA, bancos de dados, VMware e administração."] e então selecione *VMware*.
++
+O centro de planejamento é exibido.
+
 . Selecione *Criar plano EVS manualmente*.
 . Insira os requisitos para seu ambiente de VM.
 +

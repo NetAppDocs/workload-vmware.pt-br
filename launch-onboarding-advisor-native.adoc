@@ -27,7 +27,7 @@ Você pode migrar suas configurações atuais de máquina virtual em ambientes v
 
 .Passos
 . Faça login no Workload Factory usando um dos https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["experiências de console"^] .
-. No bloco de cargas de trabalho do VMware, selecione *Centro de planejamento do VMware*.
+. Selecione o menu image:workloads-menu-icon.png["O ícone do menu hambúrguer é usado para navegar até cargas de trabalho como armazenamento, EDA, IA, bancos de dados, VMware e administração."] e então selecione *VMware*.
 +
 O centro de planejamento é exibido.
 

@@ -15,9 +15,9 @@ Antes de criar um plano de migração, você precisa carregar os dados de invent
 
 .Passos
 . Faça login no Workload Factory usando um dos https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["experiências de console"^] .
-. No bloco de cargas de trabalho do VMware, selecione *Centro de planejamento do VMware*.
+. Selecione o menu image:workloads-menu-icon.png["O ícone do menu hambúrguer é usado para navegar até cargas de trabalho como armazenamento, EDA, IA, bancos de dados, VMware e administração."] e então selecione *VMware*.
 +
-No centro de planejamento, você pode carregar seus dados de inventário de VM, ver uploads de dados de inventário anteriores e planejar uma migração usando qualquer um dos conjuntos de dados de inventário de VM.
+O centro de planejamento está visível. A partir da central de planejamento, você pode carregar seus dados de inventário de VMs, visualizar carregamentos de dados de inventário anteriores e planejar uma migração usando qualquer um dos conjuntos de dados de inventário de VMs.
 
 . Selecione *Carregar inventário de VM*.
 . Escolha qual método de coleta de dados usar:
