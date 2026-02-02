@@ -243,7 +243,6 @@
   <block id="f9f61055f7c12e19b3df8a6b77099e20" category="list-text">Capacidade de alterar a taxa de transferência de dados, IOPS e o tamanho do sistema de arquivos, além de aumentar ou diminuir o tamanho dos volumes</block>
   <block id="958d4e659e939db8e66a192e1e4f46f9" category="list-text">Alta disponibilidade com suporte para implantações de várias zonas de disponibilidade (AZ)</block>
   <block id="0abb1f890b7655b5842e2e4271738b78" category="list-text">Redução de custo e latência de configurações de uma única AZ que usam peering VPC sem exigir um Transit Gateway</block>
-  <block id="20b4f77bd00b4f63a49ec8e08f3bf6a6" category="section-title">Custo</block>
   <block id="0b9c6eef4e3d3a222eb04e910d252339" category="section-title">Licenciamento</block>
   <block id="30d965eef5ba25c6b9998ae38270b43e" category="doc">Avisos legais</block>
   <block id="e9c44bbfd795a5d63d74c6a77afee70d" category="paragraph">Avisos legais fornecem acesso a declarações de direitos autorais, marcas registradas, patentes e muito mais.</block>
@@ -768,4 +767,132 @@
   <block id="45f41cadcd45c9728fa28d6a1cb8d206" category="list-text">No menu da VMware, selecione *Avaliar e planejar* e, em seguida, selecione *Migração para o VMware Cloud on AWS*.</block>
   <block id="9af7ccdef2ffa0cddc3f29f9b918947c" category="list-text">Selecione *Vamos começar!*. Você pode optar por não exibir esta página novamente selecionando a caixa de seleção.</block>
   <block id="034ce347094f8e8ed94fd4499edd6a02" category="paragraph">O centro de planejamento está visível. A partir da central de planejamento, você pode carregar seus dados de inventário de VMs, visualizar carregamentos de dados de inventário anteriores e planejar uma migração usando qualquer um dos conjuntos de dados de inventário de VMs.</block>
+  <block id="8f1b9e3fbbd44cf22e9f5ac28290aba0" category="doc">Análise bem arquitetada para Amazon Elastic VMware Service</block>
+  <block id="f6c8ff445c3db04296fa83d4b2790691" category="paragraph">O Workload Factory agora oferece análise automatizada bem arquitetada para seus ambientes do Amazon Elastic VMware Service (Exchange Virtual Server). Varreduras diárias identificam desalinhamentos de configuração e oferecem recomendações detalhadas de correção para ajudar você a manter operações, segurança e eficiência de custos ideais.</block>
+  <block id="7e27d05efe618fad67c0e09d831368c6" category="paragraph">As análises são realizadas usando APIs da AWS—sem necessidade de credenciais vSphere ou conectividade vCenter necessárias. Os resultados estão disponíveis na nova guia *Well-architected status* nos detalhes do seu ambiente Exchange Virtual Server.</block>
+  <block id="b49141c08a1be0c2df4a29b08af10e5e" category="paragraph">Esta versão inclui insights para:</block>
+  <block id="eb309475830119de69a172afb7c872e1" category="list-text">*Status de proteção contra parada/encerramento de instância*: Identifica nós Exchange Virtual Server sem proteção contra parada ou encerramento do EC2. Parar ou encerrar nós Exchange Virtual Server a partir do console do EC2 pode levar à indisponibilidade de dados da máquina virtual ou perda de dados.</block>
+  <block id="5e10e9fc9dc23fca9bdc4e8b00ae9469" category="list-text">*Alinhamento do posicionamento de partições de nós de cluster*: Detecta desalinhamentos de particionamento que podem resultar em perda significativa de poder de processamento ou tempo de inatividade caso uma partição falhe em uma Zona de Disponibilidade da AWS. Cada insight inclui níveis de gravidade, resultados detalhados com informações sobre os recursos afetados e procedimentos de correção passo a passo com base nas melhores práticas da AWS.</block>
+  <block id="3ac4be70f27829fbadc2c932a5b029e4" category="inline-link-macro">Implementar configurações bem arquitetadas</block>
+  <block id="0f39698d75936e2b93022b9c574c0eb3" category="paragraph"><block ref="0f39698d75936e2b93022b9c574c0eb3" category="inline-link-macro-rx"></block></block>
+  <block id="811182fb87c3ac2818bca780e05e0c5c" category="summary">Aprenda como o Workload Factory analisa as configurações do Amazon Elastic VMware Service para identificar problemas e fornecer recomendações de melhores práticas.</block>
+  <block id="b998e1ace581318d41cd37b71dfe5cac" category="doc">Análise de configuração para configurações do Exchange Virtual Server</block>
+  <block id="ee876b0ee5fe63fbc90fddc929719edd" category="paragraph">A Workload Factory analisa regularmente as configurações do Amazon Elastic VMware Service (Exchange Virtual Server) para identificar desalinhamentos com as melhores práticas. Use os resultados para melhorar o desempenho, a eficiência de custos e a conformidade.</block>
+  <block id="1c11d2e59190fe6a4e37f1e68abafcb4" category="paragraph">Principais funcionalidades incluem:</block>
+  <block id="ebc3bf5de769bc75ad8e36a90a0ed695" category="list-text">Análise diária de configuração</block>
+  <block id="8c0981b34ea19373e1dcf1c3d034f097" category="list-text">Validações automáticas de melhores práticas</block>
+  <block id="3583e4a3e4e2e122cff65b8ad9045348" category="list-text">Observabilidade proativa</block>
+  <block id="16fcd85dc9469370b62b4b46381f8e2a" category="list-text">Insights para ação</block>
+  <block id="fc34f37e0124ad3486b3476b4c3bf8ba" category="section-title">Status de arquitetura bem arquitetada</block>
+  <block id="ebd5767595bd56d8d385eee9f3e5317a" category="paragraph">No console do Workload Factory, o status de arquitetura bem projetada é listado para todos os ambientes de virtualização Exchange Virtual Server descobertos. Os status de arquitetura bem projetada são categorizados como "Otimizado" ou "Não otimizado". Selecionar *Inventory* direciona você para a guia de status de arquitetura bem projetada dentro do ambiente, onde você pode encontrar todas as configurações do ambiente.</block>
+  <block id="a4394e01049a42d14bd6258585de98b7" category="section-title">Categorias de configuração</block>
+  <block id="a5584aec16bb244b4e3daa5c56c07600" category="paragraph">O Workload Factory avalia as configurações do Exchange Virtual Server em diversas categorias para garantir a conformidade com as melhores práticas da AWS e da NetApp. Cada categoria se concentra em aspectos específicos do seu ambiente Exchange Virtual Server:</block>
+  <block id="faeaec9eda6bc4c8cb6e1a9156a858be" category="list-text">Disponibilidade</block>
+  <block id="bc2da75aa54d732564f6242c6a869d0c" category="list-text">Quão acessível e operacional a configuração do Exchange Virtual Server é esperada ser.</block>
+  <block id="2fae32629d4ef4fc6341f1751b405e45" category="list-text">Segurança</block>
+  <block id="6c02cf363d34d913745020138dfa79a6" category="list-text">Quão bem a configuração do Exchange Virtual Server protege os dados e controla o acesso (por exemplo, proteção contra parada e encerramento do EC2).</block>
+  <block id="02bc0523497de72834c4c7990e32d155" category="list-text">Resiliência</block>
+  <block id="75927f968f22d6de4aff600752ad874d" category="list-text">A capacidade da configuração do Exchange Virtual Server de se recuperar de falhas ou interrupções.</block>
+  <block id="01e12de62fa77fda2815719aed8ff892" category="paragraph-title">O que vem a seguir</block>
+  <block id="eb9cf952bc2ab533d61d93bdca17a2a1" category="section-title">Análise bem arquitetada para ambientes Exchange Virtual Server</block>
+  <block id="de4d561d9225c3e38ab8fb69845b3845" category="paragraph">A aba Well-architected fornece análises diárias automatizadas dos seus ambientes do Amazon Elastic VMware Service (Exchange Virtual Server) para garantir o alinhamento com as melhores práticas da AWS e da NetApp. A aba identifica problemas de configuração e fornece orientações detalhadas para correção, ajudando você a manter operações, segurança e eficiência de custos ideais.</block>
+  <block id="6c4617868490733aeac61d81c4d1a4e9" category="paragraph">As varreduras automáticas são realizadas usando APIs da AWS—nenhuma vSphere credencial é necessária. Os resultados são organizados por área de configuração, com cada resultado incluindo status, níveis de gravidade, detalhes dos recursos afetados e procedimentos de correção passo a passo.</block>
+  <block id="add6a35f61fed94b5f8dbfe9beecaf4e" category="inline-link-macro">Implemente configurações Exchange Virtual Server bem arquitetadas no Workload Factory</block>
+  <block id="978188131a8faf177650cc05b5648337" category="paragraph"><block ref="dc1d4508bc87fe084e4997c9ba74f001" category="inline-link-macro-rx"></block>. == Custo</block>
+  <block id="fccfcfaaf4414d768ea3ae43ac15179f" category="paragraph-title"><block ref="ef78558f80439832e0f51cc22cee8b8c" category="inline-image-macro-rx" type="image"></block>Analise insights bem arquitetados para o seu ambiente Exchange Virtual Server</block>
+  <block id="9af4d557947285cd35bace6367e46950" category="paragraph">Quando seu ambiente Exchange Virtual Server é detectado, o Workload Factory realiza automaticamente verificações diárias bem arquitetadas para identificar problemas de configuração e fornecer recomendações de correção.</block>
+  <block id="849b694f18d5f2f0d81dfe44c89029ea" category="inline-link-macro">Aprenda como implementar configurações bem arquitetadas</block>
+  <block id="5dc782d436d94215ab9c41482cff8c02" category="paragraph"><block ref="f09015d4a26b2878c118305ce478ca5f" category="inline-link-macro-rx"></block>.</block>
+  <block id="fc6485a9112c61e8addae60c9881529a" category="summary">Analise o status de arquitetura adequada para configurações do Exchange Virtual Server no Workload Factory e siga as orientações de correção com base nas melhores práticas da AWS e NetApp.</block>
+  <block id="74163cd660daafe169a986c2d540a418" category="doc">Implemente configurações Exchange Virtual Server bem arquitetadas</block>
+  <block id="55f759553ee3b4403a36ef5481e92158" category="paragraph">Utilize a análise de configuração do Workload Factory para revisar o status de arquitetura adequada das suas configurações do Amazon Elastic VMware Service (Exchange Virtual Server) e corrigir problemas que afetam a confiabilidade, segurança e custo.</block>
+  <block id="bbe48fb854ea022537208eeeff822f91" category="section-title">Sobre esta tarefa</block>
+  <block id="992962ec039b953e3a26be2bbe0354ea" category="paragraph">Análises diárias automáticas de todos os ambientes Exchange Virtual Server (EVS) descobertos, utilizando APIs da AWS, analisam sua configuração do Exchange Virtual Server e identificam possíveis problemas que podem afetar a disponibilidade, resiliência, segurança ou otimização de custos. Os resultados são organizados por área de configuração, com cada resultado incluindo status, níveis de gravidade, detalhes dos recursos afetados e procedimentos de correção passo a passo.</block>
+  <block id="46983665512cec916d21fde7e5cd3c92" category="paragraph">Principais recursos incluem:</block>
+  <block id="d5bec1394e46fe7beb3bfc357658dbee" category="list-text">*Verificações diárias automáticas*: Todos os ambientes Exchange Virtual Server (EVS) detectados são verificados automaticamente uma vez por dia para garantir que as informações permaneçam atualizadas.</block>
+  <block id="7178f1776bec85b1fa0d80ba102bb59c" category="list-text">*Digitalização baseada na API da AWS*: As digitalizações usam APIs da AWS e não exigem credenciais do vSphere ou conectividade com o seu vCenter.</block>
+  <block id="8157ddea6dba3cc417056b072b8b80f3" category="list-text">*Orientações detalhadas sobre a resolução de problemas*: Cada problema identificado inclui uma explicação clara, nível de gravidade e procedimentos de resolução passo a passo.</block>
+  <block id="1f4af7de884cca1c2591581301dfb2d3" category="list-text">*Visualização apenas de insights*: Fornece resultados e recomendações detalhadas, sem opções automatizadas de resolução de problemas.</block>
+  <block id="8a932e11437d1c455e0309f4576aecfc" category="section-title">Compreendendo insights bem arquitetados</block>
+  <block id="ba3c34291d7a94693a481a33bd15d66a" category="paragraph">A guia Well-architected exibe o seguinte:</block>
+  <block id="8092529325e1bffb70e26a2f0a96de8c" category="list-text">*Nome da configuração*: a área de configuração que está sendo avaliada.</block>
+  <block id="fb65a696254587c809d66cfee810bcb9" category="list-text">*Tags*: Rótulos que indicam as áreas de impacto (como Disponibilidade, Resiliência, Segurança).</block>
+  <block id="191370a235cb47e01e8bb5d93f56f68e" category="list-text">*Status*: "Otimizado" (nenhum problema encontrado) ou "Não otimizado" (problemas encontrados).</block>
+  <block id="7e06d612ab32ad7e5b276e570d6052db" category="list-text">*Gravidade*: o nível de importância da descoberta (por exemplo, Aviso).</block>
+  <block id="8b38d8216b4a9677a6565c6987244bfd" category="list-text">*Tipo de recurso*: O tipo de recurso da AWS que está sendo avaliado.</block>
+  <block id="aed619db5443435ab1909111087c9354" category="list-text">*Impacted resources count*: O número de recursos afetados pelo problema.</block>
+  <block id="d17c25d685d870f3162fd07bd3759e9d" category="section-title">Frequência de varredura</block>
+  <block id="ec009bfd9b9d35c799aa225e2210ad5d" category="paragraph">Varreduras bem arquitetadas são realizadas automaticamente para todas as configurações Exchange Virtual Server (EVS) detectadas. Detalhes importantes sobre o agendamento de varreduras:</block>
+  <block id="200b6c38eb872375baba819532b25c35" category="list-text">As verificações ocorrem uma vez por dia para cada configuração do Exchange Virtual Server.</block>
+  <block id="aac386e06e58e41f07f21274a2ce3cd3" category="list-text">As verificações para diferentes configurações podem ocorrer em momentos diferentes.</block>
+  <block id="cbf4a11b9106a765a8d59f5bde22b92b" category="list-text">Se uma verificação falhar em uma configuração, as verificações para outras configurações na mesma conta ainda serão tentadas.</block>
+  <block id="2e23c7712db264116ae4e9427788e890" category="list-text">O cartão de data e hora na aba de status Well-architected mostra quando a última verificação foi concluída para a configuração atual.</block>
+  <block id="6b263d7d4b1960744986bbf27f19031b" category="admonition">A execução sob demanda de varreduras bem arquitetadas não é suportada atualmente. Todas as varreduras são realizadas automaticamente na programação diária.</block>
+  <block id="6943da56f7bfefaf87bd63fa31f32343" category="inline-link">adicionadas credenciais da AWS</block>
+  <block id="de6391d66ba7208735ea026c0163bd82" category="list-text">Você deve ter <block ref="1c3a105d12a49d2155fa535811f69d6c" category="inline-link-rx"></block> com permissões de _Visualização, planejamento e análise_ para cargas de trabalho VMware.</block>
+  <block id="7c751b705d8b34dd77f43768750957ae" category="list-text">Você deve ter pelo menos um ambiente do Amazon Elastic VMware Service descoberto em sua conta da AWS.</block>
+  <block id="bcfe7032eb38dd46f96fae8e821cb2f5" category="section-title">Acesse a aba de status bem arquitetado</block>
+  <block id="9a1e15b3cbcb65c9396541d3f9c5193b" category="list-text">No menu do VMware, selecione *Inventory*.</block>
+  <block id="744339c5b641ba182ae35bbb4cfc33a4" category="list-text">Na lista *Ambientes de virtualização*, selecione o ambiente Exchange Virtual Server (EVS) descoberto para o qual deseja visualizar informações bem arquitetadas.</block>
+  <block id="97136f0d9a483a6fdfdfc42b5a59cfe7" category="list-text">Selecione a guia *Well-architected status*.</block>
+  <block id="a563ade9a0b771335a4862de1340dc24" category="paragraph">Os seguintes elementos são exibidos:</block>
+  <block id="4898eb92487a19f75bf5dd69bf5044ca" category="list-text">*Carimbo de data/hora da análise diária automática*: mostra quando a última verificação foi realizada para este ambiente.</block>
+  <block id="327c34fae86c3c2d78f5cfa847ccf61c" category="list-text">*Configurações*: Organiza as descobertas por área de configuração e exibe seu status e detalhes.</block>
+  <block id="3cecc2f68d529e2866ede0865952d12e" category="section-title">Visualizar avaliações bem arquitetadas</block>
+  <block id="dc1feaa4afec46ae71e1b4ce87c52cc9" category="section-title">Gerenciamento de nós de cluster</block>
+  <block id="1bb51698a0663f165dbe5f273c5c5673" category="paragraph">Esta verificação avalia se os nós do seu cluster Exchange Virtual Server têm a proteção adequada contra parada e encerramento do EC2 configurada.</block>
+  <block id="5a82da798b8d52a1877e0af59310a695" category="paragraph">*Status*:</block>
+  <block id="2177db57d319d13e0bf2ae908c5ad3fd" category="list-text">*Otimizado*: Todos os nós Exchange Virtual Server têm tanto a proteção contra parada do EC2 quanto a proteção contra término configuradas.</block>
+  <block id="645739737a5dbda70addbb1793f629c5" category="list-text">*Não otimizado*: Pelo menos um nó Exchange Virtual Server não possui proteção contra parada do EC2 ou proteção contra encerramento configurada.</block>
+  <block id="813bbde82916c6d5352808ebeccf0b78" category="paragraph">*Por que isso é importante*: </block>
+  <block id="47ba39ae7dbe55540d6304890df50c31" category="paragraph">Exchange Virtual Server nós ESXi devem ser gerenciados exclusivamente usando vCenter ou outras ferramentas de gerenciamento em nível VMware. Sem as proteções adequadas no nível do EC2, os nós podem ser interrompidos ou encerrados acidentalmente a partir do console do EC2, o que pode levar à indisponibilidade de dados da máquina virtual ou perda de dados.</block>
+  <block id="852fec60fb308754480e33bb8725f7d0" category="paragraph">*Para visualizar as descobertas detalhadas*:</block>
+  <block id="5b924baabf30c77d336ab00807a2e592" category="list-text">Na aba de status Well-architected, localize *Cluster node management*.</block>
+  <block id="2f0a4abe3577a24388d3503c76df1f1e" category="list-text">Selecione *View* para abrir a caixa de diálogo de resultados.</block>
+  <block id="f771ae48bfbea0e9bd4510a2944d7c27" category="paragraph">A caixa de diálogo exibe:</block>
+  <block id="beceff88971536474ce183c2c49086a3" category="list-text">*Findings summary*: Uma explicação detalhada do problema detectado em seu ambiente.</block>
+  <block id="521b5581051893604e80bc8d9a9b2a47" category="list-text">*Grade de recursos*: Uma tabela que mostra todos os nós Exchange Virtual Server e seu status de proteção, incluindo:</block>
+  <block id="1e64edfa54c534cdd3eab5eafafdc723" category="list-text">Identificador do nó</block>
+  <block id="79a2c7f2446afac26daa7c86e7c7552d" category="list-text">Status de proteção contra parada do EC2</block>
+  <block id="e26fc7b3b268da15eeb1541c027f3181" category="list-text">Status de proteção contra encerramento do EC2</block>
+  <block id="dd3ff4b0d866a1f342fc31bf10649488" category="list-text">*Ação necessária*: procedimentos passo a passo para resolução de problemas.</block>
+  <block id="2fb2741679a033656b8deb871364d1ba" category="list-text">*Recomendação*: Orientação sobre melhores práticas.</block>
+  <block id="801eec1f5aa15441f8563024525f7de2" category="paragraph">*Remediação*:</block>
+  <block id="0dcf33d70ce0ac99ae40cb18631345ea" category="paragraph">Para solucionar esse problema, habilite a proteção contra parada e encerramento para seus Exchange Virtual Server nós:</block>
+  <block id="f1f93afb3b5ca94caad02f19d5690631" category="inline-link">Documentação da AWS para habilitar a proteção contra interrupções</block>
+  <block id="3de60d42654be51b8431224f33d26e80" category="list-text">Siga o procedimento especificado em<block ref="39a165446f78431d50e534c995c99eb1" category="inline-link-rx"></block>.</block>
+  <block id="0ed28b656053bbc9750b2cb527e317cd" category="inline-link">Documentação da AWS para habilitar a proteção contra encerramento</block>
+  <block id="ecf75ab49e92be6325b9b3a05088f6a0" category="list-text">Siga o procedimento especificado em<block ref="723a60649762a3af21a294f7843f9b4c" category="inline-link-rx"></block>.</block>
+  <block id="ce129dbc888eb33b14b32d1fa034d7b7" category="section-title">Resiliência do ambiente Exchange Virtual Server</block>
+  <block id="c049b3d231c8b43b1fd719fd9a8215e5" category="paragraph">Esta verificação avalia se os nós do seu cluster Exchange Virtual Server estão distribuídos corretamente entre os grupos de posicionamento de partições.</block>
+  <block id="30323180fe07f0de31c13be7ab8edff5" category="list-text">*Otimizado*: Todos os nós são membros de um único grupo de posicionamento de partição configurado com quatro ou mais partições.</block>
+  <block id="bb6b44588620725c2fafc527d3a36108" category="list-text">*Não otimizado* se qualquer uma das seguintes condições for verdadeira:</block>
+  <block id="5ceff40676061e4d49313b93769e0092" category="list-text">Os nós são membros de mais de um grupo de placement.</block>
+  <block id="80e60c8a90e80f84fb5d310b198db129" category="list-text">Pelo menos um nó é membro de um grupo de placement não particionado.</block>
+  <block id="0a410fbafeb1762934b94f77af190020" category="list-text">Todos os nós são membros de um grupo de posicionamento particionado com menos de quatro partições.</block>
+  <block id="4c9e98121a4fe72e482aafa4e8b548dd" category="paragraph">O posicionamento correto das partições garante que os nós do seu cluster Exchange Virtual Server sejam distribuídos por várias partições de hardware com isolamento de falhas dentro de uma zona de disponibilidade da AWS. O desalinhamento pode resultar em perda significativa de poder de processamento ou tempo de inatividade caso uma partição falhe.</block>
+  <block id="c5b0e174597ee5abfad58c8d92e612ab" category="list-text">Na aba de status "Bem arquitetado", localize *resiliência do ambiente Exchange Virtual Server*.</block>
+  <block id="0e3b484d9d0687e5c5b32b8f2ad39c25" category="list-text">*Resumo das conclusões*: Uma explicação detalhada do desalinhamento do particionamento.</block>
+  <block id="ae7e05a26896efe16ac92af493496bfe" category="list-text">*Grade de recursos*: Uma tabela que mostra os nós do ambiente Exchange Virtual Server com:</block>
+  <block id="9a4247fce420e054bc53b23a77efaa26" category="list-text">Nome do grupo de colocação</block>
+  <block id="035f6ab94403d611f603c8115478662d" category="list-text">Tipo de grupo de colocação</block>
+  <block id="3cba1eb347e09ee7cfb864eb01fccac4" category="list-text">Contagem de partições do placement group</block>
+  <block id="bb4564e55d348d7a7b7061c258291236" category="list-text">*Ação necessária*: procedimentos de remediação passo a passo</block>
+  <block id="626f65450b25b8256e989a7d96d9dd8c" category="list-text">*Recomendação*: Orientação sobre melhores práticas</block>
+  <block id="1741ef00400e675fccbb26bb1e459a1c" category="paragraph">Para solucionar problemas de particionamento:</block>
+  <block id="190ae6870996db4b351353f26146dfe2" category="list-text">Ao adicionar novos nós ao ambiente Exchange Virtual Server, provisione os novos nós usando um grupo de posicionamento particionado com pelo menos quatro partições.</block>
+  <block id="9bc8310ff2c5946d58c2c80b2c49c003" category="list-text">Se os nós do cluster estiverem sendo substituídos, certifique-se de que os nós de substituição sejam provisionados usando um grupo de particionamento com pelo menos quatro partições.</block>
+  <block id="b4f5ac9ad226f10eca619b94888a2179" category="list-text">Procure consolidar todos os nós Exchange Virtual Server em um único grupo de posicionamento alinhado com as recomendações acima.</block>
+  <block id="ceb2f3b962adcc18ee161b7e14839412" category="paragraph">*Recomendação de melhores práticas*:</block>
+  <block id="fe90fa535ae4fff7efe640e795799979" category="paragraph">Ao criar ou expandir um ambiente Exchange Virtual Server, provisione todos os nós do cluster usando um único grupo de posicionamento particionado configurado com quatro ou mais partições.</block>
+  <block id="f2dd5e328e06e8cf91d1b5390e4cd997" category="paragraph">Após revisar seus insights bem arquitetados e implementar as mudanças recomendadas:</block>
+  <block id="139deeaf3f0b706655accefb5d2c2384" category="list-text">Monitore diariamente a aba de status bem arquitetado para se manter informado sobre o status do seu ambiente.</block>
+  <block id="1a2bd51e6c9820e6b845fcee8b825038" category="list-text">Siga os procedimentos de correção para quaisquer resultados "Não otimizados".</block>
+  <block id="84125effdc43235cd3e3b49417a766ea" category="list-text">Revise a documentação da AWS e da NetApp para obter práticas recomendadas adicionais.</block>
+  <block id="0b3b97923e2348ff9e1f39e9effff018" category="list-text">Considere implementar as recomendações antes de expandir seu ambiente Exchange Virtual Server.</block>
+  <block id="f6bd0d7447ff66cc6b859603a88fbde9" category="list-title">Links relacionados</block>
+  <block id="ab9fa5da04b047baee14c97180c20a08" category="inline-link">Documentação de placement groups da AWS</block>
+  <block id="5686150fea51f3258859e4fd15d8a797" category="list-text"><block ref="5686150fea51f3258859e4fd15d8a797" category="inline-link-rx"></block></block>
+  <block id="d1fabbd85b7cc34641739e525d26f652" category="section-title">01 de fevereiro de 2026</block>
+  <block id="5eb43e1edd4f0757c83c6d6f6632ff94" category="sidebar">Administrar e monitorar</block>
 </blocks>

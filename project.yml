@@ -60,6 +60,12 @@ sidebar:
         url: "/connect-sddc-to-fsx.html"
       - title: Migre seus dados para a nova infraestrutura
         url: "/migrate-data.html"
+  - title: Administrar e monitorar
+    entries:
+    - title: Análise de configuração para configurações do Exchange Virtual Server
+      url: "/configuration-analysis.html"
+    - title: Implemente configurações Exchange Virtual Server bem arquitetadas
+      url: "/view-evs-well-architected.html"
   - title: Conhecimento e apoio
     entries:
     - title: Registre-se para obter suporte

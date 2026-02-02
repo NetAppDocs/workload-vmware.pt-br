@@ -1,0 +1,42 @@
+---
+sidebar: sidebar 
+permalink: configuration-analysis.html 
+keywords: evs, well-architected, configuration analysis, best practices, recommendations 
+summary: Aprenda como o Workload Factory analisa as configurações do Amazon Elastic VMware Service para identificar problemas e fornecer recomendações de melhores práticas. 
+---
+= Análise de configuração para configurações do Exchange Virtual Server
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+A Workload Factory analisa regularmente as configurações do Amazon Elastic VMware Service (Exchange Virtual Server) para identificar desalinhamentos com as melhores práticas. Use os resultados para melhorar o desempenho, a eficiência de custos e a conformidade.
+
+Principais funcionalidades incluem:
+
+* Análise diária de configuração
+* Validações automáticas de melhores práticas
+* Observabilidade proativa
+* Insights para ação
+
+
+
+
+== Status de arquitetura bem arquitetada
+
+No console do Workload Factory, o status de arquitetura bem projetada é listado para todos os ambientes de virtualização Exchange Virtual Server descobertos. Os status de arquitetura bem projetada são categorizados como "Otimizado" ou "Não otimizado". Selecionar *Inventory* direciona você para a guia de status de arquitetura bem projetada dentro do ambiente, onde você pode encontrar todas as configurações do ambiente.
+
+
+
+== Categorias de configuração
+
+O Workload Factory avalia as configurações do Exchange Virtual Server em diversas categorias para garantir a conformidade com as melhores práticas da AWS e da NetApp. Cada categoria se concentra em aspectos específicos do seu ambiente Exchange Virtual Server:
+
+Disponibilidade:: Quão acessível e operacional a configuração do Exchange Virtual Server é esperada ser.
+Segurança:: Quão bem a configuração do Exchange Virtual Server protege os dados e controla o acesso (por exemplo, proteção contra parada e encerramento do EC2).
+Resiliência:: A capacidade da configuração do Exchange Virtual Server de se recuperar de falhas ou interrupções.
+
+
+.O que vem a seguir
+link:view-evs-well-architected.html["Implementar configurações bem arquitetadas"]

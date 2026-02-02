@@ -1,0 +1,19 @@
+= Análise bem arquitetada para Amazon Elastic VMware Service
+:allow-uri-read: 
+
+
+
+
+=== Análise bem arquitetada para Amazon Elastic VMware Service
+
+O Workload Factory agora oferece análise automatizada bem arquitetada para seus ambientes do Amazon Elastic VMware Service (Exchange Virtual Server). Varreduras diárias identificam desalinhamentos de configuração e oferecem recomendações detalhadas de correção para ajudar você a manter operações, segurança e eficiência de custos ideais.
+
+As análises são realizadas usando APIs da AWS—sem necessidade de credenciais vSphere ou conectividade vCenter necessárias. Os resultados estão disponíveis na nova guia *Well-architected status* nos detalhes do seu ambiente Exchange Virtual Server.
+
+Esta versão inclui insights para:
+
+* *Status de proteção contra parada/encerramento de instância*: Identifica nós Exchange Virtual Server sem proteção contra parada ou encerramento do EC2. Parar ou encerrar nós Exchange Virtual Server a partir do console do EC2 pode levar à indisponibilidade de dados da máquina virtual ou perda de dados.
+* *Alinhamento do posicionamento de partições de nós de cluster*: Detecta desalinhamentos de particionamento que podem resultar em perda significativa de poder de processamento ou tempo de inatividade caso uma partição falhe em uma Zona de Disponibilidade da AWS. Cada insight inclui níveis de gravidade, resultados detalhados com informações sobre os recursos afetados e procedimentos de correção passo a passo com base nas melhores práticas da AWS.
+
+
+link:view-evs-well-architected.html["Implementar configurações bem arquitetadas"]

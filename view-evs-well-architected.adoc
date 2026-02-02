@@ -1,0 +1,210 @@
+---
+sidebar: sidebar 
+permalink: view-evs-well-architected.html 
+keywords: evs, well-architected, wad, best practices, recommendations, security, resiliency 
+summary: Analise o status de arquitetura adequada para configurações do Exchange Virtual Server no Workload Factory e siga as orientações de correção com base nas melhores práticas da AWS e NetApp. 
+---
+= Implemente configurações Exchange Virtual Server bem arquitetadas
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Utilize a análise de configuração do Workload Factory para revisar o status de arquitetura adequada das suas configurações do Amazon Elastic VMware Service (Exchange Virtual Server) e corrigir problemas que afetam a confiabilidade, segurança e custo.
+
+
+
+== Sobre esta tarefa
+
+Análises diárias automáticas de todos os ambientes Exchange Virtual Server (EVS) descobertos, utilizando APIs da AWS, analisam sua configuração do Exchange Virtual Server e identificam possíveis problemas que podem afetar a disponibilidade, resiliência, segurança ou otimização de custos. Os resultados são organizados por área de configuração, com cada resultado incluindo status, níveis de gravidade, detalhes dos recursos afetados e procedimentos de correção passo a passo.
+
+Principais recursos incluem:
+
+* *Verificações diárias automáticas*: Todos os ambientes Exchange Virtual Server (EVS) detectados são verificados automaticamente uma vez por dia para garantir que as informações permaneçam atualizadas.
+* *Digitalização baseada na API da AWS*: As digitalizações usam APIs da AWS e não exigem credenciais do vSphere ou conectividade com o seu vCenter.
+* *Orientações detalhadas sobre a resolução de problemas*: Cada problema identificado inclui uma explicação clara, nível de gravidade e procedimentos de resolução passo a passo.
+* *Visualização apenas de insights*: Fornece resultados e recomendações detalhadas, sem opções automatizadas de resolução de problemas.
+
+
+
+
+=== Compreendendo insights bem arquitetados
+
+A guia Well-architected exibe o seguinte:
+
+* *Nome da configuração*: a área de configuração que está sendo avaliada.
+* *Tags*: Rótulos que indicam as áreas de impacto (como Disponibilidade, Resiliência, Segurança).
+* *Status*: "Otimizado" (nenhum problema encontrado) ou "Não otimizado" (problemas encontrados).
+* *Gravidade*: o nível de importância da descoberta (por exemplo, Aviso).
+* *Tipo de recurso*: O tipo de recurso da AWS que está sendo avaliado.
+* *Impacted resources count*: O número de recursos afetados pelo problema.
+
+
+
+
+=== Frequência de varredura
+
+Varreduras bem arquitetadas são realizadas automaticamente para todas as configurações Exchange Virtual Server (EVS) detectadas. Detalhes importantes sobre o agendamento de varreduras:
+
+* As verificações ocorrem uma vez por dia para cada configuração do Exchange Virtual Server.
+* As verificações para diferentes configurações podem ocorrer em momentos diferentes.
+* Se uma verificação falhar em uma configuração, as verificações para outras configurações na mesma conta ainda serão tentadas.
+* O cartão de data e hora na aba de status Well-architected mostra quando a última verificação foi concluída para a configuração atual.
+
+
+
+NOTE: A execução sob demanda de varreduras bem arquitetadas não é suportada atualmente. Todas as varreduras são realizadas automaticamente na programação diária.
+
+
+
+== Antes de começar
+
+* Você deve ter  https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["adicionadas credenciais da AWS"^] com permissões de _Visualização, planejamento e análise_ para cargas de trabalho VMware.
+* Você deve ter pelo menos um ambiente do Amazon Elastic VMware Service descoberto em sua conta da AWS.
+
+
+
+
+== Acesse a aba de status bem arquitetado
+
+.Passos
+. Faça login no Workload Factory usando um dos https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["experiências de console"^] .
+. Selecione o menu image:workloads-menu-icon.png["O ícone do menu hambúrguer é usado para navegar até cargas de trabalho como armazenamento, EDA, IA, bancos de dados, VMware e administração."] e então selecione *VMware*.
++
+O centro de planejamento é exibido.
+
+. No menu do VMware, selecione *Inventory*.
+. Na lista *Ambientes de virtualização*, selecione o ambiente Exchange Virtual Server (EVS) descoberto para o qual deseja visualizar informações bem arquitetadas.
+. Selecione a guia *Well-architected status*.
++
+Os seguintes elementos são exibidos:
+
++
+** *Carimbo de data/hora da análise diária automática*: mostra quando a última verificação foi realizada para este ambiente.
+** *Configurações*: Organiza as descobertas por área de configuração e exibe seu status e detalhes.
+
+
+
+
+
+
+== Visualizar avaliações bem arquitetadas
+
+
+
+=== Gerenciamento de nós de cluster
+
+Esta verificação avalia se os nós do seu cluster Exchange Virtual Server têm a proteção adequada contra parada e encerramento do EC2 configurada.
+
+*Status*:
+
+* *Otimizado*: Todos os nós Exchange Virtual Server têm tanto a proteção contra parada do EC2 quanto a proteção contra término configuradas.
+* *Não otimizado*: Pelo menos um nó Exchange Virtual Server não possui proteção contra parada do EC2 ou proteção contra encerramento configurada.
+
+
+*Por que isso é importante*: 
+
+Exchange Virtual Server nós ESXi devem ser gerenciados exclusivamente usando vCenter ou outras ferramentas de gerenciamento em nível VMware. Sem as proteções adequadas no nível do EC2, os nós podem ser interrompidos ou encerrados acidentalmente a partir do console do EC2, o que pode levar à indisponibilidade de dados da máquina virtual ou perda de dados.
+
+*Para visualizar as descobertas detalhadas*:
+
+. Na aba de status Well-architected, localize *Cluster node management*.
+. Selecione *View* para abrir a caixa de diálogo de resultados.
+
+
+A caixa de diálogo exibe:
+
+* *Findings summary*: Uma explicação detalhada do problema detectado em seu ambiente.
+* *Grade de recursos*: Uma tabela que mostra todos os nós Exchange Virtual Server e seu status de proteção, incluindo:
++
+** Identificador do nó
+** Status de proteção contra parada do EC2
+** Status de proteção contra encerramento do EC2
+
+
+* *Ação necessária*: procedimentos passo a passo para resolução de problemas.
+* *Recomendação*: Orientação sobre melhores práticas.
+
+
+*Remediação*:
+
+Para solucionar esse problema, habilite a proteção contra parada e encerramento para seus Exchange Virtual Server nós:
+
+* Siga o procedimento especificado em https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-stop-protection.html["Documentação da AWS para habilitar a proteção contra interrupções"^].
+* Siga o procedimento especificado em https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/Using_ChangingDisableAPITermination.html["Documentação da AWS para habilitar a proteção contra encerramento"^].
+
+
+
+
+=== Resiliência do ambiente Exchange Virtual Server
+
+Esta verificação avalia se os nós do seu cluster Exchange Virtual Server estão distribuídos corretamente entre os grupos de posicionamento de partições.
+
+*Status*:
+
+* *Otimizado*: Todos os nós são membros de um único grupo de posicionamento de partição configurado com quatro ou mais partições.
+* *Não otimizado* se qualquer uma das seguintes condições for verdadeira:
++
+** Os nós são membros de mais de um grupo de placement.
+** Pelo menos um nó é membro de um grupo de placement não particionado.
+** Todos os nós são membros de um grupo de posicionamento particionado com menos de quatro partições.
+
+
+
+
+*Por que isso é importante*: 
+
+O posicionamento correto das partições garante que os nós do seu cluster Exchange Virtual Server sejam distribuídos por várias partições de hardware com isolamento de falhas dentro de uma zona de disponibilidade da AWS. O desalinhamento pode resultar em perda significativa de poder de processamento ou tempo de inatividade caso uma partição falhe.
+
+*Para visualizar as descobertas detalhadas*:
+
+. Na aba de status "Bem arquitetado", localize *resiliência do ambiente Exchange Virtual Server*.
+. Selecione *View* para abrir a caixa de diálogo de resultados.
+
+
+A caixa de diálogo exibe:
+
+* *Resumo das conclusões*: Uma explicação detalhada do desalinhamento do particionamento.
+* *Grade de recursos*: Uma tabela que mostra os nós do ambiente Exchange Virtual Server com:
++
+** Identificador do nó
+** Nome do grupo de colocação
+** Tipo de grupo de colocação
+** Contagem de partições do placement group
+
+
+* *Ação necessária*: procedimentos de remediação passo a passo
+* *Recomendação*: Orientação sobre melhores práticas
+
+
+*Remediação*:
+
+Para solucionar problemas de particionamento:
+
+* Ao adicionar novos nós ao ambiente Exchange Virtual Server, provisione os novos nós usando um grupo de posicionamento particionado com pelo menos quatro partições.
+* Se os nós do cluster estiverem sendo substituídos, certifique-se de que os nós de substituição sejam provisionados usando um grupo de particionamento com pelo menos quatro partições.
+* Procure consolidar todos os nós Exchange Virtual Server em um único grupo de posicionamento alinhado com as recomendações acima.
+
+
+*Recomendação de melhores práticas*:
+
+Ao criar ou expandir um ambiente Exchange Virtual Server, provisione todos os nós do cluster usando um único grupo de posicionamento particionado configurado com quatro ou mais partições.
+
+
+
+== O que vem a seguir
+
+Após revisar seus insights bem arquitetados e implementar as mudanças recomendadas:
+
+* Monitore diariamente a aba de status bem arquitetado para se manter informado sobre o status do seu ambiente.
+* Siga os procedimentos de correção para quaisquer resultados "Não otimizados".
+* Revise a documentação da AWS e da NetApp para obter práticas recomendadas adicionais.
+* Considere implementar as recomendações antes de expandir seu ambiente Exchange Virtual Server.
+
+
+.Links relacionados
+* https://docs.netapp.com/us-en/workload-vmware/launch-migration-advisor-evs.html["Crie um plano de implantação para o Amazon EVS usando o consultor de migração"]
+* https://docs.netapp.com/us-en/workload-vmware/deploy-fsx-file-system-evs.html["Implante o sistema de arquivos FSX for ONTAP recomendado"]
+* https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/placement-groups.html["Documentação de placement groups da AWS"^]
+

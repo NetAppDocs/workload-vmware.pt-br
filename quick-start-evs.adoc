@@ -52,3 +52,10 @@ Implante o novo sistema de arquivos FSX for ONTAP que fornecerá os armazenament
 
 [role="quick-margin-para"]
 link:deploy-fsx-file-system-evs.html["Saiba como implantar seu novo sistema de arquivos FSX for ONTAP"].
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-6.png["Seis"]Analise insights bem arquitetados para o seu ambiente Exchange Virtual Server
+[role="quick-margin-para"]
+Quando seu ambiente Exchange Virtual Server é detectado, o Workload Factory realiza automaticamente verificações diárias bem arquitetadas para identificar problemas de configuração e fornecer recomendações de correção.
+
+[role="quick-margin-para"]
+link:view-evs-well-architected.html["Aprenda como implementar configurações bem arquitetadas"^].
