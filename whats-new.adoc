@@ -15,6 +15,39 @@ Saiba o que há de novo no componente VMware Migration Advisor do Workload Facto
 
 
 
+== 09 de março de 2026
+
+
+
+=== Apresentando o suporte do migration advisor para Google Cloud VMware Engine
+
+NetApp Workload Factory agora é compatível com o Google Cloud VMware Engine. Você pode migrar suas cargas de trabalho VMware locais para o Google Cloud VMware Engine usando o Google Cloud NetApp Volumes como datastores NFS externos, otimizando custos e permitindo maior controle sobre seu ambiente VMware sem a necessidade de refatorar ou replataformar seus aplicativos.
+
+O consultor de migração do Google Cloud VMware Engine fornece:
+
+* Dimensionamento e design automatizados de clusters do Google Cloud VMware Engine com suporte para tipos de nó VE1 e VE2
+* Otimização do layout de máquinas virtuais entre datastores internos do vSAN e datastores NFS externos do Google Cloud NetApp Volumes.
+* Comparação detalhada de custos e análise de TCO entre configurações somente vSAN e configurações aprimoradas com Google Cloud NetApp Volumes.
+* Suporte para os níveis de serviço Standard, Premium e Extreme do Google Cloud NetApp Volumes.
+* Implantação de Infrastructure-as-Code com Terraform para provisionamento automatizado.
+
+
+
+
+== 01 de março de 2026
+
+
+
+=== Novo marcador Ask Me disponível no Workload Factory
+
+Adicionamos um novo marcador Ask Me em todas as telas do console do Workload Factory. Essa melhoria torna mais fácil e rápido para você acessar o Ask Me sempre que precisar de ajuda. Ask Me é nosso assistente de IA, permitindo que você faça perguntas sobre seus próprios ambientes de carga de trabalho, obtenha insights personalizados diretamente do seu ambiente e consulte conversas anteriores.
+
+Você pode abrir o Ask Me em qualquer página clicando no novo marcador. Ele abre o Ask Me em um painel lateral sem interromper seu trabalho atual e oferece explicações rápidas e recomendações relacionadas ao que você está fazendo no momento.
+
+link:https://docs.netapp.com/us-en/workload-setup-admin/workload-factory-overview.html#features["Saiba mais sobre Ask Me"^]
+
+
+
 == 01 de fevereiro de 2026
 
 
