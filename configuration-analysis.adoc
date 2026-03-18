@@ -23,19 +23,67 @@ Principais funcionalidades incluem:
 
 
 
-== Status de arquitetura bem arquitetada
+== Como funciona
 
-No console do Workload Factory, o status de arquitetura bem projetada é listado para todos os ambientes de virtualização Exchange Virtual Server descobertos. Os status de arquitetura bem projetada são categorizados como "Otimizado" ou "Não otimizado". Selecionar *Inventory* direciona você para a guia de status de arquitetura bem projetada dentro do ambiente, onde você pode encontrar todas as configurações do ambiente.
+O Workload Factory analisa diariamente suas cargas de trabalho em execução em implantações de sistemas de arquivos Amazon FSx for NetApp ONTAP. A análise fornece status bem arquitetado, insights e recomendações.
+
+Após a conclusão da análise diária, as configurações aparecem como "otimizadas" ou "não otimizadas" no painel Well-architected da implantação. Você encontrará a pontuação total de otimização, problemas de configuração por categoria e uma lista de problemas de configuração e recomendações. Você pode revisar as recomendações para problemas de configuração. Alguns problemas podem ser corrigidos automaticamente pelo Workload Factory, enquanto outros exigem intervenção manual. Nesse caso, o Workload Factory fornece instruções detalhadas para ajudar você a implementar as alterações recomendadas.
+
+Você pode descartar a análise de configurações que não se aplicam aos seus ambientes. Isso evita alertas desnecessários e resultados de otimização imprecisos. Ao descartar uma análise de configuração específica, Workload Factory não inclui a configuração na pontuação total de otimização.
 
 
 
-== Categorias de configuração
+== Por que isso importa
 
-O Workload Factory avalia as configurações do Exchange Virtual Server em diversas categorias para garantir a conformidade com as melhores práticas da AWS e da NetApp. Cada categoria se concentra em aspectos específicos do seu ambiente Exchange Virtual Server:
+O Workload Factory aplica as melhores práticas a grandes ambientes de armazenamento, banco de dados e VMware, combinando avaliação contínua com insights de recomendações e remediação. As correções automatizadas aplicadas no console do Workload Factory reduzem erros humanos, garantem gerenciamento uniforme e preservam o desempenho e a confiabilidade em toda a sua infraestrutura de cargas de trabalho.
 
-Disponibilidade:: Quão acessível e operacional a configuração do Exchange Virtual Server é esperada ser.
-Segurança:: Quão bem a configuração do Exchange Virtual Server protege os dados e controla o acesso (por exemplo, proteção contra parada e encerramento do EC2).
-Resiliência:: A capacidade da configuração do Exchange Virtual Server de se recuperar de falhas ou interrupções.
+
+
+== Requisitos de análise
+
+Para uma análise completa da configuração, você deve fazer o seguinte:
+
+* Associe um link. A conectividade de links permite que o Workload Factory analise todas as configurações do sistema de arquivos, como proteção de dados e desempenho.
++
+link:https://docs.netapp.com/us-en/workload-fsx-ontap/create-link.html["Aprenda como associar um link existente ou criar e associar um novo link"].
+
+* Conceda permissões de _visualização, planejamento e análise_ para cargas de trabalho VMware.
++
+link:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["Aprenda como conceder permissões a uma conta da AWS"^]
+
+* Você deve ter pelo menos um ambiente do Amazon Elastic VMware Service descoberto em sua conta da AWS.
+
+
+
+
+== Melhores práticas e recomendações para cargas de trabalho do Exchange Virtual Server
+
+Workload Factory fornece as melhores práticas e recomendações para operar cargas de trabalho do Amazon Elastic VMware Service (Exchange Virtual Server) com arquitetura adequada. A análise de arquitetura adequada avalia as configurações do Exchange Virtual Server para ajudar a garantir que seus ambientes VMware estejam otimizados para confiabilidade, segurança, excelência operacional, otimização de custos e eficiência de desempenho. Na guia de status de arquitetura adequada no VMware, você encontrará insights e recomendações para ajudar a implementar as melhores práticas de arquitetura adequada para seus ambientes Exchange Virtual Server.
+
+A análise bem arquitetada categoriza as configurações nos seguintes pilares da estrutura: _reliability_ e _security_.
+
+
+
+=== Confiabilidade
+
+A confiabilidade garante que as workloads executem suas funções pretendidas de forma correta e consistente, mesmo quando ocorrem interrupções.
+
+* *resiliência do Exchange Virtual Server*
++
+Certifique-se de que os nós do seu cluster Exchange Virtual Server estejam distribuídos corretamente entre os grupos de posicionamento de partições. Todos os nós devem ser membros de um único grupo de posicionamento de partições configurado com quatro ou mais partições. O posicionamento correto das partições garante que os nós do seu cluster Exchange Virtual Server estejam distribuídos por várias partições de hardware com isolamento de falhas dentro de uma zona de disponibilidade da AWS. O desalinhamento pode resultar em perda significativa de poder de processamento ou tempo de inatividade caso uma partição falhe.
+
+
+
+
+
+=== Segurança
+
+A segurança enfatiza proteger dados, sistemas e ativos por meio de avaliações de risco e estratégias de mitigação.
+
+* *Gerenciamento de nós de cluster*
++
+Certifique-se de que os nós do seu cluster Exchange Virtual Server tenham a proteção adequada contra parada e encerramento do EC2 configurada. Os nós ESXi do Exchange Virtual Server devem ser gerenciados exclusivamente usando vCenter ou outras ferramentas de gerenciamento em nível VMware. Sem as proteções adequadas no nível do EC2, os nós podem ser interrompidos ou encerrados acidentalmente a partir do console do EC2, o que pode levar à indisponibilidade de dados da máquina virtual ou perda de dados.
+
 
 
 .O que vem a seguir
