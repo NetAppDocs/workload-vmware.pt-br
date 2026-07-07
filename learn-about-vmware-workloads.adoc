@@ -84,7 +84,11 @@ A aba Well-architected fornece análises diárias automatizadas dos seus ambient
 
 As varreduras automáticas são realizadas usando APIs da AWS—nenhuma vSphere credencial é necessária. Os resultados são organizados por área de configuração, com cada resultado incluindo status, níveis de gravidade, detalhes dos recursos afetados e procedimentos de correção passo a passo.
 
-link:view-evs-well-architected.html["Implemente configurações Exchange Virtual Server bem arquitetadas no Workload Factory"]. == Custo
+link:view-evs-well-architected.html["Implemente configurações Exchange Virtual Server bem arquitetadas no Workload Factory"].
+
+
+
+== Custo
 
 Não há custo para usar o Workload Factory para VMware.
 
@@ -105,7 +109,6 @@ O Workload Factory é suportado em todas as regiões comerciais onde o FSx for O
 As seguintes regiões da AWS não são suportadas:
 
 * Regiões da China
-* Regiões GovCloud (EUA)
 * Nuvem Secreta
 * Nuvem Top Secret
 

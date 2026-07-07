@@ -623,7 +623,6 @@
   <block id="df3078cbf2344fdc96564c4276d42b3a" category="paragraph">O Workload Factory é suportado em todas as regiões comerciais onde o FSx for ONTAP é suportado.<block ref="54b85ac4e794c565ea8c7aad421e6e67" category="inline-link-rx"></block></block>
   <block id="186585d175a4fff1722ac82a5520c584" category="paragraph">As seguintes regiões da AWS não são suportadas:</block>
   <block id="cc6dcf46ebcb08f1caa420526cc0ab18" category="list-text">Regiões da China</block>
-  <block id="1411debdb32e6b128ca27ec92a708cbd" category="list-text">Regiões GovCloud (EUA)</block>
   <block id="ecd96786b112acf6970d6aaf3be575ca" category="list-text">Nuvem Secreta</block>
   <block id="151ef168e17772f7a361db78a0c86552" category="list-text">Nuvem Top Secret</block>
   <block id="262fa4a3da671ed4e99add58ab265149" category="doc">Avisos legais para NetApp Workload Factory para VMware</block>
@@ -778,7 +777,6 @@
   <block id="de4d561d9225c3e38ab8fb69845b3845" category="paragraph">A aba Well-architected fornece análises diárias automatizadas dos seus ambientes do Amazon Elastic VMware Service (Exchange Virtual Server) para garantir o alinhamento com as melhores práticas da AWS e da NetApp. A aba identifica problemas de configuração e fornece orientações detalhadas para correção, ajudando você a manter operações, segurança e eficiência de custos ideais.</block>
   <block id="6c4617868490733aeac61d81c4d1a4e9" category="paragraph">As varreduras automáticas são realizadas usando APIs da AWS—nenhuma vSphere credencial é necessária. Os resultados são organizados por área de configuração, com cada resultado incluindo status, níveis de gravidade, detalhes dos recursos afetados e procedimentos de correção passo a passo.</block>
   <block id="add6a35f61fed94b5f8dbfe9beecaf4e" category="inline-link-macro">Implemente configurações Exchange Virtual Server bem arquitetadas no Workload Factory</block>
-  <block id="978188131a8faf177650cc05b5648337" category="paragraph"><block ref="dc1d4508bc87fe084e4997c9ba74f001" category="inline-link-macro-rx"></block>. == Custo</block>
   <block id="fccfcfaaf4414d768ea3ae43ac15179f" category="paragraph-title"><block ref="ef78558f80439832e0f51cc22cee8b8c" category="inline-image-macro-rx" type="image"></block>Analise insights bem arquitetados para o seu ambiente Exchange Virtual Server</block>
   <block id="9af4d557947285cd35bace6367e46950" category="paragraph">Quando seu ambiente Exchange Virtual Server é detectado, o Workload Factory realiza automaticamente verificações diárias bem arquitetadas para identificar problemas de configuração e fornecer recomendações de correção.</block>
   <block id="849b694f18d5f2f0d81dfe44c89029ea" category="inline-link-macro">Aprenda como implementar configurações bem arquitetadas</block>
@@ -1064,4 +1062,15 @@
   <block id="7d7265a6929882bb433fc74e8bee871a" category="paragraph">A segurança enfatiza proteger dados, sistemas e ativos por meio de avaliações de risco e estratégias de mitigação.</block>
   <block id="9bcd13fbdffcddd84a7b637f7ec4e9b8" category="list-text">*Gerenciamento de nós de cluster*</block>
   <block id="240380a5970626d74754b96038898f5e" category="paragraph">Certifique-se de que os nós do seu cluster Exchange Virtual Server tenham a proteção adequada contra parada e encerramento do EC2 configurada. Os nós ESXi do Exchange Virtual Server devem ser gerenciados exclusivamente usando vCenter ou outras ferramentas de gerenciamento em nível VMware. Sem as proteções adequadas no nível do EC2, os nós podem ser interrompidos ou encerrados acidentalmente a partir do console do EC2, o que pode levar à indisponibilidade de dados da máquina virtual ou perda de dados.</block>
+  <block id="ed577820f4fec6bbade3e14c5eb7020d" category="doc">Suporte para AWS GovCloud (US) no NetApp Workload Factory</block>
+  <block id="8b15ccb7fd3de568f0d6670c4c2d0d62" category="paragraph">NetApp Workload Factory é compatível com contas AWS GovCloud (US). Usando uma conta GovCloud, você pode implantar e gerenciar cargas de trabalho de armazenamento nas regiões AWS GovCloud (US).</block>
+  <block id="caa606c0b1085a846c384cef14c3a17f" category="doc">Suporte para instâncias i7i.metal-24xl no calculadora de TCO do Exchange Virtual Server</block>
+  <block id="b055674b094a39e8822f5941fd1ddf8d" category="paragraph">A calculadora de TCO do Exchange Virtual Server agora oferece suporte a instâncias EC2 AWS i7i.metal-24xl como hosts de cluster. Comparadas às configurações i4i.metal, essas instâncias reduzem o custo inicial do Exchange Virtual Server em cerca de 33% para computação e 25% para armazenamento vSAN.</block>
+  <block id="bbc7cb1849fc26e314ad21ecd99ca5fe" category="paragraph">A calculadora compara automaticamente os dois tipos de instância e seleciona a opção mais econômica. Uma nova seção de comparação mostra as configurações de host do Exchange Virtual Server lado a lado, facilitando a busca pela configuração ideal para suas necessidades.</block>
+  <block id="0665cdd8950328e06e0db9b1e16938d3" category="inline-link-macro">Calcule a economia estimada para Exchange Virtual Server</block>
+  <block id="86271c8c1063215a7f1ff0f45240c576" category="paragraph"><block ref="86271c8c1063215a7f1ff0f45240c576" category="inline-link-macro-rx"></block></block>
+  <block id="1449013968addffe716f61980587a6e9" category="paragraph"><block ref="dc1d4508bc87fe084e4997c9ba74f001" category="inline-link-macro-rx"></block>.</block>
+  <block id="20b4f77bd00b4f63a49ec8e08f3bf6a6" category="section-title">Custo</block>
+  <block id="b2384f97ee5bce1c28f5573e6878c9c1" category="section-title">06 de julho de 2026</block>
+  <block id="92ee6e4d72d15689a675017ce0db2fa1" category="section-title">31 de maio de 2026</block>
 </blocks>

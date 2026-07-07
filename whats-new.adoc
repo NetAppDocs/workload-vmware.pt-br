@@ -15,6 +15,30 @@ Saiba o que há de novo no componente VMware Migration Advisor do Workload Facto
 
 
 
+== 06 de julho de 2026
+
+
+
+=== Suporte para instâncias i7i.metal-24xl no calculadora de TCO do Exchange Virtual Server
+
+A calculadora de TCO do Exchange Virtual Server agora oferece suporte a instâncias EC2 AWS i7i.metal-24xl como hosts de cluster. Comparadas às configurações i4i.metal, essas instâncias reduzem o custo inicial do Exchange Virtual Server em cerca de 33% para computação e 25% para armazenamento vSAN.
+
+A calculadora compara automaticamente os dois tipos de instância e seleciona a opção mais econômica. Uma nova seção de comparação mostra as configurações de host do Exchange Virtual Server lado a lado, facilitando a busca pela configuração ideal para suas necessidades.
+
+link:calculate-evs-savings.html["Calcule a economia estimada para Exchange Virtual Server"]
+
+
+
+== 31 de maio de 2026
+
+
+
+=== Suporte para AWS GovCloud (US) no NetApp Workload Factory
+
+NetApp Workload Factory é compatível com contas AWS GovCloud (US). Usando uma conta GovCloud, você pode implantar e gerenciar cargas de trabalho de armazenamento nas regiões AWS GovCloud (US).
+
+
+
 == 09 de março de 2026
 
 
