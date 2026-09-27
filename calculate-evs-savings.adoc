@@ -17,6 +17,7 @@ Se a calculadora de economia determinar que o armazenamento mais econômico é o
 
 
 
+[[explore-savings-for-evs-environments]]
 == Explore economias para ambientes de SVE
 
 Siga estas etapas para explorar possíveis economias em uma migração planejada para um ambiente Amazon EVS.

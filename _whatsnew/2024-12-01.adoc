@@ -4,6 +4,7 @@
 
 
 
+[[amazon-ec2-migration-advisor-improvements]]
 === Melhorias do consultor de migração do Amazon EC2
 
 Esta versão do NetApp Workload Factory para VMware apresenta diversas melhorias na experiência do consultor de migração:

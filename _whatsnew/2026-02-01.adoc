@@ -4,6 +4,7 @@
 
 
 
+[[well-architected-analysis-for-amazon-elastic-vmware-service]]
 === Análise bem arquitetada para Amazon Elastic VMware Service
 
 O Workload Factory agora oferece análise automatizada bem arquitetada para seus ambientes do Amazon Elastic VMware Service (Exchange Virtual Server). Varreduras diárias identificam desalinhamentos de configuração e oferecem recomendações detalhadas de correção para ajudar você a manter operações, segurança e eficiência de custos ideais.

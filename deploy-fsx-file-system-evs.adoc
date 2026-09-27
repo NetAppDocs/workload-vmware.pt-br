@@ -17,6 +17,7 @@ Dependendo da política e das permissões que você adicionou à sua conta do Wo
 
 
 
+[[requirements]]
 == Requisitos
 
 * Você deve ter uma assinatura do Amazon Elastic VMware Service.
@@ -25,6 +26,7 @@ Dependendo da política e das permissões que você adicionou à sua conta do Wo
 
 
 
+[[considerations]]
 == Considerações
 
 * Você pode usar a opção criação rápida ou criação avançada. Advanced Create oferece alguns parâmetros de armazenamento adicionais que você pode personalizar. https://docs.netapp.com/us-en/workload-fsx-ontap/create-file-system.html["Veja o que essas duas opções oferecem"].
@@ -33,6 +35,7 @@ Dependendo da política e das permissões que você adicionou à sua conta do Wo
 
 
 
+[[steps]]
 == Passos
 
 . Na parte inferior da página *Plano de revisão*, selecione *implantar* e a página criar um sistema de arquivos FSX for ONTAP é exibida.
@@ -124,6 +127,7 @@ Em ambos os casos, você pode monitorar o progresso da criação no CloudFormati
 
 
 
+[[result]]
 == Resultado
 
 O sistema de arquivos FSX for ONTAP é implantado. Agora você pode usar o modelo do AWS CloudFormation no Codebox para implantar a configuração de VM recomendada no seu ambiente do Amazon Elastic VMware Service.

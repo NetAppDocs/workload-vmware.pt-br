@@ -15,6 +15,7 @@ NetApp Workload Factory for VMware fornece ferramentas para migrar seus dados de
 
 
 
+[[what-is-netapp-workload-factory-for-vmware]]
 == O que é o NetApp Workload Factory para VMware?
 
 NetApp Workload Factory para VMware oferece um centro de planejamento e consultores de migração que permitem analisar as configurações atuais de suas máquinas virtuais em ambientes locais vSphere. Os consultores de migração então geram um plano para implantar layouts de máquinas virtuais recomendados no Amazon Exchange Virtual Server, Amazon EC2, clusters VMware Cloud on AWS vSphere ou Google Cloud VMware Engine, usando armazenamento nativo da nuvem personalizado como datastores externos. Para ambientes AWS, isso inclui Amazon FSx for NetApp ONTAP file systems. Para ambientes Google Cloud, isso inclui Google Cloud NetApp Volumes. O centro de planejamento, atuando como o painel do Workload Factory para VMware, permite gerenciar conjuntos de dados de inventário de máquinas virtuais salvos, planos de migração salvos e provisionar qualquer um dos planos de migração que você salvou.
@@ -25,6 +26,7 @@ Para obter mais informações sobre o Workload Factory, consulte o https://docs.
 
 
 
+[[how-the-vmware-migration-advisors-work]]
 == Como funcionam os consultores de migração da VMware
 
 Os consultores de migração podem ajudar você a mover máquinas virtuais (VMs) locais e seus dados, executadas em qualquer datastore compatível com VMware, para datastores do Amazon Exchange Virtual Server, Amazon EC2, VMware Cloud ou Google Cloud VMware Engine, o que inclui datastores NFS suplementares em um sistema de arquivos FSx for ONTAP ou Google Cloud NetApp Volumes.
@@ -33,6 +35,7 @@ Observe que você pode anexar até quatro (4) volumes do FSX for ONTAP a um úni
 
 
 
+[[what-you-can-do-with-the-migration-advisors]]
 == O que você pode fazer com os consultores de migração
 
 Os consultores de migração fornecem as seguintes funcionalidades:
@@ -48,6 +51,7 @@ O assistente de migração oferece suporte ao planejamento de configuração par
 
 
 
+[[benefits-of-using-the-migration-advisors]]
 == Benefícios de usar consultores de migração
 
 A migração de partes da sua infraestrutura atual para Amazon EC2, Amazon Exchange Virtual Server, VMware Cloud on AWS ou Google Cloud VMware Engine usando armazenamento nativo da nuvem como NFS datastores externos oferece os seguintes benefícios:
@@ -63,6 +67,7 @@ A migração de partes da sua infraestrutura atual para Amazon EC2, Amazon Excha
 
 
 
+[[tools-to-use-netapp-workload-factory]]
 == Ferramentas para usar o NetApp Workload Factory
 
 Você pode usar o NetApp Workload Factory com as seguintes ferramentas:
@@ -73,11 +78,12 @@ Você pode usar o NetApp Workload Factory com as seguintes ferramentas:
 * *CloudShell CLI*: O Workload Factory inclui um CloudShell CLI para gerenciar e operar ambientes AWS e NetApp em todas as contas a partir de um único CLI baseado em navegador. Acesse o CloudShell na barra superior do console do Workload Factory.
 * *API REST*: Use as APIs REST do Workload Factory para implantar e gerenciar seu FSx para sistemas de arquivos ONTAP e outros recursos da AWS.
 * *CloudFormation*: use o código do AWS CloudFormation para executar as ações definidas no console do Workload Factory para modelar, provisionar e gerenciar recursos da AWS e de terceiros da pilha do CloudFormation na sua conta da AWS.
-* *Provedor do Terraform NetApp Workload Factory*: use o Terraform para criar e gerenciar fluxos de trabalho de infraestrutura gerados no console do Workload Factory.
+* *NetApp Terraform provider*: Use o Terraform para criar e gerenciar fluxos de trabalho de infraestrutura gerados no console do Workload Factory.
 
 
 
 
+[[well-architected-analysis-for-evs-environments]]
 == Análise bem arquitetada para ambientes Exchange Virtual Server
 
 A aba Well-architected fornece análises diárias automatizadas dos seus ambientes do Amazon Elastic VMware Service (Exchange Virtual Server) para garantir o alinhamento com as melhores práticas da AWS e da NetApp. A aba identifica problemas de configuração e fornece orientações detalhadas para correção, ajudando você a manter operações, segurança e eficiência de custos ideais.
@@ -88,6 +94,7 @@ link:view-evs-well-architected.html["Implemente configurações Exchange Virtual
 
 
 
+[[cost]]
 == Custo
 
 Não há custo para usar o Workload Factory para VMware.
@@ -96,12 +103,14 @@ Você precisará pagar pelos recursos da AWS que implantar com base nas recomend
 
 
 
+[[licensing]]
 == Licenciamento
 
 Não são necessárias licenças especiais da NetApp para usar o Workload Factory para VMware.
 
 
 
+[[regions]]
 == Regiões
 
 O Workload Factory é suportado em todas as regiões comerciais onde o FSx for ONTAP é suportado. https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/["Veja as regiões da Amazon suportadas."^]

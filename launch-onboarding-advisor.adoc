@@ -19,6 +19,7 @@ Observe que você precisa ter um nome de usuário e uma senha para acessar o Wor
 
 
 
+[[create-a-deployment-plan-based-on-an-on-premises-vsphere-environment]]
 == Crie um plano de implantação com base em um ambiente vSphere local
 
 Você pode migrar suas configurações atuais de máquina virtual em ambientes vSphere locais para máquinas virtuais no VMware Cloud on AWS e usar sistemas de arquivos personalizados do Amazon FSX for NetApp ONTAP como datastores externos.

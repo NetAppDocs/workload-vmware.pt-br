@@ -15,18 +15,21 @@ O centro de planejamento do VMware permite que você carregue novos dados de inv
 
 
 
+[[manage-vm-inventory-data]]
 == Gerenciar dados de inventário de VM
 
 Use o centro de planejamento para criar e gerenciar dados de inventário de VM.
 
 
 
+[[upload-vm-inventory-data]]
 === Carregar dados de inventário de VM
 
 Você pode carregar dados de inventário de VM quando estiver pronto para usar o Workload Factory para explorar opções de migração para ambientes Amazon AWS.  Consultelink:upload-vm-inventory.html["Carregar dados de inventário de VM"] para obter instruções.
 
 
 
+[[rename-a-dataset]]
 === Renomear um conjunto de dados
 
 Você pode alterar o nome de um conjunto de dados salvo.
@@ -43,6 +46,7 @@ O centro de planejamento é exibido.
 
 
 
+[[delete-a-dataset]]
 === Excluir um conjunto de dados
 
 Quando um conjunto de dados não for mais necessário, você pode excluí-lo a qualquer momento.
@@ -59,12 +63,14 @@ O centro de planejamento é exibido.
 
 
 
+[[manage-migration-plans]]
 == Gerenciar planos de migração
 
 Use o centro de migração para criar e gerenciar planos de migração.
 
 
 
+[[provision-a-migration-plan]]
 === Provisionar um plano de migração
 
 Você pode selecionar um plano de migração e provisioná-lo para que as VMs sejam migradas para o ambiente Amazon AWS de sua escolha.
@@ -88,6 +94,7 @@ O centro de planejamento é exibido.
 
 
 
+[[edit-the-comment-for-a-migration-plan]]
 === Editar o comentário para um plano de migração
 
 Se você precisar alterar os detalhes do comentário para um plano de migração, edite o comentário no centro de planejamento.
@@ -105,6 +112,7 @@ O centro de planejamento é exibido.
 
 
 
+[[create-a-pdf-or-csv-report-of-a-migration-plan]]
 === Crie um relatório em PDF ou CSV de um plano de migração.
 
 Crie um relatório em PDF ou CSV com os detalhes de um plano de migração.
@@ -122,6 +130,7 @@ O centro de planejamento é exibido.
 
 
 
+[[delete-a-migration-plan]]
 === Excluir um plano de migração
 
 Quando um plano de migração não for mais necessário, você poderá excluí-lo a qualquer momento.

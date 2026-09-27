@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: view-evs-well-architected.html 
-keywords: evs, well-architected, wad, best practices, recommendations, security, resiliency 
+keywords: evs, well-architected, best practices, recommendations, security, resiliency 
 summary: Analise o status de arquitetura adequada para configurações do Exchange Virtual Server no Workload Factory e siga as orientações de correção com base nas melhores práticas da AWS e NetApp. 
 ---
 = Implemente configurações Exchange Virtual Server bem arquitetadas
@@ -15,6 +15,7 @@ Utilize a análise de configuração do Workload Factory para revisar o status d
 
 
 
+[[about-this-task]]
 == Sobre esta tarefa
 
 Análises diárias automáticas de todos os ambientes Exchange Virtual Server (EVS) descobertos, utilizando APIs da AWS, analisam sua configuração do Exchange Virtual Server e identificam possíveis problemas que podem afetar a disponibilidade, resiliência, segurança ou otimização de custos. Os resultados são organizados por área de configuração, com cada resultado incluindo status, níveis de gravidade, detalhes dos recursos afetados e procedimentos de correção passo a passo.
@@ -29,6 +30,7 @@ Principais recursos incluem:
 
 
 
+[[understanding-well-architected-insights]]
 === Compreendendo insights bem arquitetados
 
 A guia Well-architected exibe o seguinte:
@@ -43,6 +45,7 @@ A guia Well-architected exibe o seguinte:
 
 
 
+[[scan-frequency]]
 === Frequência de varredura
 
 Varreduras bem arquitetadas são realizadas automaticamente para todas as configurações Exchange Virtual Server (EVS) detectadas. Detalhes importantes sobre o agendamento de varreduras:
@@ -58,6 +61,7 @@ NOTE: A execução sob demanda de varreduras bem arquitetadas não é suportada 
 
 
 
+[[before-you-begin]]
 == Antes de começar
 
 * Você deve ter  https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["adicionadas credenciais da AWS"^] com permissões de _Visualização, planejamento e análise_ para cargas de trabalho VMware.
@@ -66,6 +70,7 @@ NOTE: A execução sob demanda de varreduras bem arquitetadas não é suportada 
 
 
 
+[[access-the-well-architected-status-tab]]
 == Acesse a aba de status bem arquitetado
 
 .Passos
@@ -89,10 +94,12 @@ Os seguintes elementos são exibidos:
 
 
 
+[[view-well-architected-assessments]]
 == Visualizar avaliações bem arquitetadas
 
 
 
+[[cluster-node-management]]
 === Gerenciamento de nós de cluster
 
 Esta verificação avalia se os nós do seu cluster Exchange Virtual Server têm a proteção adequada contra parada e encerramento do EC2 configurada.
@@ -137,6 +144,7 @@ Para solucionar esse problema, habilite a proteção contra parada e encerrament
 
 
 
+[[evs-environment-resiliency]]
 === Resiliência do ambiente Exchange Virtual Server
 
 Esta verificação avalia se os nós do seu cluster Exchange Virtual Server estão distribuídos corretamente entre os grupos de posicionamento de partições.
@@ -193,6 +201,7 @@ Ao criar ou expandir um ambiente Exchange Virtual Server, provisione todos os n�
 
 
 
+[[whats-next]]
 == O que vem a seguir
 
 Após revisar seus insights bem arquitetados e implementar as mudanças recomendadas:

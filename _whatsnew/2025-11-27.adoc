@@ -4,6 +4,7 @@
 
 
 
+[[calculate-cost-savings-of-migrating-to-amazon-elastic-vmware-service-for-specific-regions]]
 === Calcule a economia de custos da migração para o Amazon Elastic VMware Service em regiões específicas.
 
 Agora você pode explorar o valor de diferentes opções de implantação para sua migração para a nuvem, otimizar os esforços investidos na avaliação de soluções e analisar em detalhes as soluções que têm o potencial de gerar valor e economia na nuvem.
