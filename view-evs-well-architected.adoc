@@ -4,7 +4,7 @@ permalink: view-evs-well-architected.html
 keywords: evs, well-architected, best practices, recommendations, security, resiliency 
 summary: Analise o status de arquitetura adequada para configurações do Exchange Virtual Server no Workload Factory e siga as orientações de correção com base nas melhores práticas da AWS e NetApp. 
 ---
-= Implemente configurações Exchange Virtual Server bem arquitetadas
+= Revise as descobertas bem arquitetadas do Exchange Virtual Server no Workload Factory para VMware
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/

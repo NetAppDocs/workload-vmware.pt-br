@@ -257,7 +257,6 @@
   <block id="2352c4e1f4d0024ade0869e00e6243f4" category="paragraph"><block ref="2352c4e1f4d0024ade0869e00e6243f4" category="inline-link-macro-rx"></block></block>
   <block id="c0227cef6f07a8cd2ac72f2945b031aa" category="section-title">Código aberto</block>
   <block id="9b73989307c1975dfa4d5e1581e4afe8" category="paragraph">Os arquivos de aviso fornecem informações sobre direitos autorais de terceiros e licenças usadas no software NetApp.</block>
-  <block id="2066c133f5c3f51fd034acd791ddedb4" category="doc">Migre seus dados para a nova infraestrutura</block>
   <block id="cc788b7e72b2a734dd0985bd1e0e9fe3" category="inline-link">Documentação do Amazon FSX para NetApp ONTAP</block>
   <block id="0eb8b604056cff3e56816d6bff3e3b57" category="paragraph">Para obter informações sobre como gerenciar seu sistema de arquivos FSX for ONTAP, acesse<block ref="fbab171416a38225bcf6963b32f6d497" category="inline-link-rx"></block> para ver os recursos de backup e proteção que você pode usar.</block>
   <block id="2281d47edbe43f0701ce273bb95a9f2f" category="summary">Use uma ferramenta como o VMware Hybrid Cloud Extension para mover seus dados do antigo armazenamento de máquina virtual para o FSX for NetApp ONTAP volumes conectados às novas máquinas virtuais. A funcionalidade de núcleo do VMware HCX permite migrar cargas de trabalho do data center local para o SDDC de forma transparente.</block>
@@ -324,17 +323,8 @@
   <block id="1d949c7c5600289e10795f178278edd1" category="section-title">7 de julho de 2024</block>
   <block id="1a61f87dd9021f3f5868a4a4418a6116" category="sidebar">Simplifique as migrações de ambientes vSphere locais para o VMware Cloud na AWS e implemente sistemas de arquivos FSX para ONTAP personalizados como datastores externos.</block>
   <block id="be11c74c1dd7f307bb80183a90dc2067" category="sidebar">Comece agora</block>
-  <block id="aebd84094284845d3e849298624e3ce8" category="sidebar">Início rápido: Migre para o VMware Cloud na AWS</block>
-  <block id="a529cc49011230ace4aa0d605878b3a7" category="sidebar">Início rápido: Migrar para o Amazon EC2</block>
   <block id="381900c88e88ebdef33aeaaba326b5d9" category="sidebar">Migre para o VMware Cloud na AWS</block>
-  <block id="a178c2b3af2dda868c902f74b1f1d2a0" category="sidebar">Crie um plano de implantação usando o consultor de migração</block>
-  <block id="1a686aeebb374b70871c49c0a3a9e04d" category="sidebar">Conete o FSX para sistemas de arquivos ONTAP ao VMware Cloud na AWS</block>
-  <block id="114262d24985ba4272fb41b60a7a9b81" category="sidebar">Documentos de workloads da VMware</block>
   <block id="7d0ee6fed10d3d4e5c9ee496729ab519" category="sidebar">Notas de lançamento</block>
-  <block id="33871b6190a8d5adbe8b15282054766c" category="sidebar">O que há de novo</block>
-  <block id="aaa94acfa678f349154ecc14f4c48e40" category="sidebar">Início rápido para migrar para o VMware Cloud na AWS</block>
-  <block id="8ca85249d2f6a1036c376d3281e10cd7" category="sidebar">Início rápido para migrar para o Amazon EC2</block>
-  <block id="48b99c17fb09e3417fa2dfdd982e21b8" category="sidebar">Conete o FSX for ONTAP ao VMware Cloud na AWS</block>
   <block id="0adc03eac86772ad2c75c8f140be417e" category="sidebar">Conhecimento e apoio</block>
   <block id="3197d9ffc65dc1fe1469440d8891e79d" category="doc">Ajuda da taxa de redução de dados do consultor de migração da VMware</block>
   <block id="10ced15d9df199f8cb002561b8728770" category="paragraph">Esta versão do Workload Factory for VMware apresenta um assistente de taxa de redução de dados. O assistente de taxa de redução de dados ajuda você a decidir qual é a melhor proporção para seu inventário e armazenamento da VMware ao se preparar para a integração na nuvem da AWS.</block>
@@ -360,13 +350,7 @@
   <block id="4db7ab627ca2119e30a51c404a814e9f" category="list-text">Na página *Classify*, revise as informações da VM, regras de classificação de volume, atribuições de volume e lista de volumes que serão migrados como parte da implantação e selecione *Next*.</block>
   <block id="6e8e51789a8fdf8319fae75541361b0d" category="list-text">Na página *Pacote*, revise as instâncias EC2 e os volumes atribuídos a diferentes clusters FSX for ONTAP e selecione *Avançar*.</block>
   <block id="45de7b9580db1698613b43e8b89bb740" category="list-text">Na página *Review plan*, revise as estimativas de custo e economia mensais estimadas para todas as VMs que você planeja migrar.</block>
-  <block id="f292a76e9c79b833f21da297f0ad751c" category="doc">Capture suas configurações de VM antes de migrar para o Amazon EC2 com cargas de trabalho VMware</block>
-  <block id="3a23349f8d161f7653f1e95b602af0f5" category="doc">Capture suas configurações de VM antes de migrar para o VMware Cloud com workloads da VMware</block>
   <block id="3173329d2df7808ef89c684e36fe95db" category="doc">Implante o sistema de arquivos FSX for ONTAP recomendado para cargas de trabalho da VMware</block>
-  <block id="d426ad1d2770909e76d9ec998753048e" category="doc">Crie um plano de implantação para o Amazon EC2 usando o consultor de migração de workloads da VMware</block>
-  <block id="9aed60fda8e95affae05b540b6cbe03a" category="doc">Crie um plano de implantação para o VMware Cloud on AWS usando o consultor de migração de workloads da VMware</block>
-  <block id="09bf5c9e5640bf75b6e024bb49783cc9" category="doc">Início rápido para migrar para o Amazon EC2 usando o consultor de migração de workloads da VMware</block>
-  <block id="ecdd552e8f9e5da2a61e6db8b8030056" category="doc">Início rápido para migrar para o VMware Cloud na AWS usando o consultor de migração de workloads da VMware</block>
   <block id="246fd576936aa6a7e609ed87c073c207" category="paragraph">A seção *Detalhes da coleta de dados* fornece o intervalo de datas e o número de horas de dados coletados usando o coletor de dados do Onboarding Advisor.</block>
   <block id="43edfc2e70d40761eafc22f44f15e60a" category="paragraph">A seção *Resumo do inventário da VM* é preenchida a partir do arquivo de inventário para refletir o número de VMs e a capacidade total de armazenamento.</block>
   <block id="694a4615408e2c20273a3b2eddddc05f" category="list-text">Na página *Escopo*, selecione as VMs na lista que você deseja incluir na migração da AWS. Você pode filtrar a lista pelo estado de energia de cada VM e em qual data center e cluster a VM reside.</block>
@@ -444,12 +428,10 @@
   <block id="024245b5e6c75ae114dc398c5ca73ae7" category="list-text">Reveja o plano. Expanda cada seção para ver os detalhes do plano.</block>
   <block id="a081cf5b640f454f47679c388f6530d7" category="list-text"><block ref="844d6e67804ecd2d3cf898790362c9e5" category="inline-link-macro-rx"></block>.</block>
   <block id="c0c3ffedc4190adc07720bcef4541cf4" category="summary">Comece a usar o consultor de migração da VMware para mover sua infraestrutura atual para o Amazon EVS usando o Amazon FSx para ONTAP como armazenamentos de dados NFS externos.</block>
-  <block id="97735cf08bc8cd1817cf2dbadd06154d" category="doc">Início rápido para migrar para o Amazon EVS usando o VMware Workloads Migration Advisor</block>
   <block id="78522cc7fdf910d1c768be65dab81580" category="paragraph">Inicie o consultor de migração do VMware e configure manualmente o ambiente de VM que você deseja criar na infraestrutura do Amazon Elastic VMWare Service usando um sistema de arquivos Amazon FSx para ONTAP como armazenamentos de dados NFS externos.</block>
   <block id="c62281747a6b17066b21d48dd60f5008" category="paragraph"><block ref="9e8ee83580ea37ccc569fc72280596e1" category="inline-link-macro-rx"></block>.</block>
   <block id="7454fc4c14df2a987637928e569efe3a" category="section-title">29 de junho de 2025</block>
   <block id="bd901b05034bb9be1d918012998e8f7b" category="section-title">5 de janeiro de 2025</block>
-  <block id="e4358de2a09588cec13214adc031a6e1" category="sidebar">Início rápido para migração para o Amazon EVS</block>
   <block id="b217f7353b9ad5ed58a9d5b9ee531f78" category="sidebar">Migrar para o Amazon Elastic VMware Service</block>
   <block id="424013c53fd9187a66e051bb44ddaa34" category="doc">Suporte aprimorado do consultor de migração para o Amazon Elastic VMWare Service</block>
   <block id="93c34ab13f70b21f6935de45dacb9ae3" category="section-title">Calcule a economia de custos da migração para o Amazon Elastic VMware Service</block>
@@ -472,8 +454,6 @@
   <block id="83fcfa0f731c9eadc58dd7b0bbe13131" category="paragraph">Se o Amazon EVS não estiver disponível nesta região ou se sua conta não tiver permissões para recuperar a lista de ARNs secretos disponíveis, você poderá inserir manualmente um valor de ARN secreto.</block>
   <block id="a2e98ef8c2ce2e5671fe4097dbf5f4ce" category="section-title">3 de agosto de 2025</block>
   <block id="6928ceecf566ab44f308d64b3806a0bc" category="section-title">2 de março de 2025</block>
-  <block id="bb0d319ea44614c003c0a5e9c6e4f1a6" category="sidebar">Início rápido: Migrar para o Amazon Elastic VMware Service</block>
-  <block id="cf48d7891f28d92c4308fb5debb574b0" category="sidebar">Explorar economias</block>
   <block id="e34fc91d682ebcf23e9732294872ca80" category="doc">Lançamento inicial do Workload Factory para VMware</block>
   <block id="bdcdfcdfcb9e0d2084c9c9ff58163d0b" category="paragraph">Esta versão do Workload Factory para VMware apresenta melhorias de funcionalidade e estabilidade, bem como a capacidade de importar e exportar planos de migração ao usar o consultor de migração do VMware.</block>
   <block id="bd926a6dc82c9eb9135d58e6c5a33568" category="paragraph">Esta versão do NetApp Workload Factory para VMware apresenta diversas melhorias na experiência do consultor de migração:</block>
@@ -625,7 +605,6 @@
   <block id="262fa4a3da671ed4e99add58ab265149" category="doc">Avisos legais para NetApp Workload Factory para VMware</block>
   <block id="aeb31c9f8c311597856b129ab948b4e6" category="inline-link">Fábrica de carga de trabalho da NetApp</block>
   <block id="55f7843f27571db97da76bdf68a76d22" category="paragraph"><block ref="55f7843f27571db97da76bdf68a76d22" category="inline-link-rx"></block></block>
-  <block id="734e5b74e7595424d4721589d572eda7" category="doc">Migre seus dados para a nova infraestrutura com o NetApp Workload Factory para VMware</block>
   <block id="3d784fb83da69a092542ad97e84229a1" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block>Efetue login no Workload Factory</block>
   <block id="e3f4d5b3a0d16b68c0f95c7031bbab0f" category="inline-link">crie uma conta no Workload Factory</block>
   <block id="8af94ef3a55ab31e78f60c3968ecc4e3" category="paragraph">Você precisará<block ref="c1e10d5d77d21feb199911d5a4450d55" category="inline-link-rx"></block> e faça login usando um dos<block ref="17b71e2884d56fdbadfe752689dbd4d6" category="inline-link-rx"></block> .</block>
@@ -635,7 +614,6 @@
   <block id="527322d1ebf3079ca1f474c5e3c8d4dc" category="paragraph"><block ref="3f004e021dfd1da14c955ee4e1d0ba17" category="inline-link-macro-rx"></block> .</block>
   <block id="465e05b02c4091132dffd8661fead178" category="paragraph"><block ref="3aea27ccdadee3f33be0c6643a1fec67" category="inline-link-macro-rx"></block> .</block>
   <block id="b334128403ed60ff931947907046e1f0" category="summary">Antes de abrir um caso de suporte com o suporte técnico da NetApp , você precisa adicionar uma conta do Site de Suporte da NetApp ao Workload Factory e então se registrar para obter suporte.</block>
-  <block id="321b853ccb62a088abe07117978e5b31" category="doc">Registre-se para obter suporte para o NetApp Workload Factory para VMware</block>
   <block id="3d9b602ae77ac6a4951ca31b05b6b54f" category="paragraph">O registro de suporte é necessário para receber suporte técnico específico para o NetApp Workload Factory e suas soluções e serviços de armazenamento. Você deve se registrar para obter suporte no NetApp Console, que é um console baseado na Web separado do Workload Factory.</block>
   <block id="c552970fd4dc8118ba1806da596acad9" category="paragraph">O registro para suporte não habilita o suporte da NetApp para um serviço de arquivo do provedor de nuvem. Para obter suporte técnico relacionado a um serviço de arquivo do provedor de nuvem, sua infraestrutura ou qualquer solução que use o serviço, consulte "Obter ajuda" na documentação do Workload Factory para esse produto.</block>
   <block id="eb803e55617f13b716b5e56642cce2b0" category="paragraph">O registro da assinatura de suporte do ID da sua conta (seu número de série 960xxxxxxxxx de 20 dígitos localizado na página Recursos de suporte no NetApp Console) serve como seu único ID de assinatura de suporte. Cada assinatura de suporte em nível de conta da NetApp deve ser registrada.</block>
@@ -649,7 +627,6 @@
   <block id="40eff8559acd41057187b6cb11fa1919" category="list-text">Associe sua nova conta NSS ao login do NetApp Console concluindo as etapas em<block ref="2f3aba04ec49ee5f0573a6c80a1b9df2" category="inline-xref-macro-rx"></block> .</block>
   <block id="f335678326583cea28377216c5515221" category="paragraph">Depois de ter sua conta do Site de Suporte NetApp , associe a conta ao seu login do Console NetApp concluindo as etapas em<block ref="2f3aba04ec49ee5f0573a6c80a1b9df2" category="inline-xref-macro-rx"></block> .</block>
   <block id="01e556e9ed381ddad48f5f248ea8c853" category="summary">Você pode usar o Centro de Planejamento para carregar informações sobre seu ambiente VMware atual.</block>
-  <block id="549db19de828407c882fab2f54c0d91b" category="doc">Carregar dados de inventário de VM para o NetApp Workload Factory</block>
   <block id="549d0e83e0f77a058ecb115d751ef72a" category="paragraph">Antes de criar um plano de migração, você precisa carregar os dados de inventário da sua VM.</block>
   <block id="6c2c52acb8ece2370c8022ea7c978cb0" category="list-text">Selecione *Carregar inventário de VM*.</block>
   <block id="d3157fb0911e0c33c9adcedf0e1598ec" category="list-text">Escolha qual método de coleta de dados usar:</block>
@@ -779,7 +756,6 @@
   <block id="849b694f18d5f2f0d81dfe44c89029ea" category="inline-link-macro">Aprenda como implementar configurações bem arquitetadas</block>
   <block id="5dc782d436d94215ab9c41482cff8c02" category="paragraph"><block ref="f09015d4a26b2878c118305ce478ca5f" category="inline-link-macro-rx"></block>.</block>
   <block id="fc6485a9112c61e8addae60c9881529a" category="summary">Analise o status de arquitetura adequada para configurações do Exchange Virtual Server no Workload Factory e siga as orientações de correção com base nas melhores práticas da AWS e NetApp.</block>
-  <block id="74163cd660daafe169a986c2d540a418" category="doc">Implemente configurações Exchange Virtual Server bem arquitetadas</block>
   <block id="55f759553ee3b4403a36ef5481e92158" category="paragraph">Utilize a análise de configuração do Workload Factory para revisar o status de arquitetura adequada das suas configurações do Amazon Elastic VMware Service (Exchange Virtual Server) e corrigir problemas que afetam a confiabilidade, segurança e custo.</block>
   <block id="bbe48fb854ea022537208eeeff822f91" category="section-title">Sobre esta tarefa</block>
   <block id="992962ec039b953e3a26be2bbe0354ea" category="paragraph">Análises diárias automáticas de todos os ambientes Exchange Virtual Server (EVS) descobertos, utilizando APIs da AWS, analisam sua configuração do Exchange Virtual Server e identificam possíveis problemas que podem afetar a disponibilidade, resiliência, segurança ou otimização de custos. Os resultados são organizados por área de configuração, com cada resultado incluindo status, níveis de gravidade, detalhes dos recursos afetados e procedimentos de correção passo a passo.</block>
@@ -884,7 +860,6 @@
   <block id="1711c42c1c1d16547f3fc604cd9af939" category="list-text">Suporte para os níveis de serviço Standard, Premium e Extreme do Google Cloud NetApp Volumes.</block>
   <block id="d5adbe8ffd84800d108bc7ddf1451b8a" category="list-text">Implantação de Infrastructure-as-Code com Terraform para provisionamento automatizado.</block>
   <block id="7f23e40eb3340fde04d9926b7462c830" category="summary">A partir do centro de planejamento da VMware, você pode iniciar o migration advisor do Google Cloud VMware Engine para ajudar a criar um plano de migração personalizado para suas necessidades.</block>
-  <block id="5e50f9be4f1e626bb755e71b6ef9feec" category="doc">Crie um plano de implantação para Google Cloud VMware Engine usando o migration advisor</block>
   <block id="bdef3354bb4b315740e7e8854254495b" category="paragraph">Você pode criar um plano de implantação para migrar máquinas virtuais para o Google Cloud VMware Engine e usar volumes personalizados do Google Cloud NetApp como datastores NFS externos. As opções no assistente de migração podem variar dependendo da ferramenta usada para coletar os dados de inventário de máquinas virtuais.</block>
   <block id="68da13bad217e0063074ca65ab1746c6" category="list-text">Você precisa de um nome de usuário e senha para acessar Workload Factory. Se você não tiver acesso, crie uma conta agora. Veja as instruções<block ref="8199fecf84297ce97d3f6270595de419" category="inline-link-rx"></block>.</block>
   <block id="5a4d83a02bb188eb7ca1f7e786e22e1d" category="list-text">Você precisa ter uma assinatura do Google Cloud VMware Engine em uma região onde ambos os serviços Google Cloud VMware Engine e Google Cloud NetApp Volumes estejam disponíveis.</block>
@@ -1023,7 +998,6 @@
   <block id="546393155194873f3731142e84a340fd" category="inline-link">permissões para NetApp Workload Factory</block>
   <block id="6bc7794709563656174e241f32f0298a" category="paragraph">Antes de começar, você deve ter uma compreensão do<block ref="aae0d4009285116ff23f9a7f74c1f54b" category="inline-link-rx"></block>.</block>
   <block id="2556da08e11585b605626929beefd4ce" category="summary">Comece a usar o assistente de migração da VMware para migrar sua infraestrutura atual para o Google Cloud VMware Engine usando o Google Cloud NetApp Volumes como datastores NFS externos.</block>
-  <block id="9e8284342c75f48a25dde90d2f2d0588" category="doc">Guia rápido para migrar para o Google Cloud VMware Engine usando o assistente de migração de cargas de trabalho da VMware</block>
   <block id="b53d94934411cf1f04ae399b5c11817c" category="paragraph">Se optar por não conceder permissões, você pode começar a usar o Workload Factory para VMware para copiar exemplos de código parcialmente concluídos.</block>
   <block id="50e7018c936f9967bef9aaaca1d14b1d" category="paragraph">Se optar por conceder permissões, você precisará<block ref="869f3c251b5d8f71098ec6e85e90e6d1" category="inline-link-rx"></block> fornecer a uma conta de serviço do GCP as permissões necessárias para visualizar e gerenciar recursos do Google Cloud NetApp Volumes, configuração de VPC e conectividade do datastore do Google Cloud VMware Engine.</block>
   <block id="175be206f8668945b45511179609ebe3" category="paragraph">Inicie o VMware migration advisor e configure o ambiente de máquina virtual que deseja criar na infraestrutura do Google Cloud VMware Engine usando o Google Cloud NetApp Volumes como datastores NFS externos.</block>
@@ -1032,9 +1006,7 @@
   <block id="fc32330336b033235d02cb9ee4ecb7f8" category="list-text"><block ref="fc32330336b033235d02cb9ee4ecb7f8" category="inline-link-macro-rx"></block></block>
   <block id="df4bdd45174b09881add6730bdfaf045" category="section-title">09 de março de 2026</block>
   <block id="4aa1f4ce7ff97e69b143fbe399631234" category="section-title">01 de março de 2026</block>
-  <block id="cd201b013ee4f8ae149bb4ba1d9c3ab3" category="sidebar">Início rápido: migrar para o Google Cloud VMware Engine</block>
   <block id="26786f5592c89fd387f588f17079366d" category="sidebar">Migre para o Google Cloud VMware Engine</block>
-  <block id="ef1fc06261bcd9214fd9546ba1a3d6f6" category="sidebar">Guia rápido para migração para Google Cloud VMware Engine</block>
   <block id="9ffdb95250e26c7a6b468126ac7c75b0" category="section-title">Como funciona</block>
   <block id="2888fa977354ad1bf513fa2f17fdd7df" category="paragraph">O Workload Factory analisa diariamente suas cargas de trabalho em execução em implantações de sistemas de arquivos Amazon FSx for NetApp ONTAP. A análise fornece status bem arquitetado, insights e recomendações.</block>
   <block id="678b83ba882b41e4bae10f8e48f4a766" category="paragraph">Após a conclusão da análise diária, as configurações aparecem como "otimizadas" ou "não otimizadas" no painel Well-architected da implantação. Você encontrará a pontuação total de otimização, problemas de configuração por categoria e uma lista de problemas de configuração e recomendações. Você pode revisar as recomendações para problemas de configuração. Alguns problemas podem ser corrigidos automaticamente pelo Workload Factory, enquanto outros exigem intervenção manual. Nesse caso, o Workload Factory fornece instruções detalhadas para ajudar você a implementar as alterações recomendadas.</block>
@@ -1117,4 +1089,22 @@
   <block id="92cf0e18866b04760e70a131cb85dfe9" category="paragraph-title">Com que frequência a análise de arquitetura bem estruturada do Exchange Virtual Server é executada e de que tipo de acesso ela precisa?</block>
   <block id="dfd41ab037a25f5c2fce16d5ee27e400" category="inline-link-macro">os requisitos de análise bem arquitetada do Exchange Virtual Server</block>
   <block id="dff9e7d880dfe3330c2697a30f505e01" category="paragraph">As configurações descobertas do Exchange Virtual Server são verificadas automaticamente uma vez por dia usando as APIs da AWS; as credenciais do vSphere e a conectividade do vCenter não são necessárias. Você precisa de credenciais da AWS com permissões de visualização, planejamento e análise para workloads do VMware e de pelo menos um ambiente do Exchange Virtual Server descoberto. Para obter detalhes, consulte <block ref="49902b356d6c7776da8fe31c598cd788" category="inline-link-macro-rx"></block>.</block>
+  <block id="07f5c2034d44eea983ae24e8a3e62629" category="doc">Explore a economia do Amazon Exchange Virtual Server com o Workload Factory para VMware</block>
+  <block id="e1b7641d7064a40c5bbdee2b40540b74" category="doc">Capturar configurações de VM para o Amazon EC2</block>
+  <block id="7b3bc3990d7543aaf66980f87335767a" category="doc">Capture as configurações de VM para o VMware Cloud on AWS</block>
+  <block id="3f8584ff413956319742ef138ff950bf" category="doc">Implantar o FSx for ONTAP para o Amazon Exchange Virtual Server</block>
+  <block id="2fbb7c9787ea3032a156a07d1f132418" category="doc">Implantar o FSx for ONTAP para o Amazon EC2</block>
+  <block id="a559ec50a8770c8e1d80a75962409463" category="doc">Implante o FSx for ONTAP para o VMware Cloud on AWS</block>
+  <block id="4adccbbed5a316b4a1a113e8e0d5ba4b" category="doc">Crie um plano de implantação para o Google Cloud VMware Engine</block>
+  <block id="138dc8298502101ab4b1dab76473550a" category="doc">Crie um plano de implantação para o Amazon EC2</block>
+  <block id="098db62d0eacef295355b49bfd3f685d" category="doc">Crie um plano de implantação para o VMware Cloud on AWS</block>
+  <block id="e139e2a548f33074a05788b33d073ed1" category="doc">Migre dados de VM para o VMware Cloud on AWS</block>
+  <block id="7f2dbecda0f9bd37e40d03689b14c2fa" category="doc">Guia rápido para a migração do Amazon Exchange Virtual Server</block>
+  <block id="0fcf95e364a521f58f982192fa0a45e6" category="doc">Guia rápido para migração do Google Cloud VMware Engine</block>
+  <block id="ea627ccca5e145e4ce43781ebdf2e6f4" category="doc">Guia rápido para migração para o Amazon EC2</block>
+  <block id="38641132a022c702ed8584dd18675ff9" category="doc">Guia rápido para migração do VMware Cloud on AWS</block>
+  <block id="f8ba0fa9860c87100328f9357c1c224f" category="doc">Registre-se para obter suporte do NetApp Workload Factory para VMware</block>
+  <block id="53d93e9fac55ddfe7c501887d49a96ea" category="doc">Faça upload dos dados de inventário de VMs para o Workload Factory for VMware</block>
+  <block id="ddff52126e082848348039b980fd1e5c" category="doc">Revise as descobertas bem arquitetadas do Exchange Virtual Server no Workload Factory para VMware</block>
+  <block id="8ecb1fa68ebd7661685ea0dc78ce9cea" category="sidebar">Novidades do NetApp Workload Factory para VMware</block>
 </blocks>

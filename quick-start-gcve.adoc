@@ -4,7 +4,7 @@ permalink: quick-start-gcve.html
 keywords: quick start, gcve, google cloud vmware engine, gcnv, google cloud netapp volumes 
 summary: Comece a usar o assistente de migração da VMware para migrar sua infraestrutura atual para o Google Cloud VMware Engine usando o Google Cloud NetApp Volumes como datastores NFS externos. 
 ---
-= Guia rápido para migrar para o Google Cloud VMware Engine usando o assistente de migração de cargas de trabalho da VMware
+= Guia rápido para migração do Google Cloud VMware Engine
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/

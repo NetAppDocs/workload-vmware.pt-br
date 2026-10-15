@@ -13,51 +13,55 @@ indexpage:
     links:
     - title: Saiba mais sobre o NetApp Workload Factory para VMware
       url: learn-about-vmware-workloads.html
-    - title: 'Início rápido: Migrar para o Amazon Elastic VMware Service'
+    - title: Guia rápido para a migração do Amazon Exchange Virtual Server
       url: quick-start-evs.html
-    - title: 'Início rápido: Migre para o VMware Cloud na AWS'
+    - title: Guia rápido para migração do VMware Cloud on AWS
       url: quick-start.html
-    - title: 'Início rápido: Migrar para o Amazon EC2'
+    - title: Guia rápido para migração para o Amazon EC2
       url: quick-start-native.html
-    - title: 'Início rápido: migrar para o Google Cloud VMware Engine'
+    - title: Guia rápido para migração do Google Cloud VMware Engine
       url: quick-start-gcve.html
     - title: Explore o centro de planejamento da VMware
       url: explore-planning-center.html
   - title: Migrar para o Amazon Elastic VMware Service
     links:
-    - title: Explorar economias
+    - title: Explore a economia do Amazon Exchange Virtual Server com o Workload Factory
+        para VMware
       url: calculate-evs-savings.html
     - title: Criar manualmente um plano de implantação
       url: launch-migration-advisor-evs-manual.html
-    - title: Crie um plano de implantação usando o consultor de migração
+    - title: Crie um plano de implantação para o Amazon EVS usando o consultor de
+        migração
       url: launch-migration-advisor-evs.html
-    - title: Implante o sistema de arquivos FSX for ONTAP recomendado
-      url: deploy-fsx-file-system.html
+    - title: Implantar o FSx for ONTAP para o Amazon Exchange Virtual Server
+      url: deploy-fsx-file-system-evs.html
   - title: Migre para o Google Cloud VMware Engine
     links:
-    - title: Crie um plano de implantação usando o consultor de migração
+    - title: Crie um plano de implantação para o Google Cloud VMware Engine
       url: launch-migration-advisor-gcve.html
   - title: Migrar para o Amazon EC2
     links:
-    - title: Crie um plano de implantação usando o consultor de migração
+    - title: Crie um plano de implantação para o Amazon EC2
       url: launch-onboarding-advisor-native.html
-    - title: Implante o sistema de arquivos FSX for ONTAP recomendado
-      url: deploy-fsx-file-system.html
+    - title: Implantar o FSx for ONTAP para o Amazon EC2
+      url: deploy-fsx-file-system-native.html
   - title: Migre para o VMware Cloud na AWS
     links:
-    - title: Crie um plano de implantação usando o consultor de migração
+    - title: Crie um plano de implantação para o VMware Cloud on AWS
       url: launch-onboarding-advisor.html
-    - title: Implante o sistema de arquivos FSX for ONTAP recomendado
+    - title: Implante o FSx for ONTAP para o VMware Cloud on AWS
       url: deploy-fsx-file-system.html
-    - title: Conete o FSX para sistemas de arquivos ONTAP ao VMware Cloud na AWS
+    - title: Conete seus sistemas de arquivos do FSX for ONTAP ao VMware Cloud na
+        AWS
       url: connect-sddc-to-fsx.html
-    - title: Migre seus dados para a nova infraestrutura
+    - title: Migre dados de VM para o VMware Cloud on AWS
       url: migrate-data.html
   - title: Administrar e monitorar
     links:
     - title: Análise de configuração para configurações do Exchange Virtual Server
       url: configuration-analysis.html
-    - title: Implemente configurações Exchange Virtual Server bem arquitetadas
+    - title: Revise as descobertas bem arquitetadas do Exchange Virtual Server no
+        Workload Factory para VMware
       url: view-evs-well-architected.html
   - title: Blogs & comunidade
     links:

@@ -4,7 +4,7 @@ permalink: quick-start.html
 keywords: quick start 
 summary: Comece a usar o consultor de migração da VMware para migrar sua infraestrutura atual para o VMware Cloud na AWS usando o Amazon FSX for ONTAP como datastores NFS externos. 
 ---
-= Início rápido para migrar para o VMware Cloud na AWS usando o consultor de migração de workloads da VMware
+= Guia rápido para migração do VMware Cloud on AWS
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
