@@ -1,0 +1,14 @@
+= Suporte a instâncias i7i.metal-24xl e i7i.metal-48xl na calculadora de TCO do Exchange Virtual Server
+:allow-uri-read: 
+
+
+
+
+[[i7i-metal-24xl-and-i7i-metal-48xl-instance-support-in-evs-tco-calculator]]
+=== Suporte a instâncias i7i.metal-24xl e i7i.metal-48xl na calculadora de TCO do Exchange Virtual Server
+
+A calculadora de TCO do Exchange Virtual Server agora oferece suporte a instâncias EC2 AWS i7i.metal-24xl e i7i.metal-48xl como hosts de cluster. Em comparação com as configurações i4i.metal, as instâncias i7i.metal-24xl reduzem o custo inicial do Exchange Virtual Server em cerca de 33% para computação e 25% para armazenamento vSAN.
+
+A calculadora compara todos os tipos de instâncias e seleciona automaticamente a opção de menor custo. Uma nova seção de comparação exibe lado a lado as configurações de host do Exchange Virtual Server, facilitando a escolha da melhor configuração para suas necessidades.
+
+link:https://docs.netapp.com/us-en/workload-vmware/calculate-evs-savings.html["Calcule a economia estimada para Exchange Virtual Server"]

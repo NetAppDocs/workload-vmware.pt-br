@@ -1107,4 +1107,8 @@
   <block id="53d93e9fac55ddfe7c501887d49a96ea" category="doc">Faça upload dos dados de inventário de VMs para o Workload Factory for VMware</block>
   <block id="ddff52126e082848348039b980fd1e5c" category="doc">Revise as descobertas bem arquitetadas do Exchange Virtual Server no Workload Factory para VMware</block>
   <block id="8ecb1fa68ebd7661685ea0dc78ce9cea" category="sidebar">Novidades do NetApp Workload Factory para VMware</block>
+  <block id="d6ed55c5fa0490be9e9d07719ba741ce" category="doc">Suporte a instâncias i7i.metal-24xl e i7i.metal-48xl na calculadora de TCO do Exchange Virtual Server</block>
+  <block id="b6c3bb340d0b13e009a53c6c8a2b9219" category="paragraph">A calculadora de TCO do Exchange Virtual Server agora oferece suporte a instâncias EC2 AWS i7i.metal-24xl e i7i.metal-48xl como hosts de cluster. Em comparação com as configurações i4i.metal, as instâncias i7i.metal-24xl reduzem o custo inicial do Exchange Virtual Server em cerca de 33% para computação e 25% para armazenamento vSAN.</block>
+  <block id="e50148793a31ae443693925cfda40d91" category="paragraph">A calculadora compara todos os tipos de instâncias e seleciona automaticamente a opção de menor custo. Uma nova seção de comparação exibe lado a lado as configurações de host do Exchange Virtual Server, facilitando a escolha da melhor configuração para suas necessidades.</block>
+  <block id="8b253c1d4259c21c8314fc85adcb31d6" category="section-title">01 de novembro de 2026</block>
 </blocks>
